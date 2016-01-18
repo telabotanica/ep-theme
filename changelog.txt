@@ -1,0 +1,29 @@
+== Changelog ==
+
+= 1.7 =
+
+* Better CSS support for plugins
+* Fix CSS issues for BuddyPress pages
+* Change directory listing pages to a 2 column layout
+* Misc small cross-browser CSS corrections
+* Better integration for child themes
+
+= 1.6 =
+
+* Fix redirect url when activating account
+
+= 1.5 = 
+
+* Fix a bug for Members/Groups Directory, buttons were breaking markup
+* Fix a bug for Activate Account page
+* Redirect to single group page after group is created
+* Fix markup for BuddyPress plugins
+
+= 1.4 =
+
+* Fix a bug for 'Create Group' button
+* CSS changes
+
+= 1.0 =
+
+* Initial release
