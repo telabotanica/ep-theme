@@ -15,7 +15,7 @@ do_action( 'bp_before_group_header' );
 
 		<div id="item-buttons">
 
-			<?php do_action( 'bp_group_header_actions' ); ?>
+			
 
 		</div><!-- #item-buttons -->
 

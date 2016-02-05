@@ -3,20 +3,16 @@
 	<div id="content">
 	
 		<div class="padder">
+		
+			<!-- Lien de retour à l'accueil -->
+			<div id="creation-retour">
+				<a href="<?php echo get_option('home'); ?>" class="lien-accueil">Revenir à l'accueil</a>
+			</div>
 
 			<form action="<?php bp_group_creation_form_action(); ?>" method="post" id="create-group-form" class="standard-form" enctype="multipart/form-data">
-				<h3><?php _e( 'Create a Group', 'huddle' ); ?></h3>
-				<br />
 
 				<?php do_action( 'bp_before_create_group' ); ?>
 
-				<div class="no-ajax" id="group-create-tabs" role="navigation">
-					<ul>
-
-						<?php bp_group_creation_tabs(); ?>
-
-					</ul>
-				</div>
 
 				<div class="clear"></div>
 
@@ -32,11 +28,13 @@
 						<p class="editfield">
 							<label for="group-name"><?php _e( 'Group Name (required)', 'huddle' ); ?></label>
 							<input type="text" name="group-name" id="group-name" aria-required="true" value="<?php bp_new_group_name(); ?>" />
+							* Champ obligatoire
 						</p>
 
 						<p class="editfield">
 							<label for="group-desc"><?php _e( 'Group Description (required)', 'huddle' ) ?></label>
-							<textarea name="group-desc" id="group-desc" rows="5" cols="45" aria-required="true"><?php bp_new_group_description(); ?></textarea>
+							<input type="text" name="group-desc" id="group-desc" aria-required="true" value="<?php bp_new_group_description(); ?>" />
+							* Champ obligatoire
 						</p>
 
 						<?php
@@ -70,12 +68,10 @@
 							<?php endif; ?>
 						<?php endif; ?>
 
-						<hr />
-
 						<h4><?php _e( 'Privacy Options', 'huddle' ); ?></h4>
 
-						<div class="radio">
-							<label><input type="radio" name="group-status" value="public"<?php if ( 'public' == bp_get_new_group_status() || !bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
+						<div class="radio" id="confidentialite">
+							<label class="pointer"><input type="radio" name="group-status" value="public"<?php if ( 'public' == bp_get_new_group_status() || !bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
 								<strong><?php _e( 'This is a public group', 'huddle' ); ?></strong>
 								<ul>
 									<li><?php _e( 'Any site member can join this group.', 'huddle' ); ?></li>
@@ -84,7 +80,7 @@
 								</ul>
 							</label>
 
-							<label><input type="radio" name="group-status" value="private"<?php if ( 'private' == bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
+							<label class="pointer"><input type="radio" name="group-status" value="private"<?php if ( 'private' == bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
 								<strong><?php _e( 'This is a private group', 'huddle' ); ?></strong>
 								<ul>
 									<li><?php _e( 'Only users who request membership and are accepted can join the group.', 'huddle' ); ?></li>
@@ -93,7 +89,7 @@
 								</ul>
 							</label>
 
-							<label><input type="radio" name="group-status" value="hidden"<?php if ( 'hidden' == bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
+							<label class="pointer"><input type="radio" name="group-status" value="hidden"<?php if ( 'hidden' == bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
 								<strong><?php _e('This is a hidden group', 'huddle'); ?></strong>
 								<ul>
 									<li><?php _e( 'Only users who are invited can join the group.', 'huddle' ); ?></li>
@@ -107,20 +103,18 @@
 
 						<h4><?php _e( 'Group Invitations', 'huddle' ); ?></h4>
 
-						<p><?php _e( 'Which members of this group are allowed to invite others?', 'huddle' ) ?></p>
-
-						<div class="radio">
-							<label>
+						<div class="radio" id="invitations">
+							<label class="pointer">
 								<input type="radio" name="group-invite-status" value="members"<?php bp_group_show_invite_status_setting( 'members' ) ?> />
 								<strong><?php _e( 'All group members', 'huddle' ) ?></strong>
 							</label>
 
-							<label>
+							<label class="pointer">
 								<input type="radio" name="group-invite-status" value="mods"<?php bp_group_show_invite_status_setting( 'mods' ) ?> />
 								<strong><?php _e( 'Group admins and mods only', 'huddle' ) ?></strong>
 							</label>
 
-							<label>
+							<label class="pointer">
 								<input type="radio" name="group-invite-status" value="admins"<?php bp_group_show_invite_status_setting( 'admins' ) ?> />
 								<strong><?php _e( 'Group admins only', 'huddle' ) ?></strong>
 							</label>

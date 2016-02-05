@@ -1,12 +1,6 @@
 
 <?php do_action( 'bp_before_member_header' ); ?>
 
-<!-- Lien de retour -->
-<a class="lien-accueil" href="/wordpress/groups">
-	Revenir aux projets
-</a>
-
-<!-- Avatar du membre -->
 <div id="item-header-avatar">
 	<a href="<?php bp_user_link(); ?>">
 

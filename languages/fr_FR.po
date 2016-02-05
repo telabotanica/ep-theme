@@ -7418,12 +7418,12 @@ msgstr ""
 #: bp-templates/bp-legacy/buddypress/groups/create.php:60
 #: bp-templates/bp-legacy/buddypress/groups/single/admin.php:30
 msgid "Group Name (required)"
-msgstr "* Nom du projet"
+msgstr "* Nom du projet <br /> (50 caractères max.)"
 
 #: bp-templates/bp-legacy/buddypress/groups/create.php:65
 #: bp-templates/bp-legacy/buddypress/groups/single/admin.php:33
 msgid "Group Description (required)"
-msgstr "* Description du projet"
+msgstr "* Résumé du projet <br /> (200 caractères max.)"
 
 #: bp-templates/bp-legacy/buddypress/groups/create.php:95
 #: bp-templates/bp-legacy/buddypress/groups/single/admin.php:91

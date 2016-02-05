@@ -23,17 +23,17 @@
 
 						<?php bp_get_options_nav(); ?>
 
-						<?php do_action( 'bp_group_options_nav' ); ?><?php do_action( 'bp_group_options_nav' ); ?>
+						<?php do_action( 'bp_group_options_nav' ); ?>
 						
 					</ul>
 				</div>
 			</div><!-- #item-nav -->
 
 			<div id="item-body">
-			
+				
 				<?php do_action( 'bp_before_group_body' );
 				
-				/* Onglet Gestion du projet */
+				/* Onglet Réglages */
 				if ( bp_is_group_admin_page() && bp_group_is_visible() ) :
 					locate_template( array( 'groups/single/admin.php' ), true );
 		
@@ -42,7 +42,7 @@
 					locate_template( array( 'groups/single/members.php' ), true );
 
 				elseif ( bp_group_is_visible() ) :
-					locate_template( array( 'groups/single/accueil.php' ), true );
+					locate_template( array( 'groups/single/description.php' ), true );
 					
 				/* Onglet Activité */
 				elseif ( bp_is_group_activity() ) :
@@ -80,12 +80,14 @@
 				do_action( 'bp_after_group_body' ); ?>
 
 			</div><!-- #item-body -->
+			
 
 			<?php do_action( 'bp_after_group_home_content' ); ?>
 
 			<?php endwhile; endif; ?>
 
 		</div><!-- .padder -->
+		
 	</div><!-- #content -->
 
 <?php get_sidebar( 'buddypress' ); ?>

@@ -15,22 +15,28 @@
 
 	<p class="editfield">
 		<label for="group-name"><?php _e( 'Group Name (required)', 'huddle' ); ?></label>
-		<input type="text" name="group-name" id="group-name" value="<?php bp_group_name() ?>" aria-required="true" />
+		<input class="tb-input" type="text" name="group-name" id="group-name" value="<?php bp_group_name() ?>" aria-required="true" />
 	</p>
 
 	<p class="editfield">
 		<label for="group-desc"><?php _e( 'Group Description (required)', 'huddle' ); ?></label>
-		<textarea name="group-desc" id="group-desc" aria-required="true"><?php bp_group_description_editable() ?></textarea>
+		<input class="tb-input" type="text" name="group-desc" id="group-desc" value="<?php bp_group_description_editable() ?>" aria-required="true" />
 	</p>
 
 	<?php do_action( 'groups_custom_group_fields_editable' ) ?>
 
 	<p class="editfield">
-		<label for="group-notifiy-members"><?php _e( 'Notify group members of changes via email', 'huddle' ); ?></label>
+		<label for="group-notifiy-members"><?php _e( 'Notify group members of these changes via email', 'huddle' ); ?></label>
 		<label class="no"><input type="radio" name="group-notify-members" value="1" /> <?php _e( 'Yes', 'huddle' ); ?></label>&nbsp;
 		<label class="no"><input type="radio" name="group-notify-members" value="0" checked="checked" /> <?php _e( 'No', 'huddle' ); ?></label>
 	</p>
-	<br /><br />
+	
+	<p class="editfield">
+		* Champ obligatoire
+	</p>
+	
+	<br />
+	<br />
 
 	<?php do_action( 'bp_after_group_details_admin' ); ?>
 

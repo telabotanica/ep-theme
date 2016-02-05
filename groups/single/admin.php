@@ -20,7 +20,7 @@
 
 	<p class="editfield">
 		<label for="group-desc"><?php _e( 'Group Description (required)', 'huddle' ); ?></label>
-		<textarea name="group-desc" id="group-desc" aria-required="true"><?php bp_group_description_editable() ?></textarea>
+		<input type="text" name="group-desc" id="group-desc" value="<?php bp_group_description_editable() ?>" aria-required="true" />
 	</p>
 
 	<?php do_action( 'groups_custom_group_fields_editable' ) ?>
@@ -30,7 +30,13 @@
 		<label class="no"><input type="radio" name="group-notify-members" value="1" /> <?php _e( 'Yes', 'huddle' ); ?></label>&nbsp;
 		<label class="no"><input type="radio" name="group-notify-members" value="0" checked="checked" /> <?php _e( 'No', 'huddle' ); ?></label>
 	</p>
-	<br /><br />
+	
+	<p class="editfield">
+		* Champ obligatoire
+	</p>
+	
+	<br />
+	<br />
 
 	<?php do_action( 'bp_after_group_details_admin' ); ?>
 

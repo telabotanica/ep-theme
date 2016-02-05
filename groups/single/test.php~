@@ -1,22 +1,10 @@
 <?php
-
-function initialisation_bp() {
-	global $wpdb;
-	/* On parcourt les meta-données de tous les projets */
-	$res = $wpdb->get_results("
-		SELECT * 
-		FROM {$wpdb->prefix}bp_groups_groupmeta 
-		WHERE group_id=52
-	") ;
-	/* On affiche les outils s'ils sont activés */
-	foreach ($res as $meta) {
-		$outil = $meta->meta_key;
-		if ($meta->meta_value == "true") {
-			require( dirname( __FILE__ ) . '/outils/'.$outil.'.php' );
-		}
-	}	
-
+function display()
+{
+    echo "hello ".$_POST["studentname"];
 }
-add_action( 'bp_include', 'initialisation_bp' );
-
+if(isset($_POST['submit']))
+{
+   display();
+} 
 ?>

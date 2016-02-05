@@ -4,30 +4,53 @@ do_action( 'bp_before_group_header' );
 
 ?>
 
-<a class="lien-accueil" href="<?php echo get_option('home'); ?>">
-	Retour à l'accueil
+<!-- Lien de retour -->
+<a class="lien-accueil" href="/wordpress/groups">
+	Revenir aux projets
 </a>
 
+
+
+<!-- Avatar du projet -->
 <div id="item-header-avatar">
+
 	<a href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>">
-
 		<?php bp_group_avatar(); ?>
-
 	</a>
-</div><!-- #item-header-avatar -->
+	
+	<!-- Confidentialité du projet -->
+	<div class="absolute highlight"><?php bp_group_type(); ?> </div>
+	
+</div>
 
+
+
+<!-- Contenu du header -->
 <div id="item-header-content">
+	
+	
+
+	<!-- Titre du projet -->
 	<h2><a href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>"><?php bp_group_name(); ?></a></h2>
-	<span class="highlight"><?php bp_group_type(); ?></span> <span class="activity"><?php printf( __( 'active %s', 'huddle' ), bp_get_group_last_active() ); ?></span>
+	
+	<!-- Résumé du projet -->
+	<span class="highlight" id="resume"><?php bp_group_description(); ?></span>
+	
+	<!-- Dernière activité sur le projet -->
+	<span class="activity" id="activite"><?php printf( __( 'active %s', 'huddle' ), bp_get_group_last_active() ); ?></span>
 
 	<?php do_action( 'bp_before_group_header_meta' ); ?>
 
-</div><!-- #item-header-content -->
+</div>
 
+
+
+<!-- Actions du header -->
 <div id="item-actions">
 
 	<?php if ( bp_group_is_visible() ) : ?>
-
+	
+		<!-- Administrateurs du groupe -->
 		<h3><?php _e( 'Group Admins', 'huddle' ); ?></h3>
 
 		<ul id="group-admins">
@@ -62,7 +85,7 @@ do_action( 'bp_before_group_header' );
 
 	endif; ?>
 
-</div><!-- #item-actions -->
+</div>
 
 <?php
 do_action( 'bp_after_group_header' );

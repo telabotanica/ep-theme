@@ -364,7 +364,7 @@ if( ! function_exists( 'huddle_auto_excerpt_more' ) ) {
 /* ------------------------------------------------
 	Register Sidebars
 ------------------------------------------------ */
-
+/*
 add_action( 'widgets_init', 'huddle_widgets_init' );
 
 if( ! function_exists( 'huddle_widgets_init' ) ) {
@@ -381,13 +381,13 @@ if( ! function_exists( 'huddle_widgets_init' ) ) {
 		) );
 	}
 }
-
+*/
 
 /* ------------------------------------------------
 	Onglets du projet
 ------------------------------------------------ */
 
-/* Un onglet Porte-documents pour mon groupe negro ! */
+/* Un onglet Selection des outils 
 add_action( 'bp_actions', 'selection_outils' );
 
 function selection_outils() {
@@ -413,7 +413,7 @@ function selection_outils() {
 	}
 }
 
-	
+*/
 
 
 
@@ -558,5 +558,35 @@ function ajouter_styles()
     wp_enqueue_style( 'bootstrap-css' );
 }
 add_action('wp_enqueue_scripts', 'ajouter_styles');
+
+
+
+
+
+/* ------------------------------------------------
+   Surcharge & redéfinition des fonctions BuddyPress
+------------------------------------------------ */
+
+function bp_surcharge_directory_groups_search_form($action) {
+
+	$query_arg = bp_core_get_component_search_query_arg( 'groups' );
+
+	if ( ! empty( $_REQUEST[ $query_arg ] ) ) {
+		$search_value = stripslashes( $_REQUEST[ $query_arg ] );
+	} else {
+		$search_value = bp_get_search_default_text( 'groups' );
+	}
+
+	$search_form_html = '<form action="'.$action.'" method="get" id="search-groups-form">
+		<label for="groups_search"><input type="text" name="' . esc_attr( $query_arg ) . '" id="groups_search" placeholder="'. esc_attr( $search_value ) .'" /></label>
+		<input type="submit" class="hide-responsive custom_groups_search_submit" name="groups_search_submit" value="Je cherche un projet" />
+		<input type="submit" class="show-responsive custom_groups_search_submit" name="groups_search_submit" value="Recherche" />
+	</form>';
+
+	echo apply_filters( 'bp_directory_groups_search_form', $search_form_html );
+
+}
+
+
 
 

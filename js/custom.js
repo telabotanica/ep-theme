@@ -188,47 +188,89 @@ jQuery.fn.placeHolder = function( default_value ) {
 
 // Ajouts Tela-Botanica
 
-/*-- Barre de recherche flottante --*/
-$(window).scroll(
-	function() {
-		if ($(window).scrollTop() >= 475) {
-			$('.tb-recherche').addClass("flottant");
-		} else {
-			$('.tb-recherche').removeClass("flottant");
-		}
-	}
-);
+/*-- Options --*/
+$('.tuile-options').on('mouseover', function() {
+	$('.titre-options', this).css('opacity','1');
+});
+$('.tuile-options').on('mouseleave', function() {
+	$('.titre-options', this).css('opacity','0.8');
+});
+
+$('#masquer-panneau-lateral').on('click', function() {
+	$('#panneau-lateral').hide();
+	$('#groups-list').css('margin-left', '-20px');
+	$('#afficher-panneau-lateral').show();
+	$('#masquer-panneau-lateral').hide();
+});
+$('#afficher-panneau-lateral').on('click', function() {
+	$('#panneau-lateral').show();
+	$('#groups-list').css('margin-left', '20px');
+	$('#afficher-panneau-lateral').hide();
+	$('#masquer-panneau-lateral').show();
+});
+
 
 /*-- Tuiles --*/
 $('.generic-button .btn-gray').hide();
 
-$('.tuile-projet').on('mouseenter',function() {
-  	$('.description-projet', this).toggle();
+$('.tb-encart-projet').on('mouseenter', function() {
+	$(this).animate({
+		opacity: 1
+	}, 
+	200);
+});
+
+$('.tb-encart-projet').on('mouseleave', function() {
+	$(this).animate({
+		opacity: 0.95
+	}, 
+	100);
+});
+
+$('.tuile-projet').on('mouseenter', function() {
+	$(this).animate({
+		opacity: 1
+	}, 
+	200);
+  	$('.resume-projet', this).toggle();
   	$('.activite-projet', this).toggle();
   	$('.membres-projet', this).toggle();
+  	$('.confidentialite-projet', this).toggle();
+  	$('.gtags-item-tags a', this).toggle();
   	$('.avatar-projet img', this).animate({
 		borderRadius: '100%',
 		height: '140px',
 		width: '140px',
-		margin: '10px',
+		margin: '30px',
 		opacity: 1
 	}, 
-	500);
+	200);
 });
-$('.tuile-projet').on('mouseleave',function() {
-  	$('.description-projet', this).toggle();
+
+$('.tuile-projet').on('mouseleave', function() {
+	$(this).animate({
+		opacity: 0.8
+	}, 
+	100);
+  	$('.resume-projet', this).toggle();
   	$('.activite-projet', this).toggle();
   	$('.membres-projet', this).toggle();
+  	$('.confidentialite-projet', this).toggle();
+  	$('.gtags-item-tags a', this).toggle();
   	$('.avatar-projet img', this).animate({
 		borderRadius: 0,
 		height: '100%',
 		width: '100%',
 		margin: 0,
-		opacity: 0.2
+		opacity: 0.8
 	}, 
-	200);
+	100);
 });
 
 
-
+$('.on-off').on('change', function() {
+	var val = ($(this).val()=="1" ? 'actif' : 'inactif');
+	$(this).after('<span class="val-temp"> ' + val + '</span>');
+	$('.val-temp').fadeOut(2000);
+});
 

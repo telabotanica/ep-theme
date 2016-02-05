@@ -1,8 +1,3 @@
-<!-- Emplacement Page du widget (YOYO) -->
-<div class="widget-page">
-	<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('page') ) ?>
-</div>
-
 <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
 	<ul>
 		<li class="feed"><a href="<?php bp_group_activity_feed_link() ?>" title="<?php _e( 'RSS Feed', 'huddle' ); ?>"><?php _e( 'RSS', 'huddle' ) ?></a></li>

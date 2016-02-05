@@ -22,8 +22,9 @@
 			<div class="item-list-tabs" id="subnav" role="navigation">
 				<ul>
 
-					<?php do_action( 'bp_members_directory_member_sub_types' ); ?>
+					<?php do_action( 'bp_members_directory_member_sub_types' ); ?>a>	
 					
+					<!-- Barre de recherche -->
 					<?php bp_directory_members_search_form(); ?>
 					
 					<!--

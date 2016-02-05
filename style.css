@@ -3,8 +3,8 @@ Theme Name: Tela Botanica
 Theme URI: 
 Author: Tela Botanica
 Author URI: 
-Description: Theme Tela Botanica
-Version: en cours de développement
+Description: Le thème Tela Botanica propose un habillage respectant la charte de l'association pour l'espace projet.
+Version: 1.0 BETA
 License: 
 License URI: 
 Tags: 
@@ -28,6 +28,39 @@ Tags:
  		- VIOLET : 		#964e75
  		- TURQUOISE : 	#009fb8
  		- TAUPE : 		#918a6f
+ 		
+	4. POLICES
+
+		/*-- Ficticcia College --*/
+		@font-face {
+		   font-family: 'Ficticcia College';
+		   src: url('fonts/FicticciaCollege.woff') format('woff'); 
+		}
+
+		/*-- A Little Sunshine --*/
+		@font-face {
+		   font-family: 'A Little Sunshine';
+		   src: url('fonts/ALittleSunshine.ttf') format('truetype'); 
+		}
+
+		/*-- Moon Flower --*/
+		@font-face {
+		   font-family: 'Moon Flower';
+		   src: url('fonts/MoonFlower.ttf') format('truetype'); 
+		}
+
+		/*-- Moon Flower Bold --*/
+		@font-face {
+		   font-family: 'Moon Flower Bold';
+		   src: url('fonts/MoonFlowerBold.ttf') format('truetype'); 
+		}
+
+		/*-- Traveling Typewriter --*/
+		@font-face {
+		   font-family: 'Traveling Typewriter';
+		   src: url('fonts/TravelingTypewriter.ttf') format('truetype'); 
+		}
+
 
 -------------------------------------------------------------------
 
@@ -93,19 +126,28 @@ Tags:
 		- 12.3. IE7
 		- 12.4. FIREFOX
 	13. TELA BOTANICA CSS
+		- 13.0. SURCHARGE WORDPRESS
 		- 13.1. ACCUEIL
-			- 13.1.1 BANDEAU
-			- 13.1.2 VITRINE
-			- 13.1.3 BARRE DE RECHERCHE
+			- 13.1.1 MENU
+			- 13.1.2 LIENS LISTE/CREATION PROJETS
+			- 13.1.3 PROJETS MIS EN AVANT
 			- 13.1.4 ARTICLES
+		- 13.2. FORMULAIRE DE CREATION DE PROJET
+		- 13.3. LISTE DES PROJETS
+			- 13.3.1 PANNEAU LATERAL
+		- 13.4 PAGE PROJET
+			- 13.4.1 SURCHARGE
+			- 13.4.2 PLUG-IN TELA-BOTANICA
+			
 	14. MEDIA QUERIES 
-		- 14.1. XS 240PX
-		- 14.2. S  480PX
-		- 14.3. M  720PX
-		- 14.4. L  960PX
-		- 14.5. XL 1200PX
+		- 14.1.  XS : [  	   719- PX ]	=>	2 COLONNES (VOLET = 0)
+		- 14.2.   S : [  720 -  959 PX ]	=>	3 COLONNES (VOLET = 1)
+		- 14.3.   M : [  960 - 1199 PX ]	=>	4 COLONNES (VOLET = 1)
+		- 14.4.   L : [ 1200 - 1439 PX ]	=>	5 COLONNES (VOLET = 1)
+		- 14.5.	 XL : [ 1440 - 1919 PX ]	=>	6 COLONNES (VOLET = 2)
+		- 14.6. XXL : [ 1920+       PX ]	=>	8 COLONNES (VOLET = 2)
    
------------------------------------------------- */
+------------------------------------------------
 
 
 
@@ -166,11 +208,13 @@ a img {
 -------------------------------------*/
 
 html {
-	background-color: #333333;
+	background: url('images/backgrounds/bck-html.jpg') no-repeat center fixed;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
 }
 
+
 body {
-	background-color: #f0f0f1;
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -183,6 +227,29 @@ input, textarea {
 	color: #666666;
 	text-shadow: 0 1px 0 #ffffff;
 	margin: 0;
+}
+
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: #009fb8;
+    height: 20px;
+    border-radius: 3px;
+    border: 2px solid #009fb8;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 10px;
+    height: 20px;
+    border-radius: 2px;
+}
+input[type=range]::-moz-range-thumb {
+  	background-color: white;
+    width: 10px;
+    height: 20px;
+    border-radius: 2px;
 }
 		
 h1, h2, h3, h4 ,h5, h6 {
@@ -234,8 +301,8 @@ p {
 }
 	
 ul {
-	list-style: square;
-	margin: 0 0 20px 1.5em;
+	list-style: nonne;
+	padding: 0;
 }
 	
 ol {
@@ -365,10 +432,15 @@ a:hover {
 .grid {
 	width: 100%;
 	margin: 0 auto;
+	background-color: rgba(0, 159, 184, 0.8);
 }
 
 .fl {
 	float: left;
+}
+
+.center {
+	text-align: center;
 }
 
 .fr {
@@ -380,10 +452,18 @@ a:hover {
 	overflow: hidden;
 }
 
+.absolute {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
 .editfield {
 	color: #777;
 	font-size: 11px;
 	font-style: italic;
+	padding-right: 20px;
+	margin-bottom: 30px;
 }
 
 .editfield label {
@@ -393,6 +473,7 @@ a:hover {
 	color: #404040;
 	font-size: 12px;
 	font-style: normal;
+	font-weight: bold;
 }
 
 .editfield label.no {
@@ -444,6 +525,32 @@ a:hover {
 	cursor: pointer;
 }
 
+.full-width {
+	width: 100%;
+}
+
+.background-white {
+	background-color: white;
+}
+
+.retour-haut-page {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 36px;
+	line-height: 36px;
+	font-size: 24px;
+	text-align: center;
+	background-color: #e16e38;
+	color: white;
+	border-radius: 5px;
+	opacity: 0.8;
+}
+
+.retour-haut-page:hover {
+	opacity: 0.95;
+}
+
 
 /*-- 1.1 BUTTON --*/
 
@@ -482,9 +589,25 @@ a:hover {
 	color: #009fb8;
 }
 
+.custom_groups_search_submit {
+	font-family: 'A Little Sunshine';
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	color: white;
+	border: 0;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 .btn-gray span {
 	color: #b5cbfa;
 	font-weight: normal;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 /*-- 1.2 COLORBOX --*/
@@ -874,7 +997,7 @@ li.last .sub-menu {
 }
 
 .home-page #content {
-
+	background-color: inherit;
 }
 
 .page-template-template-homepage-php #content {
@@ -1532,32 +1655,39 @@ li.last .sub-menu {
 
 /* Barre de navigation projets */
 .item-list-tabs {
+	position: relative;
 	min-height: 42px;
 	background-color: #009fb8;
 	background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
-	background-size:8px 8px;
+	background-size: 8px 8px;
 	line-height: 42px;
 	padding: 0;
 	font-size: 11px;
 	color: white;
 	clear: both;
 	overflow: hidden;
+	opacity: 0.95;
 }
 
 .item-list-tabs a {
-	color: white;
+	color: #fff;
+}
+
+.item-list-tabs a:hover {
+	color: #c3d45d;
 }
 
 .item-list-tabs select {
-	background-color: #f0f0f1;
-	padding: 3px;
-	border-radius: 5px;
+	background-color: #fff;
+	padding: 5px;
+	margin-right: 5px;
 	cursor: pointer;
 }
 
 .item-list-tabs.for-bottom {
 	border-top: 0;
-	margin-top: -30px;
+	padding-left: 10px;
+	padding-right: 10px;
 	height: 42px;
 }
 
@@ -1620,10 +1750,23 @@ li.last .sub-menu {
 	margin-left: 3px;
 }
 
+.item-list-tabs #img-reglages {
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	opacity: 0.8;
+} 
+
+.item-list-tabs #img-reglages:hover {
+	opacity: 1;
+}
+
 .dir-list {
+	/* Bordure de tes morts
 	border-left: 1px solid #e9e9e9;
 	border-right: 1px solid #e9e9e9;
 	border-bottom: 1px solid #e9e9e9;
+	*/
 	padding: 20px;
 	margin-bottom: 30px;
 }
@@ -1643,101 +1786,6 @@ li.last .sub-menu {
 .dir-list.blogs #pag-top,
 .dir-list.blogs #pag-bottom  {
 	display: none;
-}
-
-
-
-
-/* Conteneur tuiles */
-.dir-list .item-list {
-	margin: -20px;
-	background-color: #333333;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-}
-
-/* Tuile projet */
-.dir-list .item-list .tuile-projet {
-	position: relative;
-	height: 350px;
-	width: 220px;
-	display: inline-block;
-	background-color: #009fb8;
-	list-style: none;
-	cursor: pointer;
-	margin: 5px;
-	background-color: #009fb8;
-	background: linear-gradient(-45deg, #333333 25%, #444444 25%, #444444 50%, #333333 50%, #333333 75%, #444444 75%, #444444);
-	background-size: 8px 8px;
-}
-.dir-list .item-list .tuile-projet:hover {
-	box-shadow: 0px 0px 20px black;
-}
-
-
-/* Avatar projet */
-.dir-list .item-list .tuile-projet .avatar-projet {
-	height: 220px;
-}
-.dir-list .item-list .tuile-projet .avatar-projet img {
-	width: 100%;
-	height: 100%;
-	opacity: 0.2;
-}
-
-/* Titre projet */
-.dir-list .item-list .tuile-projet .titre-projet {
-	position: absolute;
-	top: 160px;
-	background: linear-gradient(180deg, transparent, black);
-	text-align: center;
-	color: white;
-	font-size: 14px;
-	font-weight: bold;
-	height: 60px;
-	width: 220px;
-	line-height: 20px;
-	overflow: hidden;
-	text-transform: uppercase;
-}
-
-/* Details projet */
-.dir-list .item-list .tuile-projet .details-projet {
-	color: white;
-	font-size: 12px;
-	padding-left: 5px;
-	padding-right: 5px;
-	line-height: 18px;
-	height: 130px;
-	overflow: hidden;
-	background-color: #009fb8;
-	background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
-	background-size: 8px 8px;
-}
-.dir-list .item-list .tuile-projet .details-projet .activite-projet {
-	
-}
-.dir-list .item-list .tuile-projet .details-projet .membres-projet {
-	font-weight: bold;
-	margin-top: 2em;
-	display: none;
-}
-.dir-list .item-list .tuile-projet .details-projet .description-projet {	
-	text-align: left;
-}
-.dir-list .item-list .tuile-projet .details-projet .description-projet p{
-}
-
-/* Action projet */
-.dir-list .item-list .tuile-projet .action-projet {
-	float: right;
-	width: 100%;
-	font-size: 11px;
-	height: 20px;
-	background-color: #009fb8;
-	background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
-	background-size: 8px 8px;
 }
 
 .generic-button {
@@ -1765,7 +1813,6 @@ li.last .sub-menu {
 #item-header {
 	float: left;
 	width: 164px;
-	background-color: #f0f0f1;
 	min-height: 672px;
 	padding: 10px;
 }
@@ -1777,24 +1824,60 @@ li.last .sub-menu {
 	margin-bottom: 20px;
 }
 
+#item-header a {
+	color: white;
+}
+
 #item-header .activity {
 	display: block;
-	color: #777;
 	font-size: 10px;
 	font-style: italic;
+	color: white;
 }
 
 #item-header .user-nicename,
 #item-header .highlight {
 	display: inline-block;
-	color: #777;
 	font-size: 10px;
-	background: #F7F7F7;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
+	font-weight: bold;
+	background: rgba(0, 159, 184, 0.8);
 	padding: 0 5px;
 	margin-bottom: 5px;
+	text-align: center;	
+	color: white;
+}
+
+#item-header .etiquette.highlight {
+	font-size: 12px;
+	color: white;
+	border: 1px solid #009fb8;
+}
+
+#item-header .etiquette.highlight:hover {
+	background-color: white;
+	color: #009fb8;
+}
+
+#item-header #resume {
+	background-color: white;
+	background: linear-gradient(-45deg, white 25%, #F9F9F9 25%, #F9F9F9 50%, white 50%, white 75%, #F9F9F9 75%, #F9F9F9);
+	background-size: 8px 8px;
+	color: #009fb8;
+	font-size: 14px;
+	width: 100%;
+	text-align: left;
+	border-radius: 0;
+	margin-left: -10px;
+	padding-right: 20px;
+	font-weight: normal;
+}	
+
+#item-header #resume p{
+	padding: 10px;
+}
+
+#item-header #activite {
+	text-align: center;
 }
 
 #item-header #latest-update {
@@ -1820,12 +1903,13 @@ li.last .sub-menu {
 #item-header #item-actions a {
 	font-size: 11px;
 	font-weight: bold;
-	color: #777;
+	color: white;
 }
 
 #item-header #item-actions h3 {
 	font-size: 12px;
 	margin-bottom: 15px;
+	color: white;
 }
 
 #item-header #item-actions #group-admins {
@@ -1844,13 +1928,13 @@ li.last .sub-menu {
 }
 
 #item-header #item-actions #group-admins .item-meta {
-	color: #777777;
+	color: white;
 	font-style: italic;
 	font-size: 10px;
 }
 
 #item-header #item-actions #group-admins a {
-	color: #404040;
+	color: white;
 }
 
 body.groups #item-header #item-meta {
@@ -1863,11 +1947,11 @@ body.groups #item-header #item-meta {
 }
 
 #item-header-avatar {
+	position: relative;
 	text-align: center;
 }
 
 #item-header-avatar img {
-	border-radius: 100%;
 	width: 100%;
 	height: 100%;
 }
@@ -1877,12 +1961,9 @@ body.groups #item-header #item-meta {
 }
 
 #item-header-content a {
-	color: #009fb8;
+	color: white;
 }
 
-#item-header-content h2 {
-	
-}
 
 /* Nav profil */
 #item-nav {
@@ -1898,6 +1979,7 @@ body.groups #item-header #item-meta {
 	padding: 20px;
 	min-height: 550px;
 	text-align: justify;
+	background-color: white;
 }
 
 #item-body h1, 
@@ -1907,6 +1989,7 @@ body.groups #item-header #item-meta {
 #item-body h5, 
 #item-body h6 {
 	margin-bottom: 20px;
+	margin-top: 0;
 }
 
 #item-body .item-list-tabs,
@@ -1934,7 +2017,7 @@ body.groups #item-header #item-meta {
 #item-body .item-list-tabs .active a,
 #item-body .item-list-tabs .current a,
 #item-body .item-list-tabs .selected a {
-	color: #406098;
+	color: #c3d45d;
 }
 
 #item-body .item-list-tabs li.last,
@@ -2432,6 +2515,7 @@ table.notification-settings .no {
 	overflow: hidden;
 	border-left: 1px solid #E9E9E9;
 	margin-bottom: 20px;
+	padding-left: 0px;
 }
 
 #group-create-tabs li {
@@ -3989,17 +4073,20 @@ body.cyan.forums table.forum td .topic-meta a,
    13. TELA BOTANICA CSS
 -------------------------------------*/
 
-/*-- 13.1. ACCUEIL --*/
-.gauche{
-	float: left;
-}
-	
-.droite{
-	float: right;
+/*-- 13.0. SURCHARGE WORDPRESS --*/
+#wpadminbar {
+	opacity: 0;
 }
 
+#wpadminbar:hover {
+	opacity: 1;
+}
+
+
+
+/*-- 13.1. ACCUEIL --*/
 #page-accueil {
-	background-color: #333333;
+	background-color: transparent;
 }
 
 #page-accueil #tb-zone-bandeau {
@@ -4008,15 +4095,14 @@ body.cyan.forums table.forum td .topic-meta a,
 	background-color: #009fb8;
 	background: linear-gradient(-45deg, #333333 25%, #444444 25%, #444444 50%, #333333 50%, #333333 75%, #444444 75%, #444444);
 	background-size: 8px 8px;
-	border-radius: 0 0 10px 10px;
+	opacity: 0.98;
 }
 
-
-
-	/*-- 13.1.1 BANDEAU --*/
+	/*-- 13.1.1 MENU --*/
 	#page-accueil .tb-bandeau {
 		width: 50%;
 		font-weight: bold;
+		font-family: 'A Little Sunshine';
 	}
 	
 	#page-accueil .tb-conteneur-bandeau {
@@ -4033,15 +4119,15 @@ body.cyan.forums table.forum td .topic-meta a,
 
 	#page-accueil .tb-bandeau-titre {
 		text-transform: uppercase;
-		font-size: 24px;
+		font-size: 36px;
 		font-weight: bold;
-		line-height: 28px;
+		line-height: 36px;
 		color: #e16e38;
 	}
 
 	#page-accueil .tb-bandeau-sstitre {
 		text-transform: uppercase;
-		font-size: 16px;
+		font-size: 24px;
 		font-weight: bold;
 		color: white;
 	}
@@ -4052,32 +4138,22 @@ body.cyan.forums table.forum td .topic-meta a,
 
 	#page-accueil .tb-bandeau ul {
 		list-style: none;
-		margin-left: 0px;
 		width: 50%;
 	}
 
 	#page-accueil .tb-bandeau li {
-		font-size: 14px;
+		font-size: 20px;
+		line-height: 20px;
+		text-transform: uppercase;
 	}
 	
 
-	
-	
-	/*-- 13.1.2 PROJETS --*/
+	/*-- 13.1.2 LIENS LISTE/CREATION PROJETS --*/
 	#page-accueil #tb-zone-projets {
 		display: flex;
-		height: 120px;
-		margin-top: 2em;
 		color: white;
 		text-align: center;
-		border: 1px solid white;
-	}
-	
-	#page-accueil #tb-zone-projets h3 {
-		font-size: 20px;
-		font-style: italic;
-		color: white;
-		font-weight: none;
+		position: relative;
 	}
 	
 	#page-accueil #tb-zone-projets a {
@@ -4087,44 +4163,72 @@ body.cyan.forums table.forum td .topic-meta a,
 		color: #e16e38;
 	}
 	
-	#page-accueil #tb-recherche-projet,
-	#page-accueil #tb-creation-projet {
+	#page-accueil .tb-encart-projet {
+		margin-top: 50px;
+		opacity: 0.95;
 		display: inline-block;
-		height: 100%;
-		padding-left: 5%;
-		padding-right: 5%;
 	}
 	
 	#page-accueil #tb-recherche-projet {
 		width: 50%;
-		margin-top: 10px;
 	}
 	
-	#page-accueil #tb-recherche-projet #groups_search {
-		width: 60%;
-		margin: 1em;
+	#page-accueil input {
+		line-height: 2em;
+		font-size: 36px;
+	}
+	
+	#page-accueil input[type=submit] {
+		width: 100%;
+	}
+	
+	#page-accueil #tb-recherche-projet input[type=text] {
+		width: 100%;
+		line-height: 50px;
+		font-size: 20px;
+		text-transform: uppercase;
+		position: absolute;
+		border: 0;
+		top: 0;
+		left: 0;
+		padding: 0;
+		z-index: 9999;
+		text-align: center;
+		background-color: white;
+		background: linear-gradient(-45deg, white 25%, #F9F9F9 25%, #F9F9F9 50%, white 50%, white 75%, #F9F9F9 75%, #F9F9F9);
+		background-size: 8px 8px;
+	}
+	
+	#page-accueil #tb-recherche-projet input[type=submit] {
+		background-color: #e16e38;
+		background: linear-gradient(-45deg, #e16e38 25%, #e15e38 25%, #e15e38 50%, #e16e38 50%, #e16e38 75%, #e15e38 75%, #e16e38);
+		background-size: 8px 8px;
 	}
 	
 	#page-accueil #tb-creation-projet {
-		width: 30%;
-		border-left: 1px solid white;
+		width: 50%;
 	}
 	
-	#page-accueil #tb-creation-projet h3 {
-		margin-top: 40px;
-	}
+	#page-accueil #tb-creation-projet input {
+		background-color: #964e75;
+		background: linear-gradient(-45deg, #964e75 25%, #953e75 25%, #953e75 50%, #964e75 50%, #964e75 75%, #953e75 75%, #964e75);
+		background-size: 8px 8px;
+		width: 100%;
+	}	
 	
-	#page-accueil .btn-projet {
-		margin-top: 35px;
-		border-radius: 10px;
-		border: 2px solid white;
-		font-size: 20px;
-		padding: 10px;
-		background: #e16e38;
-	}
-	#page-accueil .btn-projet:hover {
-		background-color: transparent;
+	
+	/*-- 13.1.3 PROJETS MIS EN AVANT --*/
+	#page-accueil #tb-zone-projets-populaires {
+		background-color: #009aa8;
+		background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
+		background-size: 8px 8px;
+		padding-top: 6px;
+		position: relative;
+		border-top: 0;
 		color: white;
+		opacity: 0.95;
+		height: 365px;
+		overflow: hidden;
 	}
 	
 	
@@ -4134,17 +4238,16 @@ body.cyan.forums table.forum td .topic-meta a,
 	}
 
 	#page-accueil .post {
+		position: relative;
+		margin-top: 5em;
 		background-color: #f0f0f1;
-		border-radius: 10px;
-		margin-top: 2em;
-		width: 100%;
+		
 	}
 	
 	#page-accueil .sticky .tb-article-titre {
 		background-color: #e16e38;
 		background: linear-gradient(-45deg, #e16e38 25%, red 25%, red 50%, #e16e38 50%, #e16e38 75%, red 75%, red);
 		background-size:8px 8px;
-		border-radius: 0;
 	}
 	
 	#page-accueil .sticky .tb-article-contenu {
@@ -4162,14 +4265,15 @@ body.cyan.forums table.forum td .topic-meta a,
 		background-color: #009fb8;
 		background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
 		background-size:8px 8px;
-		border-radius: 10px 10px 0px 0px;
 		box-shadow: 0px 1px 2px #333333;
 		color: white;
 	}
 	
 	#page-accueil .tb-article-date {
-		float: right;
-		margin-right: 20px;
+		position: absolute;
+		border-top: 3px dotted #009fb8;
+		bottom: 5px;
+		right: 5px;
 		font-weight: normal;
 		font-style: italic;
 		font-size: 10px;
@@ -4180,121 +4284,35 @@ body.cyan.forums table.forum td .topic-meta a,
 		text-align: justify;
 	}
 
-	#page-accueil .tb-article-contenu p {
-		
-	}
-
 	#page-accueil .tb-article-contenu img {
 		max-height: 100%;
 		width: auto;
 		float: left;
 		margin-right: 10px;
 	}
-
-
-
-/*-------------------------------------
-   14. MEDIA QUERIES
--------------------------------------*/
-
-/*-- 14.1. [XS : *-480] --*/
-@media all and  (max-width: 480px)
-{
-	#wpadminbar { display: none; }
-	body { width: 240px; }
-	#content { margin: 0; }
-	#nav { display: none; }
-	#subnav ul { padding: 0; }
-	#subnav * { 
-		display: block; 
-		text-align: center;
-	}
 	
-	#groups_search, 
-	#groups_search_submit, 
-	#groups_search_submit btn-gray,
-	#groups_order_select select {
-		width: 100%;
-	}
-	#groups_order_select label { display: none; }
 	
-	/* Projet */
-	#item-header { display: none; }
-	#item-nav { width: 100%; }
-	#item-nav li { 
-		float: none; 
-		text-align: center;
-		margin: 0;
-	}
-	#item-body { width: 200px; }
-
-}
-
-/*-- 14.2. [S : 481-720] --*/
-@media all and (min-width: 481px) and (max-width: 720px)
-{
-	body { width: 480px; }
-	#content { margin: 0; }
-	#nav { display: none; }
 	
-	/* Projet */
-	#item-header { width: 160px; }
-	#item-nav { width: 300px; }
-		#item-nav li { 
-		float: none; 
-		text-align: center;
-		margin: 0;
-	}
-	#item-body { width: 260px; }
-}
-
-/*-- 14.3. [M : 721-960] --*/
-@media all and (min-width: 721px) and (max-width: 960px)
-{
-	body { width: 720px; }
-	
-	/* Projet */
-	#item-header { width: 160px; }
-	#item-nav { width: 540px; }
-	#item-body { width: 500px; }
-}
-
-/*-- 14.4. [L : 961-1200] --*/
-@media all and (min-width: 961px) and (max-width: 1440px)
-{
-	body { width: 960px; }
-	
-	/* Projet */
-	#item-header { width: 200px; }
-	#item-nav { width: 740px; }
-	#item-body { width: 700px; }
-}
-
-/*-- 14.5. [XL : 1201] --*/
-@media all and (min-width: 1441px)
-{
-	body { width: 1440px; }
-
-	#groups_search {
-		
-	}
-	
-	/* Projet */
-	#item-header { width: 200px; }
-	#item-nav { width: 1220px; }
-	#item-body { width: 1180px; }
-}
-
-
-
-
-
-
-
-/* Création projet */
-
+/*-- 13.2 FORMULAIRE DE CREATION DE PROJET --*/
 #create-group-form {
-	padding: 50px;
+	padding: 0 2em 2em 2em;
+}
+
+#create-group-form label,
+#create-group-form p,
+#create-group-form h3,
+#create-group-form h4,
+#create-group-form a {
+	color: white;
+	font-weight: bold;
+}
+
+#create-group-form label {
+	font-size: 14px;
+}
+
+#create-group-form #group-create-body li {
+	list-style: square;
 }
 
 #create-group-form #confidentialite,
@@ -4302,39 +4320,463 @@ body.cyan.forums table.forum td .topic-meta a,
 	display: flex;
 }
 
-#subnav .lien-accueil {
-	padding: 6px;
-	border: 1px solid white;
-	background-color: #009fb8;
-}
-
-#subnav .lien-accueil:hover {
-	background-color: white;
-	color: #009fb8;
-}
-
-#item-header .lien-accueil {
-	display: block;
-	height: 22px;
-	line-height: 22px;
+#group-name,
+#group-desc,
+#group-tags {
 	width: 100%;
-	background-color: #009fb8;
-	background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
-	background-size: 8px 8px;
-	z-index: 9999;
-	padding: 10px;
-	margin-left: -10px;
-	margin-top: -10px;
-	margin-bottom: 10px;
-	font-weight: bold;
-	color: white;
+	height: 20px;
 }
 
-#item-header .lien-accueil:hover {
-	opacity: 0.9;
+
+/*-- 13.3 LISTE DES PROJETS --*/
+
+	/*-- 13.3.1 PANNEAU LATERAL --*/
+	#panneau-lateral {
+		position: relative;
+		margin: -20px;
+		padding: 10px;
+		background: rgba(0, 0, 0, 0.6);
+	}
+
+	#titre-panneau-lateral {
+		line-height: 20px;
+		margin-bottom: 10px;
+		text-indent: 5px;
+		font-weight: bold;
+		color: white;
+	}
+
+	#afficher-panneau-lateral {
+		text-align: center;
+		display: none;
+		background: rgba(0, 0, 0, 0.2);
+		font-weight: bold;
+	}
+
+	#afficher-panneau-lateral:hover {
+		text-align: center;
+		background: rgba(0, 0, 0, 0.1);
+		font-weight: bold;
+	}
+
+	#masquer-panneau-lateral {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 20px;
+		height: 20px;
+		background-color: #009aa8;
+		background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
+		background-size: 8px 8px;
+		opacity: 0.5;
+		color: white;
+		line-height: 20px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+	}
+
+	#masquer-panneau-lateral:hover {
+		opacity: 1;
+	}
+
+	.tuile-options {
+		margin-bottom: 10px;
+	}
+
+	.titre-options {
+		line-height: 48px;
+		color: white;
+		font-size: 16px;
+		font-weight: bold;
+		text-indent: 20px;
+		background-color: #009aa8;
+		background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
+		background-size: 8px 8px;
+		opacity: 0.8;
+	}
+
+	.titre-options:hover {
+		opacity: 1;
+	}
+
+	.contenu-options {
+		text-align: center;
+		padding: 10px;
+		background-color: white;
+		background: linear-gradient(-45deg, white 25%, #F9F9F9 25%, #F9F9F9 50%, white 50%, white 75%, #F9F9F9 75%, #F9F9F9);
+		background-size: 8px 8px;
+	}
+
+	.contenu-options .etiquette {
+		display: inline-block;
+		background-color: #009aa8;
+		background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
+		background-size: 8px 8px;
+		padding: 3px;
+		color: white;
+		border: 2px solid #009aa8;
+		margin-bottom: 5px;
+	}
+
+	.contenu-options .etiquette:hover {
+		background: transparent;
+		color: #009aa8;
+		text-decoration: none;
+	}
+
+	.contenu-options button {
+		width: 180px;
+		margin: 10px;
+	}
+	
+	
+	/*-- 13.3.2 TUILES PROJETS --*/
+	
+	.dir-list .item-list {
+		position: relative;
+		margin: -20px;
+		text-align: left;
+	}
+
+	#groups-dir-list {
+		display: flex;
+	}
+
+	#groups-list {
+		margin-left: 20px;
+	}
+
+	.dir-list .item-list .tuile-projet {
+		position: relative;
+		height: 360px;
+		width: 230px;
+		display: inline-block;
+		background-color: #009fb8;
+		list-style: none;
+		margin-left: 6px;
+		background-color: #009fb8;
+		background: linear-gradient(-45deg, #333333 25%, #444444 25%, #444444 50%, #333333 50%, #333333 75%, #444444 75%, #444444);
+		background-size: 8px 8px;
+		box-shadow: 0 0 20px 2px black;
+		opacity: 0.8;
+		text-align: center;
+	}
+	.dir-list .item-list .tuile-projet:hover {
+		box-shadow: 0 0 50px 5px black;
+	}
+
+	.dir-list .item-list .tuile-projet .avatar-projet {
+		height: 230px;
+	}
+	.dir-list .item-list .tuile-projet .highlight {
+		display: none;
+	}
+
+	.dir-list .item-list .tuile-projet .avatar-projet img {
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		border: 0;
+	}
+
+	.dir-list .item-list .tuile-projet .titre-projet {
+		position: absolute;
+		top: 170px;
+		background: linear-gradient(180deg, transparent, black);
+		text-align: center;
+		color: white;
+		font-size: 14px;
+		font-weight: bold;
+		height: 60px;
+		width: 230px;
+		line-height: 20px;
+		overflow: hidden;
+		text-transform: uppercase;
+		text-shadow: 0 0 2px black;
+	}
+
+	.dir-list .item-list .tuile-projet .details-projet {
+		color: white;
+		font-size: 12px;
+		line-height: 18px;
+		height: 130px;
+		overflow: hidden;
+		background-color: #009fb8;
+		background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
+		background-size: 8px 8px;
+		font-weight: bold;
+		cursor: default;
+	}
+	
+	.dir-list .item-list .tuile-projet .details-projet .resume-projet {	
+		display: none;
+		line-height: 16px;
+		text-align: justify;
+		padding-top: 4px;
+		padding-left: 8px;
+		padding-right: 8px;
+		font-weight: normal;
+	}
+	
+	.dir-list .item-list .tuile-projet .details-projet .resume-projet p{	
+		margin: 0;
+	}
+	
+	.dir-list .item-list .tuile-projet .details-projet .confidentialite-projet {
+		background-color: rgba(0, 0, 0, 0.5);
+		color: white;
+	}
+	
+	.dir-list .item-list .tuile-projet .details-projet .membres-projet {
+		margin-top: 1em;
+	}
+	
+	.dir-list .item-list .tuile-projet .details-projet .activite-projet {
+		margin-top: 1em;
+	}
+
+	.dir-list .item-list .tuile-projet .action-projet {
+		float: right;
+		width: 100%;
+		font-size: 11px;
+		height: 20px;
+		background-color: #009fb8;
+		background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
+		background-size: 8px 8px;
+	}
+	
+	
+	/*-- 13.3.3 TUILE CREATION PROJET --*/
+	#conteneur-creation-projet {
+		margin-top: -30px;
+	}
+
+	#tuile-creation-projet {
+		background: rgba(150, 78, 117, 0.8);
+		text-align: center;
+		line-height: 100px;
+		font-family: 'A Little Sunshine';
+		font-size: 48px;
+		color: white;
+	}
+
+	#tuile-creation-projet:hover {
+		background: rgba(150, 78, 117, 0.95);
+	}
+	
+	
+	
+/*-- 13.4 PAGE PROJET --*/
+
+	/*-- 13.4.1 SURCHARGE --*/
+		#subnav .lien-accueil {
+		padding: 6px;
+		border: 1px solid white;
+		background-color: #009fb8;
+	}
+
+	#subnav .lien-accueil:hover {
+		background-color: white;
+		color: #009fb8;
+	}
+
+	#item-header .lien-accueil {
+		display: block;
+		height: 22px;
+		line-height: 22px;
+		width: 100%;
+		background-color: #009fb8;
+		background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
+		background-size: 8px 8px;
+		z-index: 9999;
+		padding: 10px;
+		margin-left: -10px;
+		margin-top: -10px;
+		margin-bottom: 10px;
+		font-weight: bold;
+		color: white;
+	}
+
+	#item-header .lien-accueil:hover {
+		opacity: 0.9;
+	}
+	
+	#creation-retour {
+		line-height: 42px;
+		text-indent: 1em;
+		background-color: #009fb8;
+		background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
+		background-size: 8px 8px;
+		color: white;
+		font-weight: bold;
+	}
+	
+	#creation-retour:hover {
+		opacity: 0.9;	
+	}
+	
+	
+	/*-- 13.4.2 PLUG-IN TELA-BOTANICA --*/
+	.on-off {
+		width: 50px;
+	}
+
+	.valeur-range {
+		line-height: 20px;
+		font-style: none,
+		font-size: 20px;
+	}
+
+	#activation-outil::-webkit-slider-thumb,
+	#confidentialite-outil::-webkit-slider-thumb {
+		width: 25px;
+	}
+
+	.on-off::-moz-range-thumb {
+		width: 22px;
+	}
+
+	#position-outil {
+		width: 200px;
+	}
+	
+
+
+/*-------------------------------------
+   14. MEDIA QUERIES
+-------------------------------------*/
+
+/*-- 14.1. [XS : 719-] --*/
+@media all  and (max-width: 719px)
+{
+	/* Squelette */
+	body { width: 480px; }
+	.show-responsive { display: block; }
+	.hide-responsive { display: none; }
+	
+	/* Liste des projets */
+	#panneau-lateral > .tuile-options { width: 220px; } /* Padding de 10px = 240px */
+	
+	/* Projet */
+	#item-header {width: 140px; }
+	#item-nav { width: 320px; }
+	.item-list-tabs li { 
+		float: none; 
+		text-align: center;
+		margin: 0;
+	}
+	#item-body { width: 280px; }
 }
 
-#description-courte {
-	color: red;
-	float: left;
+/*-- 14.2. [S : 720-959] --*/
+@media all and (min-width: 720px) and (max-width: 959px)
+{
+	/* Squelettes */
+	body { width: 720px; }
+	.show-responsive { display: block; }
+	.hide-responsive { display: none; }
+	
+	/* Liste des projets */
+	#panneau-lateral > .tuile-options { width: 220px; } /* Padding de 10px = 240px */
+	
+	/* Projet */
+	#item-header { width: 160px; }
+	#item-nav { width: 540px; }
+	#item-body { width: 500px; }
 }
+
+/*-- 14.3. [M : 960-1199] --*/
+@media all and (min-width: 960px) and (max-width: 1199px)
+{
+	/* Squelette */
+	body { width: 960px; }
+	.show-responsive { display: none; }
+	.hide-responsive { display: block; }
+	
+	/* Liste des projets */
+	#panneau-lateral > .tuile-options { width: 220px; } /* Padding de 10px = 240px */
+	
+	/* Projet */
+	#item-header { width: 200px; }
+	#item-nav { width: 740px; }
+	#item-body { width: 700px; }
+}
+
+/*-- 14.4. [L : 1200-1439] --*/
+@media all and (min-width: 1200px) and (max-width: 1439px)
+{
+	/* Squelette */
+	body { width: 1200px; }
+	.show-responsive { display: none; }
+	.hide-responsive { display: block; }
+	#tb-zone-articles { display: flex; }	
+	.post { margin: 10px; }
+	
+	/* Liste des projets */
+	#panneau-lateral > .tuile-options { width: 220px; } /* Padding de 10px = 240px */
+	
+	/* Projet */
+	#item-header { width: 200px; }
+	#item-nav { width: 980px; }
+	#item-body { width: 940px; }
+}
+
+/*-- 14.5. [XL : 1440-1919] --*/
+@media all and (min-width: 1440px) and (max-width: 1919px)
+{
+	/* Squelette */
+	body { width: 1440px; }
+	.show-responsive { display: none; }
+	.hide-responsive { display: block; }
+	#tb-zone-articles { display: flex; }	
+	.post { margin: 10px; }
+	
+	/* Liste des projets */
+	#panneau-lateral > .tuile-options { width: 460px; } /* Padding de 10px = 480px */
+	
+	/* Projet */
+	#item-header { width: 200px; }
+	#item-nav { width: 1220px; }
+	#item-body { width: 1180px; }
+}
+
+/*-- 14.6. [XXL : 1920+] --*/
+@media all and (min-width: 1920px)
+{
+	/* Squelette */
+	body { width: 1920px; }
+	.show-responsive { display: none; }
+	.hide-responsive { display: block; }
+	#tb-zone-articles { display: flex; }	
+	.post { margin: 10px; }
+	
+	/* Liste des projets */
+	#panneau-lateral > .tuile-options { width: 460px; } /* Padding de 10px = 480px */
+	
+	/* Projet */
+	#item-header { width: 200px; }
+	#item-nav { width: 1700px; }
+	#item-body { width: 1660px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

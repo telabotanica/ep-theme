@@ -31,21 +31,19 @@
 
 			<div id="item-body">
 				
-				<form type="post" action="<?php dirname( __FILE__ ) . '/tela-botanica.php'?>">
-				
+				<form method="post" action="">
+
 					<h3>Sélection des outils</h3>
 					<p>
 						<label for="porte-documents">
 							<h4>Porte-documents</h4>
-							<input type="radio" name="porte-documents" value="true" />Activer
-							<input type="radio" name="porte-documents" value="false" />Désactiver
+							<input type="checkbox" name="porte-documents" value="true" />
 						</label>
 					</p>
 					<p>
 						<label for="forum">
 							<h4>Forum</h4>
 							<input type="radio" name="forum" value="true" />Activer
-							<input type="radio" name="forum" value="false" />Désactiver
 						</label>
 					</p>
 				
