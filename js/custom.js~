@@ -186,7 +186,25 @@ jQuery.fn.placeHolder = function( default_value ) {
 
 
 
-// Ajouts Tela-Botanica
+
+/*----------------------------
+---- Ajouts Tela-Botanica ----
+----------------------------*/
+
+
+/*-- Détection du navigateur --*/
+function idNavigateur(){
+    c=navigator.userAgent.search("Chrome");
+    f=navigator.userAgent.search("Firefox");
+    m8=navigator.userAgent.search("MSIE 8.0");
+    m9=navigator.userAgent.search("MSIE 9.0");
+    if (c > -1){ nav = "Chrome"; }
+    else if(f > -1){ nav = "Firefox"; }
+    else if (m9 > -1){ nav = "MSIE 9.0"; }
+    else if (m8 > -1){ nav ="MSIE 8.0"; }
+    return nav;
+}
+
 
 /*-- Options --*/
 $('.tuile-options').on('mouseover', function() {
@@ -196,6 +214,8 @@ $('.tuile-options').on('mouseleave', function() {
 	$('.titre-options', this).css('opacity','0.8');
 });
 
+
+/*-- Panneau latéral --*/
 $('#masquer-panneau-lateral').on('click', function() {
 	$('#panneau-lateral').hide();
 	$('#groups-list').css('margin-left', '-20px');
@@ -214,57 +234,69 @@ $('#afficher-panneau-lateral').on('click', function() {
 $('.generic-button .btn-gray').hide();
 
 $('.tb-encart-projet').on('mouseenter', function() {
-	$(this).animate({
-		opacity: 1
-	}, 
-	200);
+	if (idNavigateur() != 'Firefox') {
+		$(this).animate({
+			opacity: 1
+		},
+		200);
+	}
 });
 
 $('.tb-encart-projet').on('mouseleave', function() {
-	$(this).animate({
-		opacity: 0.95
-	}, 
-	100);
+	if (idNavigateur() != 'Firefox') {
+		$(this).animate({
+			opacity: 0.95
+		},
+		100);
+	}
 });
 
+
+
+/*-- Animation tuile projet (Mouse Enter)--*/
 $('.tuile-projet').on('mouseenter', function() {
-	$(this).animate({
-		opacity: 1
-	}, 
-	200);
-  	$('.resume-projet', this).toggle(200);
+  	$('.resume-projet', this).toggle();
   	$('.activite-projet', this).toggle();
   	$('.membres-projet', this).toggle();
-  	$('.confidentialite-projet', this).toggle();
-  	$('.gtags-item-tags a', this).toggle();
-  	$('.avatar-projet img', this).animate({
-		borderRadius: '100%',
-		height: '140px',
-		width: '140px',
-		margin: '30px',
-		opacity: 1
-	}, 
-	200);
+  	$('.confidentialite-projet', this).toggle(200);
+  	$('.gtags-item-tags a', this).toggle();	
+  	if (idNavigateur() != 'Firefox') {
+		$('.avatar-projet img', this).animate({
+			borderRadius: '100%',
+			height: '140px',
+			width: '140px',
+			margin: '30px',
+			opacity: 1
+		},
+		200);
+			$(this).animate({
+			opacity: 1
+		}, 
+		200);
+	}
 });
-
+/*-- Animation tuile projet (Mouse Leave)--*/
 $('.tuile-projet').on('mouseleave', function() {
-	$(this).animate({
-		opacity: 0.8
-	}, 
-	100);
-  	$('.resume-projet', this).toggle(100);
+  	$('.resume-projet', this).toggle();
   	$('.activite-projet', this).toggle();
   	$('.membres-projet', this).toggle();
-  	$('.confidentialite-projet', this).toggle();
+  	$('.confidentialite-projet', this).toggle(100);
   	$('.gtags-item-tags a', this).toggle();
-  	$('.avatar-projet img', this).animate({
-		borderRadius: 0,
-		height: '100%',
-		width: '100%',
-		margin: 0,
-		opacity: 0.8
-	}, 
-	100);
+  	$('.avatar-projet img', this)
+  	if (idNavigateur() != 'Firefox') {
+		$('.avatar-projet img', this).animate({
+			borderRadius: 0,
+			height: '100%',
+			width: '100%',
+			margin: 0,
+			opacity: 0.8
+		},
+		100);
+		$(this).animate({
+			opacity: 0.8
+		}, 
+		100);
+	}
 });
 
 

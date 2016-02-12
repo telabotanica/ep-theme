@@ -66,9 +66,9 @@ $url = rtrim( current( explode( '?', $_SERVER['REQUEST_URI'] ) ), '/' );
 				/* Lecture de la table "wp_tb_categories_projets" */
 				$requete = "
 					SELECT * 
-					FROM {$wpdb->prefix}tb_categories_projets C, {$wpdb->prefix}bp_groups P
-					WHERE P.id_categorie=C.id_categorie
-					GROUP BY C.id_categorie
+					FROM {$wpdb->prefix}tb_categories_projets
+					WHERE id_categorie != 'Aucune catégorie'
+					GROUP BY id_categorie
 				";
 				$res = $wpdb->get_results($requete) ;
 			

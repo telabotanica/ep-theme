@@ -5,9 +5,8 @@ do_action( 'bp_before_group_header' );
 ?>
 
 <!-- Lien de retour -->
-<a class="lien-accueil" href="/wordpress/groups">
-	Revenir aux projets
-</a>
+<div class="hide-responsive"><a class="lien-accueil" href="/wordpress/groups">Revenir aux projets</a></div>
+<div class="show-responsive"><a class="lien-accueil" href="/wordpress/groups"><   Retour</a></div>
 
 
 
@@ -19,17 +18,14 @@ do_action( 'bp_before_group_header' );
 	</a>
 	
 	<!-- Confidentialité du projet -->
-	<div class="center absolute highlight"><?php bp_group_type(); ?> 
-	</div>
+	<div class="absolute highlight"><?php bp_group_type(); ?></div>
 	
 </div>
 
 
 
 <!-- Contenu du header -->
-<div id="item-header-content">
-	
-	
+<div id="item-header-content" class="hide-responsive">
 
 	<!-- Titre du projet -->
 	<h2><a href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>"><?php bp_group_name(); ?></a></h2>
@@ -47,7 +43,7 @@ do_action( 'bp_before_group_header' );
 
 
 <!-- Actions du header -->
-<div id="item-actions">
+<div id="item-actions" class="hide-responsive">
 
 	<?php if ( bp_group_is_visible() ) : ?>
 	

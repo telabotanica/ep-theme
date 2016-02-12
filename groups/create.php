@@ -23,7 +23,7 @@
 
 				<div class="item-body" id="group-create-body">
 
-					<?php /* Group creation step 1: Basic group details */ ?>
+					<?php /*-- Etape 1 --*/ ?>
 					<?php if ( bp_is_group_creation_step( 'group-details' ) ) : ?>
 
 						<?php do_action( 'bp_before_group_details_creation_step' ); ?>
@@ -48,7 +48,7 @@
 
 					<?php endif; ?>
 
-					<?php /* Group creation step 2: Group settings */ ?>
+					<?php /*-- Etape 2 --*/ ?>
 					<?php if ( bp_is_group_creation_step( 'group-settings' ) ) : ?>
 
 						<?php do_action( 'bp_before_group_settings_creation_step' ); ?>
@@ -57,24 +57,30 @@
 							<?php if ( bp_forums_is_installed_correctly() ) : ?>
 
 								<div class="checkbox">
-									<label><input type="checkbox" name="group-show-forum" id="group-show-forum" value="1"<?php checked( bp_get_new_group_enable_forum(), true, true ); ?> /> <?php _e( 'Enable discussion forum', 'huddle' ); ?></label>
+									<label>
+										<input type="checkbox" name="group-show-forum" id="group-show-forum" value="1"<?php checked( bp_get_new_group_enable_forum(), true, true ); ?> /> <?php _e( 'Enable discussion forum', 'huddle' ); ?></label>
 								</div>
 
 							<?php else : ?>
 								<?php if ( is_super_admin() ) : ?>
 
 									<div class="checkbox">
-										<label><input type="checkbox" disabled="disabled" name="disabled" id="disabled" value="0" /> <?php printf( __( '<strong>Attention Site Admin:</strong> Group forums require the <a href="%s">correct setup and configuration</a> of a bbPress installation.', 'huddle' ), bp_get_root_domain() . '/wp-admin/admin.php?page=bb-forums-setup' ); ?></label>
+										<label>
+											<input type="checkbox" disabled="disabled" name="disabled" id="disabled" value="0" /> <?php printf( __( '<strong>Attention Site Admin:</strong> Group forums require the <a href="%s">correct setup and configuration</a> of a bbPress installation.', 'huddle' ), bp_get_root_domain() . '/wp-admin/admin.php?page=bb-forums-setup' ); ?>
+										</label>
 									</div>
 
 								<?php endif; ?>
 							<?php endif; ?>
 						<?php endif; ?>
 
+						<!-- Paramètres de confidentialité -->
 						<h4><?php _e( 'Privacy Options', 'huddle' ); ?></h4>
-
+						
 						<div class="radio" id="confidentialite">
-							<label class="pointer"><input type="radio" name="group-status" value="public"<?php if ( 'public' == bp_get_new_group_status() || !bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
+						
+							<label class="pointer">
+								<input type="radio" name="group-status" value="public"<?php if ( 'public' == bp_get_new_group_status() || !bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
 								<strong><?php _e( 'This is a public group', 'huddle' ); ?></strong>
 								<ul>
 									<li><?php _e( 'Any site member can join this group.', 'huddle' ); ?></li>
@@ -83,7 +89,8 @@
 								</ul>
 							</label>
 
-							<label class="pointer"><input type="radio" name="group-status" value="private"<?php if ( 'private' == bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
+							<label class="pointer">
+								<input type="radio" name="group-status" value="private"<?php if ( 'private' == bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
 								<strong><?php _e( 'This is a private group', 'huddle' ); ?></strong>
 								<ul>
 									<li><?php _e( 'Only users who request membership and are accepted can join the group.', 'huddle' ); ?></li>
@@ -92,7 +99,8 @@
 								</ul>
 							</label>
 
-							<label class="pointer"><input type="radio" name="group-status" value="hidden"<?php if ( 'hidden' == bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
+							<label class="pointer">
+								<input type="radio" name="group-status" value="hidden"<?php if ( 'hidden' == bp_get_new_group_status() ) { ?> checked="checked"<?php } ?> />
 								<strong><?php _e('This is a hidden group', 'huddle'); ?></strong>
 								<ul>
 									<li><?php _e( 'Only users who are invited can join the group.', 'huddle' ); ?></li>
@@ -101,12 +109,15 @@
 								</ul>
 							</label>
 						</div>
+						
 
 						<hr />
 
+						<!-- Invitations au projet -->
 						<h4><?php _e( 'Group Invitations', 'huddle' ); ?></h4>
-
+						
 						<div class="radio" id="invitations">
+						
 							<label class="pointer">
 								<input type="radio" name="group-invite-status" value="members"<?php bp_group_show_invite_status_setting( 'members' ) ?> />
 								<strong><?php _e( 'All group members', 'huddle' ) ?></strong>
@@ -121,6 +132,7 @@
 								<input type="radio" name="group-invite-status" value="admins"<?php bp_group_show_invite_status_setting( 'admins' ) ?> />
 								<strong><?php _e( 'Group admins only', 'huddle' ) ?></strong>
 							</label>
+							
 						</div>
 
 						<hr />
@@ -131,7 +143,7 @@
 
 					<?php endif; ?>
 
-					<?php /* Group creation step 3: Avatar Uploads */ ?>
+					<?php /*-- Etape 3 --*/ ?>
 					<?php if ( bp_is_group_creation_step( 'group-avatar' ) ) : ?>
 
 						<?php do_action( 'bp_before_group_avatar_creation_step' ); ?>
@@ -142,7 +154,7 @@
 
 								<?php bp_new_group_avatar( 'width=35&height=35' ); ?>
 
-							</div><!-- .left-menu -->
+							</div>
 
 							<div class="main-column">
 								<p><?php _e( "Upload an image to use as an avatar for this group. The image will be shown on the main group page, and in search results.", 'huddle' ); ?></p>
@@ -154,7 +166,7 @@
 								</p>
 
 								<p><?php _e( 'To skip the avatar upload process, hit the "Next Step" button.', 'huddle' ); ?></p>
-							</div><!-- .main-column -->
+							</div>
 
 						<?php endif; ?>
 
@@ -185,7 +197,7 @@
 
 					<?php endif; ?>
 
-					<?php /* Group creation step 4: Invite friends to group */ ?>
+					<?php /*-- Etape 4 --*/ ?>
 					<?php if ( bp_is_group_creation_step( 'group-invites' ) ) : ?>
 
 						<?php do_action( 'bp_before_group_invites_creation_step' ); ?>
@@ -202,7 +214,7 @@
 									<?php wp_nonce_field( 'groups_invite_uninvite_user', '_wpnonce_invite_uninvite_user' ); ?>
 								</div>
 
-							</div><!-- .left-menu -->
+							</div>
 
 							<div class="main-column">
 
@@ -237,7 +249,7 @@
 
 								</ul>
 
-							</div><!-- .main-column -->
+							</div>
 
 						<?php else : ?>
 
@@ -299,7 +311,7 @@
 
 					<?php do_action( 'bp_directory_groups_content' ); ?>
 
-				</div><!-- .item-body -->
+				</div>
 
 				<?php do_action( 'bp_after_create_group' ); ?>
 
@@ -307,6 +319,6 @@
 		
 		</div>
 
-	</div><!-- #content -->
+	</div>
 
 <?php get_footer( 'buddypress' ); ?>

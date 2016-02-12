@@ -35,11 +35,11 @@
 
 				<ul id="groups-list-popular" class="item-list" role="main">
 				
-				<?php for ($i=1; $i <=6; $i++) { ?>
+				<?php $i_row = 0; $i = 0; $i_column = 0; while ( bp_groups() ) : bp_the_group(); ?>
 
 					<!-- Projet -->
 					<?php
-					//bp_groups();
+					bp_groups();
 					bp_the_group();
 					?>
 					<li class="tuile-projet">
@@ -69,7 +69,7 @@
 						
 					</li>
 		
-				<?php } ?>
+				<?php endwhile; ?>
 				
 				</ul>
 

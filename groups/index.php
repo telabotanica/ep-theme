@@ -20,7 +20,9 @@
 
 				<?php do_action( 'template_notices' ); ?>
 
+				<!-- Header -->
 				<div class="item-list-tabs" id="subnav" role="navigation">
+				
 					<ul>
 
 						<?php do_action( 'bp_groups_directory_group_types' ); ?>
@@ -71,22 +73,22 @@
 
 				<?php do_action( 'bp_after_directory_groups_content' ); ?>
 
-			</form><!-- #groups-directory-form -->
+			</form>
 		
 			<!-- Tuile création projet -->
-			<div id="conteneur-creation-projet">
+			<?php if ( is_user_logged_in() && bp_user_can_create_groups() ) { ?>
 				<a href="create">
 					<div id="tuile-creation-projet">Créer un nouveau projet</div>
 				</a>
-			</div>
+			<?php } ?>
 
 			<?php do_action( 'bp_after_directory_groups' ); ?>
 			
 			<!-- Retour haut de page -->
 			<a href="#subnav" class="retour-haut-page show-responsive" title="Revenir en haut de la page">&#9650;</a>
 
-		</div><!-- .padder -->
-	</div><!-- #content -->
+		</div>
+	</div>
 
 	<?php do_action( 'bp_after_directory_groups_page' ); ?>
 

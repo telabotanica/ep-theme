@@ -7,7 +7,7 @@ Description: Le thème Tela Botanica propose un habillage respectant la charte d
 Version: 1.0 BETA
 License: 
 License URI: 
-Tags: 
+Tags: Tela Botanica, Espace projets, Botanique
 
 -------------------------------------------------------------------
 
@@ -1975,9 +1975,8 @@ body.groups #item-header #item-meta {
 #item-body {
 	float: right;
 	width: 736px;
-	margin-bottom: 30px;
 	padding: 20px;
-	min-height: 550px;
+	min-height: 650px;
 	text-align: justify;
 	background-color: white;
 }
@@ -4327,6 +4326,20 @@ body.cyan.forums table.forum td .topic-meta a,
 	height: 20px;
 }
 
+#categorie {
+	padding: 10px;
+	cursor: pointer;
+	background-color: #964e75;
+	background: linear-gradient(-45deg, #964e75 25%, #953e75 25%, #953e75 50%, #964e75 50%, #964e75 75%, #953e75 75%, #964e75);
+	background-size: 8px 8px;
+	color: white;
+	border: 0;
+}
+
+#categorie option {
+	background-color: #964e75;
+}
+
 
 /*-- 13.3 LISTE DES PROJETS --*/
 
@@ -4549,15 +4562,13 @@ body.cyan.forums table.forum td .topic-meta a,
 	
 	
 	/*-- 13.3.3 TUILE CREATION PROJET --*/
-	#conteneur-creation-projet {
-		margin-top: -30px;
-	}
-
 	#tuile-creation-projet {
+		margin-top: -30px;
 		background: rgba(150, 78, 117, 0.8);
 		text-align: center;
 		line-height: 100px;
 		font-family: 'A Little Sunshine';
+		font-weight: bold;
 		font-size: 48px;
 		color: white;
 	}
@@ -4619,6 +4630,19 @@ body.cyan.forums table.forum td .topic-meta a,
 	
 	
 	/*-- 13.4.2 PLUG-IN TELA-BOTANICA --*/
+	.tuile-projet .categorie-projet {
+		display: none;
+	}
+
+	.categorie-projet {
+		margin-top: -6px;
+		background-color: #964e75;
+		background: linear-gradient(-45deg, #964e75 25%, #953e75 25%, #953e75 50%, #964e75 50%, #964e75 75%, #953e75 75%, #964e75);
+		background-size: 8px 8px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+
 	.on-off {
 		width: 50px;
 	}
@@ -4660,14 +4684,15 @@ body.cyan.forums table.forum td .topic-meta a,
 	#panneau-lateral > .tuile-options { width: 220px; } /* Padding de 10px = 240px */
 	
 	/* Projet */
-	#item-header {width: 140px; }
-	#item-nav { width: 320px; }
-	.item-list-tabs li { 
+	#item-header { width: 100px; min-height: auto; } 
+	#item-header-avatar { height: 100%; }
+	#item-nav { width: 360px; }
+	#item-nav li { 
 		float: none; 
 		text-align: center;
 		margin: 0;
 	}
-	#item-body { width: 280px; }
+	#item-body { width: 440px; }
 }
 
 /*-- 14.2. [S : 720-959] --*/
@@ -4760,23 +4785,5 @@ body.cyan.forums table.forum td .topic-meta a,
 	#item-nav { width: 1700px; }
 	#item-body { width: 1660px; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
