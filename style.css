@@ -427,6 +427,7 @@ a {
 	
 a:hover {
 	text-decoration: none;
+	color: #e16e38;
 }
 
 .grid {
@@ -838,14 +839,6 @@ a:hover {
 	font-weight: bold !important;
 	color: white;
 }
-
-#nav a:hover {
-	color: #e16e38;
-}
-
-
-
-
 
 #subnav .btn-gray {
 	color: white;
@@ -1886,7 +1879,7 @@ li.last .sub-menu {
 
 #item-header #latest-update a {
 	font-style: italic;
-	color: #406098;
+	color: white;
 	font-weight: normal;
 }
 
@@ -2042,14 +2035,15 @@ body.groups #item-header #item-meta {
 }
 
 #activity-stream .activity-content {
-	width: 684px;
-	float: right;
+	width: 100%;
+	margin-left: 50px;
 }
 
 #activity-stream .activity-header {
 	color: #777;
 	font-style: italic;
 	font-size: 10px;
+	display: inline-block;
 }
 
 #activity-stream .activity-header a {
@@ -2104,8 +2098,7 @@ body.groups #item-header #item-meta {
 }
 
 #activity-stream .activity-comments {
-	width: 684px;
-	float: right;
+	width: 100%;
 	margin-top: 10px;
 }
 
@@ -2181,7 +2174,6 @@ body.groups #item-header #item-meta {
 }
 
 #activity-stream .activity-time-since {
-	float: right;
 	color: #777;
 	font-style: italic;
 	font-size: 10px;
@@ -2210,9 +2202,9 @@ body.groups #item-header #item-meta {
 #whats-new-content textarea {
 	border: 1px solid #D9D8D8;
 	color: #666;
-	padding: 8px;
 	background: url(images/bg-search-inp.png) repeat-x white;
-	width: 351px;
+	width: 100%;
+	max-width: 100%;
 	height: 34px;
 }
 
@@ -4280,6 +4272,7 @@ body.cyan.forums table.forum td .topic-meta a,
 
 	#page-accueil .tb-article-contenu {
 		padding: 20px;	
+		padding-top: 5px;
 		text-align: justify;
 	}
 

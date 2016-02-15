@@ -6,7 +6,7 @@ do_action( 'bp_before_group_header' );
 
 <!-- Lien de retour -->
 <div class="hide-responsive"><a class="lien-accueil" href="/wordpress/groups">Revenir aux projets</a></div>
-<div class="show-responsive"><a class="lien-accueil" href="/wordpress/groups"><   Retour</a></div>
+<div class="show-responsive"><a class="lien-accueil" href="/wordpress/groups">Retour</a></div>
 
 
 
@@ -14,7 +14,7 @@ do_action( 'bp_before_group_header' );
 <div id="item-header-avatar">
 
 	<a href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>">
-		<?php bp_group_avatar(); ?>
+		
 	</a>
 	
 	<!-- Confidentialité du projet -->

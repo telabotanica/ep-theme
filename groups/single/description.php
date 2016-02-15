@@ -17,12 +17,6 @@ do_action( 'bp_before_group_header' );
 		</div><!-- #item-buttons -->
 
 		<?php do_action( 'bp_group_header_meta' ); ?>
-		
-		<!-- Emplacement Page du widget (YOYO)
-		<div class="widget-page">
-			<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('page') ) ?>
-		</div>
-		-->
 
 	</div>
 </div><!-- #item-header-content -->

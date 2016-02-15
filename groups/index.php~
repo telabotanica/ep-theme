@@ -20,7 +20,9 @@
 
 				<?php do_action( 'template_notices' ); ?>
 
+				<!-- Header -->
 				<div class="item-list-tabs" id="subnav" role="navigation">
+				
 					<ul>
 
 						<?php do_action( 'bp_groups_directory_group_types' ); ?>
@@ -61,7 +63,7 @@
 				<!-- Liste des groupes -->
 				<div id="groups-dir-list" class="groups dir-list">
 
-					<?php locate_template( array( 'groups/groups-loop.php' ), true ); ?>
+					<?php locate_template( array( 'groups/liste-projts.php' ), true ); ?>
 
 				</div><!-- #groups-dir-list -->
 
@@ -71,7 +73,7 @@
 
 				<?php do_action( 'bp_after_directory_groups_content' ); ?>
 
-			</form><!-- #groups-directory-form -->
+			</form>
 		
 			<!-- Tuile création projet -->
 			<?php if ( is_user_logged_in() && bp_user_can_create_groups() ) { ?>

@@ -258,7 +258,7 @@ $('.tuile-projet').on('mouseenter', function() {
   	$('.resume-projet', this).toggle();
   	$('.activite-projet', this).toggle();
   	$('.membres-projet', this).toggle();
-  	$('.confidentialite-projet', this).toggle(200);
+  	$('.confidentialite-projet', this).toggle();
   	$('.gtags-item-tags a', this).toggle();	
   	if (idNavigateur() != 'Firefox') {
 		$('.avatar-projet img', this).animate({
@@ -276,11 +276,11 @@ $('.tuile-projet').on('mouseenter', function() {
 	}
 });
 /*-- Animation tuile projet (Mouse Leave)--*/
-$('.tuile-projet').on('mouseleave', function() {
+$('.dir-list .item-list .tuile-projet').on('mouseleave', function() {
   	$('.resume-projet', this).toggle();
   	$('.activite-projet', this).toggle();
   	$('.membres-projet', this).toggle();
-  	$('.confidentialite-projet', this).toggle(100);
+  	$('.confidentialite-projet', this).toggle();
   	$('.gtags-item-tags a', this).toggle();
   	$('.avatar-projet img', this)
   	if (idNavigateur() != 'Firefox') {

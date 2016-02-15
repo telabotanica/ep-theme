@@ -254,7 +254,7 @@ $('.tb-encart-projet').on('mouseleave', function() {
 
 
 /*-- Animation tuile projet (Mouse Enter)--*/
-$('.tuile-projet').on('mouseenter', function() {
+$('.dir-list .item-list .tuile-projet').on('mouseenter', function() {
   	$('.resume-projet', this).toggle();
   	$('.activite-projet', this).toggle();
   	$('.membres-projet', this).toggle();
@@ -276,7 +276,7 @@ $('.tuile-projet').on('mouseenter', function() {
 	}
 });
 /*-- Animation tuile projet (Mouse Leave)--*/
-$('.tuile-projet').on('mouseleave', function() {
+$('.dir-list .item-list .tuile-projet').on('mouseleave', function() {
   	$('.resume-projet', this).toggle();
   	$('.activite-projet', this).toggle();
   	$('.membres-projet', this).toggle();

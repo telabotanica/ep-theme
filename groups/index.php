@@ -63,7 +63,7 @@
 				<!-- Liste des groupes -->
 				<div id="groups-dir-list" class="groups dir-list">
 
-					<?php locate_template( array( 'groups/groups-loop.php' ), true ); ?>
+					<?php locate_template( array( 'groups/liste-projets.php' ), true ); ?>
 
 				</div><!-- #groups-dir-list -->
 
