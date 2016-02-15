@@ -60,7 +60,7 @@ msgstr "Réponse publiée !"
 #, fuzzy
 msgid "There was an error posting that reply. Please try again."
 msgstr ""
-"Une erreur s'est produite pendant l'envoi de la réponse. Veuillez "
+"Une erreur s&#39;est produite pendant l&#39;envoi de la réponse. Veuillez "
 "recommencer."
 
 #: bp-activity/bp-activity-actions.php:461
@@ -573,7 +573,7 @@ msgstr "Aucune activité trouvée"
 #: bp-activity/bp-activity-admin.php:1283 bp-groups/bp-groups-admin.php:1386
 #, fuzzy
 msgid "All"
-msgstr "Toutes les activités"
+msgstr "Tous"
 
 #: bp-activity/bp-activity-admin.php:1284
 #, fuzzy
@@ -782,7 +782,7 @@ msgstr "Flux d'activités"
 #: bp-activity/bp-activity-loader.php:114
 #, fuzzy
 msgid "Search Activity..."
-msgstr "Rechercher parmi les activités"
+msgstr "Rechercher parmi les activités..."
 
 #: bp-activity/bp-activity-loader.php:348
 #: bp-activity/bp-activity-template.php:1474
@@ -941,7 +941,7 @@ msgstr "Vous n'avez pas accés à cette activité."
 #: bp-activity/bp-activity-screens.php:570
 #, fuzzy
 msgid "Activity"
-msgstr "Activités par page"
+msgstr "Activités"
 
 #: bp-activity/bp-activity-screens.php:380 bp-blogs/bp-blogs-template.php:1272
 #: bp-friends/bp-friends-screens.php:110 bp-groups/bp-groups-screens.php:1332
@@ -988,7 +988,7 @@ msgstr ""
 #: bp-activity/bp-activity-template.php:851
 #, fuzzy
 msgid "Viewing 1 item"
-msgstr "Aperçu : 1 élément"
+msgstr "Aperçu: 1 élément"
 
 #: bp-activity/bp-activity-template.php:853
 msgid "Viewing %1$s - %2$s of %3$s item"
@@ -1010,7 +1010,7 @@ msgstr "Logo du projet"
 #: bp-groups/bp-groups-admin.php:1606 bp-groups/bp-groups-template.php:897
 #, fuzzy
 msgid "Group logo of %s"
-msgstr "Logo du projet %s"
+msgstr "Logo du groupe %s"
 
 #: bp-activity/bp-activity-template.php:1644
 #, fuzzy
@@ -1189,7 +1189,7 @@ msgstr "Messages"
 #: bp-blogs/bp-blogs-template.php:476
 #, fuzzy
 msgid "Viewing 1 site"
-msgstr "Aperçu : 1 site"
+msgstr "Aperçu: 1 site"
 
 #: bp-blogs/bp-blogs-template.php:478
 msgid "Viewing %1$s - %2$s of %3$s site"
@@ -1262,7 +1262,7 @@ msgstr "Nom du blog :"
 #: bp-blogs/bp-blogs-template.php:1228
 #, fuzzy
 msgid "Site Domain:"
-msgstr "Domaine du blog:"
+msgstr "Domaine du blo:"
 
 #: bp-blogs/bp-blogs-template.php:1242
 #, fuzzy
@@ -1296,7 +1296,7 @@ msgstr "Titre du site&nbsp;:"
 #: bp-blogs/bp-blogs-template.php:1267
 #, fuzzy
 msgid "Privacy:"
-msgstr "Confidentialité&nbsp;:"
+msgstr "Confidentialit&eacute;:"
 
 #: bp-blogs/bp-blogs-template.php:1268
 #: bp-templates/bp-legacy/buddypress/members/register.php:276
@@ -1398,7 +1398,7 @@ msgstr "Enregistrer les réglages"
 #: bp-core/admin/bp-core-admin-components.php:374
 #, fuzzy
 msgid "Extended Profiles"
-msgstr "Profils étendus"
+msgstr "Profil détaillé"
 
 #: bp-core/admin/bp-core-admin-components.php:68
 #: bp-core/admin/bp-core-admin-components.php:375
@@ -1431,7 +1431,7 @@ msgstr ""
 #: bp-notifications/bp-notifications-loader.php:230
 #, fuzzy
 msgid "Notifications"
-msgstr "Options de notification"
+msgstr "Notes"
 
 #: bp-core/admin/bp-core-admin-components.php:76
 #: bp-core/admin/bp-core-admin-components.php:395
@@ -1524,7 +1524,7 @@ msgstr "Les Forums BuddyPress ont été  retirés. Utilisez %s."
 #: bp-core/admin/bp-core-admin-components.php:382
 #, fuzzy
 msgid "Friend Connections"
-msgstr "Connexions entre amis"
+msgstr "Les amis"
 
 #: bp-core/admin/bp-core-admin-components.php:383
 #, fuzzy
@@ -1566,7 +1566,7 @@ msgstr ""
 #: bp-core/admin/bp-core-admin-components.php:398
 #, fuzzy
 msgid "User Groups"
-msgstr "Mes projets"
+msgstr "Groupes"
 
 #: bp-core/admin/bp-core-admin-components.php:399
 #, fuzzy
@@ -1642,9 +1642,9 @@ msgid ""
 "your permalink structure</a> to something other than the default for it to "
 "work."
 msgstr ""
-"<strong>BuddyPress est presque prêt</strong>. Vous devez encore <a href=\"%s"
-"\">positionner la structure des permaliens</a> sur autre chose que le "
-"réglage par défaut pour assurer son fonctionnement."
+"<strong>BuddyPress est presque pr&ecirc;t</strong>. Vous devez encore <a "
+"href=\"%s\">positionner la structure des permaliens</a> sur autre chose que "
+"le réglage par défaut pour assurer son fonctionnement."
 
 #: bp-core/admin/bp-core-admin-functions.php:270
 #: bp-core/admin/bp-core-admin-slugs.php:148
@@ -1798,13 +1798,13 @@ msgstr "BuddyPress"
 #: bp-core/admin/bp-core-admin-functions.php:769
 #, fuzzy
 msgid "Logged-In"
-msgstr "Connecté"
+msgstr "Connect&eacute;"
 
 #: bp-core/admin/bp-core-admin-functions.php:763
 #: bp-core/admin/bp-core-admin-functions.php:778
 #, fuzzy
 msgid "Logged-Out"
-msgstr "Déconnecté"
+msgstr "D&eacute;connect&eacute;"
 
 #: bp-core/admin/bp-core-admin-functions.php:770
 #, fuzzy
@@ -1876,12 +1876,12 @@ msgstr "Activer BuddPress vers la synchronisation des profils de WordPress ?"
 #: bp-core/admin/bp-core-admin-settings.php:154
 #, fuzzy
 msgid "Allow registered members to upload avatars"
-msgstr "Les membres peuvent télécharger un avatar"
+msgstr "Autoriser le téléchargement d'avatars aux membres enregistrés"
 
 #: bp-core/admin/bp-core-admin-settings.php:179
 #, fuzzy
 msgid "Enable group creation for all users"
-msgstr "Activer la création de projets pour tous les utilisateurs"
+msgstr "Tous les utilisateurs sont autorisés à créer des projets."
 
 #: bp-core/admin/bp-core-admin-settings.php:180
 #, fuzzy
@@ -1893,7 +1893,7 @@ msgstr ""
 #: bp-core/admin/bp-core-admin-settings.php:193
 #, fuzzy
 msgid "Allow customizable avatars for groups"
-msgstr "Autoriser la personnalisation des avatars de projets."
+msgstr "Autoriser le téléchargement d'avatars de projets."
 
 #: bp-core/admin/bp-core-admin-settings.php:223
 #, fuzzy
@@ -1965,7 +1965,7 @@ msgid ""
 "often after an import, update, or migration."
 msgstr ""
 "BuddyPress conserve les traces des différentes relations établies entre "
-"utilisateurs, projets et éléments d'activités. Occasionnellement, ces "
+"utilisateurs, projets et éléments d'activités. Occasionellement, ces "
 "relations peuvent se désynchroniser, le plus souvent après une importation, "
 "une mise à jour ou une migration."
 
@@ -2121,7 +2121,7 @@ msgstr "Suppression de compte"
 #: bp-core/bp-core-admin.php:341
 #, fuzzy
 msgid "Profile Photo Uploads"
-msgstr "Photos de profils téléchargés"
+msgstr "Photo de profil"
 
 #: bp-core/bp-core-admin.php:345
 #, fuzzy
@@ -2141,7 +2141,7 @@ msgstr "Création de projet"
 #: bp-core/bp-core-admin.php:361
 #, fuzzy
 msgid "Group Photo Uploads"
-msgstr "Téléchargement des photos d'illustration de projet"
+msgstr "Photo de projet"
 
 #: bp-core/bp-core-admin.php:370
 #, fuzzy
@@ -2439,12 +2439,12 @@ msgstr ""
 #: bp-core/bp-core-admin.php:642
 #, fuzzy
 msgid "Project Leaders"
-msgstr "Gestionnaires de projets"
+msgstr "Chefs de Projets"
 
 #: bp-core/bp-core-admin.php:647
 #, fuzzy
 msgid "Project Lead"
-msgstr "Gestionnaire de projet"
+msgstr "Chef de Projet"
 
 #: bp-core/bp-core-admin.php:652 bp-core/bp-core-admin.php:657
 #, fuzzy
@@ -2587,8 +2587,8 @@ msgid ""
 "The BuddyBar is no longer supported. Please migrate to the WordPress toolbar "
 "as soon as possible."
 msgstr ""
-"La BuddyBar a été retirée. Veuillez migrer vers la Toolbar de WordPress dès "
-"que possible."
+"La BuddyBar a été retirée. Veuillez migrer vers la Toolbar de WordPress "
+"aussitôt que possible."
 
 #: bp-core/bp-core-attachments.php:95
 #, fuzzy
@@ -2786,7 +2786,7 @@ msgstr ""
 #: bp-core/bp-core-avatars.php:329
 #, fuzzy
 msgid "Profile Photo"
-msgstr "Photo du profil"
+msgstr "Photo"
 
 #: bp-core/bp-core-avatars.php:821
 #, fuzzy
@@ -2941,7 +2941,7 @@ msgstr "inconnu"
 #: bp-core/bp-core-functions.php:1083
 #, fuzzy
 msgid "right now"
-msgstr "à l&#39;instant"
+msgstr "&agrave; l&#39;instant"
 
 #: bp-core/bp-core-functions.php:1092
 #, fuzzy
@@ -3006,7 +3006,7 @@ msgstr "Se déconnecter"
 #: bp-core/deprecated/2.1.php:239
 #, fuzzy
 msgid "Log In"
-msgstr "Connexion"
+msgstr "Se connecter"
 
 #: bp-core/bp-core-template.php:99
 #, fuzzy
@@ -3026,7 +3026,7 @@ msgstr "%1$s (%2$s)"
 #: bp-core/bp-core-template.php:574
 #, fuzzy
 msgid "Search anything..."
-msgstr "Tout rechercher"
+msgstr "Tout rechercher..."
 
 #: bp-core/bp-core-template.php:770
 #, fuzzy
@@ -3331,7 +3331,7 @@ msgstr "Membre au hasard"
 #: bp-core/deprecated/2.1.php:347
 #, fuzzy
 msgid "Random Group"
-msgstr "Projet au hasard"
+msgstr "Groupe au hasard"
 
 #: bp-core/deprecated/2.1.php:353
 #, fuzzy
@@ -3537,7 +3537,7 @@ msgstr "mot-clé correspondant \"%s\""
 #: bp-forums/bp-forums-template.php:1882
 #, fuzzy
 msgid "Viewing 1 topic"
-msgstr "Aperçu : 1 sujet"
+msgstr "Aperçu: 1 sujet"
 
 #: bp-forums/bp-forums-template.php:1884
 msgid "Viewing %1$s - %2$s of %3$s topic"
@@ -3548,7 +3548,7 @@ msgstr[1] ""
 #: bp-forums/bp-forums-template.php:2632
 #, fuzzy
 msgid "Viewing 1 post"
-msgstr "Aperçu : 1 article"
+msgstr "Aperçu: 1 article"
 
 #: bp-forums/bp-forums-template.php:2634
 msgid "Viewing %1$s - %2$s of %3$s post"
@@ -3780,9 +3780,10 @@ msgid ""
 "\t\t\t\tprocess. When you're ready, hit the link below."
 msgstr ""
 "\"Vous avez décidé d&#39;installer bbPress pour gérer vos forums dans "
-"BuddyPress. Cette opération est très simple et s&#39;effectue généralement "
-"en un clin d&#39;oeil.\n"
-"\"\"\t\t\t\tDès que vous serrez prêt, cliquez sur le lien ci-dessous.\""
+"BuddyPress. Cette opération est tr&egrave;s simple et s&#39;effectue "
+"généralement en un clin d&#39;oeil.\n"
+"\"\"\t\t\t\tD&egrave;s que vous serrez pr&ecirc;t, cliquez sur le lien ci-"
+"dessous.\""
 
 #: bp-forums/deprecated/1.6.php:197
 #, fuzzy
@@ -3790,9 +3791,9 @@ msgid ""
 "bbPress files were not found. To install the forums component you must "
 "download a copy of bbPress and make sure it is in the folder: \"%s\""
 msgstr ""
-"Aucun fichier bbPress n'a été trouvé. Pour pouvoir installer le composant "
-"Forums, vous devez télécharger bbPress et vous assurer qu'il se trouve bien "
-"dans le dossier \"%s\""
+"Aucun fichier bbPress n'a été trouv&eacute;. Pour pouvoir installer le "
+"composant Forums, vous devez télécharger bbPress et vous assurer qu'il se "
+"trouve bien dans le dossier \"%s\""
 
 #: bp-forums/deprecated/1.6.php:225
 #, fuzzy
@@ -3874,7 +3875,7 @@ msgstr "%1$s et %2$s sont en contact"
 #: bp-friends/bp-friends-loader.php:92
 #, fuzzy
 msgid "Search Friends..."
-msgstr "Rechercher"
+msgstr "Rechercher..."
 
 #: bp-friends/bp-friends-loader.php:119
 #, fuzzy
@@ -3958,7 +3959,7 @@ msgstr "Relation refusée"
 #: bp-friends/bp-friends-screens.php:61
 #, fuzzy
 msgid "Friendship could not be rejected"
-msgstr "La mise en relation n&#39;a pu être rejetée."
+msgstr "La mise en relation n&#39;a pu &ecirc;tre rejetée."
 
 #: bp-friends/bp-friends-screens.php:70
 #, fuzzy
@@ -3973,7 +3974,7 @@ msgstr "Votre demande de mise en relation n'a pas pu être retirée"
 #: bp-friends/bp-friends-template.php:82
 #, fuzzy
 msgid "My Friends"
-msgstr "Mes amis"
+msgstr "Seulement mes amis"
 
 #: bp-friends/bp-friends-template.php:82
 #, fuzzy
@@ -3993,7 +3994,7 @@ msgstr "Vous n'avez pas encore noué de contact"
 #: bp-friends/bp-friends-template.php:102
 #, fuzzy
 msgid "%s hasn't created any friend connections yet."
-msgstr "%s n&#39;a pas encore établi de contact"
+msgstr "%s n&#39;a pas encore noué de contact"
 
 #: bp-friends/bp-friends-template.php:172
 #, fuzzy
@@ -4166,7 +4167,7 @@ msgstr "Le téléchargement du logo de projet s'est terminé avec succès !"
 #: bp-groups/bp-groups-actions.php:380 bp-groups/bp-groups-actions.php:387
 #, fuzzy
 msgid "There was an error joining the group."
-msgstr "Un problème est survenu à la fermeture de l'alerte."
+msgstr "Une erreur s'est produite pendant l'adhésion au projet."
 
 #: bp-groups/bp-groups-actions.php:389
 #, fuzzy
@@ -4181,7 +4182,7 @@ msgstr "Vous devez désigner au moins un administrateur pour ce projet."
 #: bp-groups/bp-groups-actions.php:436
 #, fuzzy
 msgid "There was an error leaving the group."
-msgstr "Un problème est survenu à la fermeture de l'alerte."
+msgstr "Une erreur s'est produite pendant que vous quittiez le projet"
 
 #: bp-groups/bp-groups-actions.php:438 bp-groups/bp-groups-functions.php:447
 #, fuzzy
@@ -4196,7 +4197,10 @@ msgstr "Activités du projet %s"
 #: bp-groups/bp-groups-activity.php:31
 #, fuzzy
 msgid "Created a group"
-msgstr "Créer un nouvel espace projet"
+msgstr ""
+"<strong>Type</strong> - Chaque sorte d&#39;activité a son propre type. Par "
+"exemple, <code>created_group</code> est utilisé quand un projet est créé et "
+"<code>joined_group</code> est utilisé quand un utilisateur rejoint le projet."
 
 #: bp-groups/bp-groups-activity.php:33
 msgid "New Groups"
@@ -4205,7 +4209,10 @@ msgstr "Nouveaux projets"
 #: bp-groups/bp-groups-activity.php:40
 #, fuzzy
 msgid "Joined a group"
-msgstr "Rejoindre le projet"
+msgstr ""
+"<strong>Type</strong> - Chaque sorte d&#39;activité a son propre type. Par "
+"exemple, <code>created_group</code> est utilisé quand un projet est créé et "
+"<code>joined_group</code> est utilisé quand un utilisateur rejoint le projet."
 
 #: bp-groups/bp-groups-activity.php:42
 msgid "Group Memberships"
@@ -4219,7 +4226,7 @@ msgstr "Options du projet mises à jour"
 #: bp-groups/bp-groups-activity.php:51
 #, fuzzy
 msgid "Group Updates"
-msgstr "Mises à jour du Projet"
+msgstr "Mises à jour du Groupe"
 
 #: bp-groups/bp-groups-activity.php:62
 #, fuzzy
@@ -4326,7 +4333,7 @@ msgid ""
 "Clicking \"Visit\" will take you to the group&#8217;s public page. Use this "
 "link to see what the group looks like on the front end of your site."
 msgstr ""
-"En cliquant sur \"Visiter\" vous accéderez à la page publique du projet. "
+"En cliquant sur \"Visiter\" vous accèderez à la page publique du projet. "
 "Utilisez ce lien pour voir à quoi ressemble le projet sur la partie publique "
 "de votre site."
 
@@ -4376,12 +4383,12 @@ msgstr "Vous ne pouvez pas supprimer tous les administrateurs d'un projet."
 #: bp-groups/bp-groups-admin.php:506
 #, fuzzy
 msgid "Group name cannot be empty."
-msgstr "Nom de Projet. Ce champ ne peut rester vide."
+msgstr "Nom de Groupe. Ce champ ne peut rester vide."
 
 #: bp-groups/bp-groups-admin.php:510
 #, fuzzy
 msgid "Group description cannot be empty."
-msgstr "Description du projet. Ce champ ne peut rester vide."
+msgstr "Description du Groupe. Ce champ ne peut rester vide."
 
 #: bp-groups/bp-groups-admin.php:514
 #, fuzzy
@@ -4432,7 +4439,7 @@ msgstr "Modifier"
 #: bp-groups/bp-groups-admin.php:573 bp-groups/bp-groups-admin.php:728
 #, fuzzy
 msgid "Add New"
-msgstr "Ajouter un nouveau"
+msgstr "Ajouter un utilisateur"
 
 #: bp-groups/bp-groups-admin.php:592
 #, fuzzy
@@ -4499,7 +4506,7 @@ msgstr "Activer la discussion du forum"
 #: bp-groups/bp-groups-admin.php:774
 #, fuzzy
 msgid "Privacy"
-msgstr "Confidentialité"
+msgstr "Confidentialit&eacute;"
 
 #: bp-groups/bp-groups-admin.php:777 bp-groups/bp-groups-admin.php:1653
 #: bp-groups/bp-groups-template.php:1270
@@ -4642,7 +4649,7 @@ msgstr "&raquo;"
 #: bp-members/bp-members-template.php:654
 #, fuzzy
 msgid "Viewing 1 member"
-msgstr "Aperçu : 1 membre"
+msgstr "Aperçu: 1 membre"
 
 #: bp-groups/bp-groups-admin.php:1047 bp-groups/bp-groups-template.php:4215
 #: bp-members/bp-members-template.php:656
@@ -4990,7 +4997,7 @@ msgstr "Vous avez été nommé modérateur du projet \"%s\""
 #: bp-groups/bp-groups-notifications.php:1098
 #, fuzzy
 msgid "You have %d new group invitations"
-msgstr "Vous êtes invité à rejoindre %d projets."
+msgstr "Vous &ecirc;tes invité à rejoindre %d projets."
 
 #: bp-groups/bp-groups-notifications.php:1113
 #, fuzzy
@@ -5000,7 +5007,7 @@ msgstr "Invitations"
 #: bp-groups/bp-groups-notifications.php:1132
 #, fuzzy
 msgid "You have an invitation to the group: %s"
-msgstr "Vous êtes invité(e) par le projet %s"
+msgstr "Vous &ecirc;tes invit&eacute;(e) par le projet %s"
 
 #: bp-groups/bp-groups-screens.php:77
 #, fuzzy
@@ -5040,7 +5047,7 @@ msgstr "Votre réponse a été postée avec succès."
 #: bp-groups/bp-groups-screens.php:237
 #, fuzzy
 msgid "There was an error when making that topic a sticky"
-msgstr "Une erreur est survenue en tentant d'épingler le sujet"
+msgstr "Une erreur est survenue en tentant d'&eacute;pingler le sujet"
 
 #: bp-groups/bp-groups-screens.php:239
 #, fuzzy
@@ -5297,12 +5304,12 @@ msgstr "Le projet a été correctement supprimé !"
 #: bp-groups/bp-groups-template.php:804
 #, fuzzy
 msgid "Public Group"
-msgstr "Projet Public"
+msgstr "Groupe Public"
 
 #: bp-groups/bp-groups-template.php:806
 #, fuzzy
 msgid "Hidden Group"
-msgstr "Projet Masqué"
+msgstr "Groupe Masqué"
 
 #: bp-groups/bp-groups-template.php:808
 #, fuzzy
@@ -5312,7 +5319,7 @@ msgstr "Groupe Privé"
 #: bp-groups/bp-groups-template.php:810
 #, fuzzy
 msgid "Group"
-msgstr "Projet"
+msgstr "Groupe"
 
 #: bp-groups/bp-groups-template.php:1017
 #, fuzzy
@@ -5342,7 +5349,7 @@ msgstr "Filtrer les projets"
 #: bp-groups/bp-groups-template.php:1840
 #, fuzzy
 msgid "Viewing 1 group"
-msgstr "Aperçu : 1 projet"
+msgstr "Aperçu: 1 projet"
 
 #: bp-groups/bp-groups-template.php:1842
 msgid "Viewing %1$s - %2$s of %3$s group"
@@ -5544,7 +5551,7 @@ msgstr "contacté %s"
 #: bp-groups/bp-groups-template.php:5346
 #, fuzzy
 msgid "Viewing 1 request"
-msgstr "Aperçu : 1 demande"
+msgstr "Aperçu: 1 demande"
 
 #: bp-groups/bp-groups-template.php:5348
 msgid "Viewing %1$s - %2$s of %3$s request"
@@ -5555,7 +5562,7 @@ msgstr[1] ""
 #: bp-groups/bp-groups-template.php:5725
 #, fuzzy
 msgid "Viewing 1 invitation"
-msgstr "Aperçu : 1 invitation"
+msgstr "Aperçu: 1 invitation"
 
 #: bp-groups/bp-groups-template.php:5727
 msgid "Viewing %1$s - %2$s of %3$s invitation"
@@ -5602,7 +5609,7 @@ msgstr "Maximum de projets à afficher:"
 #: bp-groups/bp-groups-widgets.php:171
 #, fuzzy
 msgid "Default groups to show:"
-msgstr "Projets par défaut à afficher :"
+msgstr "Groupes par défaut à afficher:"
 
 #: bp-groups/bp-groups-widgets.php:240
 #, fuzzy
@@ -5637,7 +5644,7 @@ msgstr "BuddyPress Default"
 #: bp-settings/bp-settings-loader.php:180
 #, fuzzy
 msgid "Email"
-msgstr "Options de messagerie"
+msgstr "Email "
 
 #: bp-members/admin/bp-members-admin-classes.php:138
 #: bp-members/admin/bp-members-admin-classes.php:512
@@ -5702,7 +5709,7 @@ msgstr ""
 #: bp-members/bp-members-activity.php:26
 #, fuzzy
 msgid "New member registered"
-msgstr "Nouveau membre enregistré"
+msgstr "Nouveau membre enregistr&eacute;."
 
 #: bp-members/bp-members-activity.php:28
 msgid "New Members"
@@ -6059,7 +6066,7 @@ msgstr ""
 #: bp-members/bp-members-admin.php:1979
 #, fuzzy
 msgid "Last notified: %s"
-msgstr "Dernière notification: %1$s"
+msgstr "Dernière note: %1$s"
 
 #: bp-members/bp-members-admin.php:1983
 #, fuzzy
@@ -6182,7 +6189,7 @@ msgstr "Désolé, ce nom d'utilisateur existe déjà !"
 #: bp-members/bp-members-functions.php:1947
 #, fuzzy
 msgid "Invalid activation key."
-msgstr "La clé d&#39;activation est invalide."
+msgstr "La clé d’activation est invalide."
 
 #: bp-members/bp-members-functions.php:1954
 #, fuzzy
@@ -6247,7 +6254,7 @@ msgstr "Ce type d'utilisateur existe déjà."
 #: bp-members/bp-members-loader.php:104
 #, fuzzy
 msgid "Search Members..."
-msgstr "Rechercher un utilisateur"
+msgstr "Rechercher un utilisateur..."
 
 #: bp-members/bp-members-loader.php:269
 #, fuzzy
@@ -6286,7 +6293,7 @@ msgstr "Compte activé"
 #: bp-members/bp-members-template.php:636
 #, fuzzy
 msgid "Viewing 1 active member"
-msgstr "Aperçu : 1 membre actif"
+msgstr "Aperçu: 1 membre actif"
 
 #: bp-members/bp-members-template.php:638
 msgid "Viewing %1$s - %2$s of %3$s active member"
@@ -6297,7 +6304,7 @@ msgstr[1] ""
 #: bp-members/bp-members-template.php:642
 #, fuzzy
 msgid "Viewing 1 member with friends"
-msgstr "Aperçu : 1 membre avec des amis"
+msgstr "Aperçu: 1 membre avec des amis"
 
 #: bp-members/bp-members-template.php:644
 msgid "Viewing %1$s - %2$s of %3$s member with friends"
@@ -6308,7 +6315,7 @@ msgstr[1] ""
 #: bp-members/bp-members-template.php:648
 #, fuzzy
 msgid "Viewing 1 online member"
-msgstr "Aperçu : 1 membre en ligne"
+msgstr "Aperçu: 1 membre en ligne"
 
 #: bp-members/bp-members-template.php:650
 msgid "Viewing %1$s - %2$s of %3$s online member"
@@ -6475,7 +6482,7 @@ msgstr "Messages privés"
 #: bp-messages/bp-messages-loader.php:118
 #, fuzzy
 msgid "Search Messages..."
-msgstr "Rechercher un message"
+msgstr "Rechercher un message..."
 
 #: bp-messages/bp-messages-loader.php:136
 #, fuzzy
@@ -6715,7 +6722,7 @@ msgstr[1] ""
 #: bp-messages/bp-messages-template.php:1092
 #, fuzzy
 msgid "Viewing 1 message"
-msgstr "Aperçu : 1 message"
+msgstr "Aperçu: 1 message"
 
 #: bp-messages/bp-messages-template.php:1094
 msgid "Viewing %1$s - %2$s of %3$s message"
@@ -6726,7 +6733,7 @@ msgstr[1] ""
 #: bp-messages/bp-messages-template.php:1120
 #, fuzzy
 msgid "Search Messages"
-msgstr "Rechercher un message"
+msgstr "Rechercher un message..."
 
 #: bp-messages/bp-messages-template.php:1263
 #, fuzzy
@@ -6832,48 +6839,48 @@ msgstr "%s destinataires"
 #: bp-notifications/bp-notifications-actions.php:43
 #, fuzzy
 msgid "Notification successfully marked read."
-msgstr "La notification a bien été marquée comme lue."
+msgstr "La note a été archivée"
 
 #: bp-notifications/bp-notifications-actions.php:45
 #: bp-notifications/bp-notifications-actions.php:81
 #, fuzzy
 msgid "There was a problem marking that notification."
-msgstr "Un problème est survenu pendant le marquage de la notification."
+msgstr "Un problème est survenu pendant le marquage de la note."
 
 #: bp-notifications/bp-notifications-actions.php:79
 #, fuzzy
 msgid "Notification successfully marked unread."
-msgstr "La notification a bien été marquée comme non lue"
+msgstr "La note a été désarchivée"
 
 #: bp-notifications/bp-notifications-actions.php:115
 #, fuzzy
 msgid "Notification successfully deleted."
-msgstr "La notification a bien été supprimée."
+msgstr "La note a été supprimée."
 
 #: bp-notifications/bp-notifications-actions.php:117
 #, fuzzy
 msgid "There was a problem deleting that notification."
-msgstr "Il y a eu un problème pendant la suppression de la notification."
+msgstr "Un problème est survenu pendant la suppression de la note."
 
 #: bp-notifications/bp-notifications-actions.php:151
 #, fuzzy
 msgid "There was a problem managing your notifications."
-msgstr "Un problème est survenu pendant la gestion de vos notifications."
+msgstr "Un problème est survenu pendant la gestion de vos notes."
 
 #: bp-notifications/bp-notifications-actions.php:163
 #, fuzzy
 msgid "Notifications deleted."
-msgstr "Notifications supprimées."
+msgstr "Notes supprimées."
 
 #: bp-notifications/bp-notifications-actions.php:170
 #, fuzzy
 msgid "Notifications marked as read"
-msgstr "La notification a été marquée comme lue."
+msgstr "La note a été archivée"
 
 #: bp-notifications/bp-notifications-actions.php:177
 #, fuzzy
 msgid "Notifications marked as unread."
-msgstr "La notification a été marquée comme non lue"
+msgstr "La note a été désarchivée."
 
 #: bp-notifications/bp-notifications-adminbar.php:54
 #, fuzzy
@@ -6883,7 +6890,7 @@ msgstr "Vous n&#39;avez rien re&ccedil;u !"
 #: bp-notifications/bp-notifications-loader.php:85
 #, fuzzy
 msgid "Search Notifications..."
-msgstr "Chercher une notification..."
+msgstr "Chercher une note..."
 
 #: bp-notifications/bp-notifications-template.php:781
 #, fuzzy
@@ -6899,7 +6906,7 @@ msgstr "Archiver"
 #: bp-notifications/bp-notifications-template.php:1189
 #, fuzzy
 msgid "Viewing 1 notification"
-msgstr "Aperçu : 1 notification"
+msgstr "Aperçu: 1 note"
 
 #: bp-notifications/bp-notifications-template.php:1191
 msgid "Viewing %1$s - %2$s of %3$s notification"
@@ -7597,7 +7604,7 @@ msgstr "Aucun projet n'a été trouvé."
 #: bp-templates/bp-legacy/buddypress/groups/index.php:43
 #, fuzzy
 msgid "All Groups <span>%s</span>"
-msgstr "Tous les projets <span>%s</span>"
+msgstr "Tous les Groupes <span>%s</span>"
 
 #: bp-templates/bp-legacy/buddypress/groups/index.php:78
 #: bp-templates/bp-legacy/buddypress/members/single/groups.php:23
@@ -7812,8 +7819,9 @@ msgid ""
 "Your account was activated successfully! You can now <a href=\"%s\">log in</"
 "a> with the username and password you provided when you signed up."
 msgstr ""
-"Votre compte est activé. Vous pouvez <a href=\"%s\">vous connecter</a> en "
-"utilisant les identifiants que vous avez indiqué lors de votre inscription"
+"Votre compte est activ&eacute;. Vous pouvez <a href=\"%s\">vous connecter</"
+"a> en utilisant les identifiants que vous avez indiqué lors de votre "
+"inscription"
 
 #: bp-templates/bp-legacy/buddypress/members/activate.php:38
 msgid "Please provide a valid activation key."
@@ -7990,7 +7998,7 @@ msgstr "Voir le message"
 #: bp-templates/bp-legacy/buddypress/members/single/messages/messages-loop.php:124
 #, fuzzy
 msgid "Unread"
-msgstr "A lire"
+msgstr "Désarchiver"
 
 #: bp-templates/bp-legacy/buddypress/members/single/messages/messages-loop.php:165
 msgid "Sorry, no messages were found."
@@ -8007,7 +8015,7 @@ msgstr "Supprimer le message"
 #: bp-templates/bp-legacy/buddypress/members/single/messages/notices-loop.php:89
 #, fuzzy
 msgid "Sorry, no notices were found."
-msgstr "Désolé, aucune alerte n'a été trouvée !"
+msgstr "Désol&eacute;, aucune alerte n'a été trouvée !"
 
 #: bp-templates/bp-legacy/buddypress/members/single/messages/single.php:21
 msgid "You are alone in this conversation."
@@ -8039,27 +8047,27 @@ msgstr "Répondre"
 #: bp-templates/bp-legacy/buddypress/members/single/notifications/feedback-no-notifications.php:7
 #, fuzzy
 msgid "You have no unread notifications."
-msgstr "Il n&#39;y a aucune notification à lire !"
+msgstr "Il n&#39;y a aucune note à lire !"
 
 #: bp-templates/bp-legacy/buddypress/members/single/notifications/feedback-no-notifications.php:11
 #, fuzzy
 msgid "This member has no unread notifications."
-msgstr "Ce membre n&#39;a aucune notification non lue."
+msgstr "Ce membre n&#39;a aucune note non lue."
 
 #: bp-templates/bp-legacy/buddypress/members/single/notifications/feedback-no-notifications.php:19
 #, fuzzy
 msgid "You have no notifications."
-msgstr "Il n&#39;y a aucune notification."
+msgstr "Il n&#39;y a aucune note."
 
 #: bp-templates/bp-legacy/buddypress/members/single/notifications/feedback-no-notifications.php:23
 #, fuzzy
 msgid "This member has no notifications."
-msgstr "Ce membre n&#39;a pas de notifications"
+msgstr "Ce membre n&#39;a pas de notes"
 
 #: bp-templates/bp-legacy/buddypress/members/single/notifications/notifications-loop.php:7
 #, fuzzy
 msgid "Notification"
-msgstr "Notification"
+msgstr "Note"
 
 #: bp-templates/bp-legacy/buddypress/members/single/notifications/notifications-loop.php:8
 #, fuzzy
@@ -8069,7 +8077,7 @@ msgstr "Réception"
 #: bp-templates/bp-legacy/buddypress/members/single/profile/change-avatar.php:1
 #, fuzzy
 msgid "Change Profile Photo"
-msgstr "Changer la photo du profil"
+msgstr "Ma photo"
 
 #: bp-templates/bp-legacy/buddypress/members/single/profile/change-avatar.php:14
 #, fuzzy
@@ -8081,8 +8089,8 @@ msgid ""
 msgstr ""
 "La photo est affichée sur votre profil et l'ensemble le site. Si vous "
 "utilisez <a href=\"http://gravatar.com\">Gravatar</a> avec le mail que vous "
-"avez indiqué lors de votre inscription, il sera affiché. Sinon vous pouvez "
-"télécharger une image de votre choix depuis votre ordinateur."
+"avez indiqué lors de votre inscription, il sera affich&eacute;. Sinon vous "
+"pouvez télécharger une image de votre choix depuis votre ordinateur."
 
 #: bp-templates/bp-legacy/buddypress/members/single/profile/change-avatar.php:21
 #, fuzzy
@@ -8216,7 +8224,7 @@ msgstr "BuddyPress Héritage"
 #: bp-templates/bp-legacy/buddypress-functions.php:299
 #, fuzzy
 msgid "Accepted"
-msgstr "Accepté"
+msgstr "Accept&eacute;"
 
 #: bp-templates/bp-legacy/buddypress-functions.php:301
 #, fuzzy
@@ -8236,7 +8244,7 @@ msgstr "Mes Favoris"
 #: bp-templates/bp-legacy/buddypress-functions.php:305
 #, fuzzy
 msgid "Rejected"
-msgstr "Rejeté"
+msgstr "Rejet&eacute;"
 
 #: bp-templates/bp-legacy/buddypress-functions.php:307
 #, fuzzy
@@ -8266,7 +8274,8 @@ msgstr ""
 #, fuzzy
 msgid "There was a problem posting your update. Please try again."
 msgstr ""
-"Une erreur s'est produite pendant l'envoi de la note. Veuillez recommencer."
+"Une erreur s'est produite pendant l'envoi de la mise à jour. Veuillez "
+"recommencer."
 
 #: bp-templates/bp-legacy/buddypress-functions.php:1074
 #: bp-templates/bp-legacy/buddypress-functions.php:1111
@@ -8352,7 +8361,7 @@ msgstr "Un problème est survenu en marquant le message comme lu."
 #: bp-templates/bp-legacy/buddypress-functions.php:1667
 #, fuzzy
 msgid "There was a problem deleting messages."
-msgstr "Un problème est survenu lors de la suppression du message."
+msgstr "Un problème est survenu à la suppression du message"
 
 #: bp-xprofile/bp-xprofile-activity.php:31
 #, fuzzy
@@ -8739,13 +8748,13 @@ msgstr "La communauté BuddyPress"
 #, fuzzy
 msgctxt "Admin Dashbord SWA page title"
 msgid "Activity"
-msgstr "Activités par page"
+msgstr "Activités"
 
 #: bp-activity/bp-activity-admin.php:33
 #, fuzzy
 msgctxt "Admin Dashbord SWA menu"
 msgid "Activity"
-msgstr "Activités par page"
+msgstr "Activités"
 
 #: bp-activity/bp-activity-admin.php:253
 #, fuzzy
@@ -8781,13 +8790,13 @@ msgstr "ID Auteur"
 #, fuzzy
 msgctxt "Activity items per page (screen options)"
 msgid "Activity"
-msgstr "Activités par page"
+msgstr "Activités"
 
 #: bp-activity/bp-activity-admin.php:972
 #, fuzzy
 msgctxt "Admin SWA page"
 msgid "Activity"
-msgstr "Activités par page"
+msgstr "Activités"
 
 #: bp-activity/bp-activity-admin.php:1336
 #, fuzzy
@@ -8799,7 +8808,7 @@ msgstr "Auteurs"
 #, fuzzy
 msgctxt "Admin SWA column header"
 msgid "Activity"
-msgstr "Activités par page"
+msgstr "Activités"
 
 #: bp-activity/bp-activity-admin.php:1338
 #, fuzzy
@@ -8859,7 +8868,7 @@ msgstr "Répertoire"
 #, fuzzy
 msgctxt "component directory title"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-members/bp-members-loader.php:103
 #, fuzzy
@@ -8871,7 +8880,7 @@ msgstr "Membres"
 #, fuzzy
 msgctxt "Profile activity screen nav"
 msgid "Activity"
-msgstr "Activités par page"
+msgstr "Activités"
 
 #: bp-activity/bp-activity-loader.php:166
 #, fuzzy
@@ -8895,13 +8904,13 @@ msgstr "Mes favoris"
 #, fuzzy
 msgctxt "Profile activity screen sub nav"
 msgid "Friends"
-msgstr "Mes amis"
+msgstr "Amis"
 
 #: bp-activity/bp-activity-loader.php:216
 #, fuzzy
 msgctxt "Profile activity screen sub nav"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-activity/bp-activity-loader.php:261
 #, fuzzy
@@ -8919,7 +8928,7 @@ msgstr "Mes citations"
 #, fuzzy
 msgctxt "My Account Activity sub nav"
 msgid "Activity"
-msgstr "Activités par page"
+msgstr "Activités"
 
 #: bp-activity/bp-activity-loader.php:279
 #, fuzzy
@@ -8937,13 +8946,13 @@ msgstr "Mes favoris"
 #, fuzzy
 msgctxt "My Account Activity sub nav"
 msgid "Friends"
-msgstr "Mes amis"
+msgstr "Amis"
 
 #: bp-activity/bp-activity-loader.php:319
 #, fuzzy
 msgctxt "My Account Activity sub nav"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-activity/bp-activity-loader.php:343
 #, fuzzy
@@ -8991,7 +9000,7 @@ msgstr "Amis"
 #, fuzzy
 msgctxt "widget name"
 msgid "(BuddyPress) Groups"
-msgstr "(BuddyPress) Projets"
+msgstr "(BuddyPress) Groupes"
 
 #: bp-members/bp-members-widgets.php:38
 #, fuzzy
@@ -9015,7 +9024,7 @@ msgstr "(BuddyPress) Membres Récemment Actifs"
 #, fuzzy
 msgctxt "Label for the Title field of the Recent Networkwide Posts widget"
 msgid "Title:"
-msgstr "Titre&nbsp;:"
+msgstr "Titre :"
 
 #: bp-core/admin/bp-core-admin-components.php:152
 #, fuzzy
@@ -9047,7 +9056,7 @@ msgstr "Utilisez %s pour réparer ces relations."
 #, fuzzy
 msgctxt "BuddyPress setting tab"
 msgid "Profile Settings"
-msgstr "Paramètres des profils"
+msgstr "Paramétrage des profils"
 
 #: bp-core/bp-core-admin.php:617
 #, fuzzy
@@ -9113,31 +9122,31 @@ msgstr "type"
 #, fuzzy
 msgctxt "customizer menu type label"
 msgid "Custom Link"
-msgstr "Lien Personnalisé"
+msgstr "lien personnalisé"
 
 #: bp-core/bp-core-filters.php:974
 #, fuzzy
 msgctxt "customizer menu section title"
 msgid "BuddyPress (logged-in)"
-msgstr "BuddyPress (connexion)"
+msgstr "BuddyPress (connecté)"
 
 #: bp-core/bp-core-filters.php:979
 #, fuzzy
 msgctxt "customizer menu section title"
 msgid "BuddyPress (logged-out)"
-msgstr "BuddyPress (déconnexion)"
+msgstr "BuddyPress (déconnecté)"
 
 #: bp-core/bp-core-functions.php:640
 #, fuzzy
 msgctxt "Page title for the Activity directory."
 msgid "Activity"
-msgstr "Activités par page"
+msgstr "Activités"
 
 #: bp-core/bp-core-functions.php:641
 #, fuzzy
 msgctxt "Page title for the Groups directory."
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-core/bp-core-functions.php:642
 #, fuzzy
@@ -9190,7 +9199,7 @@ msgstr "Membres"
 #, fuzzy
 msgctxt "search form"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-core/bp-core-template.php:509
 #, fuzzy
@@ -9267,7 +9276,7 @@ msgstr "&rarr;"
 #, fuzzy
 msgctxt "Friends screen page <title>"
 msgid "Friend Connections"
-msgstr "Connexions entre amis"
+msgstr "Les amis"
 
 #: bp-friends/bp-friends-loader.php:140
 #, fuzzy
@@ -9291,7 +9300,7 @@ msgstr "Amis <span class=\"count\">%s</span>  "
 #, fuzzy
 msgctxt "My Account Friends menu"
 msgid "Friends"
-msgstr "Mes amis"
+msgstr "Amis"
 
 #: bp-friends/bp-friends-loader.php:186
 #, fuzzy
@@ -9315,7 +9324,7 @@ msgstr "Tous mes contacts"
 #, fuzzy
 msgctxt "Friend settings on notification settings page"
 msgid "Friends"
-msgstr "Mes amis"
+msgstr "Amis"
 
 #: bp-friends/bp-friends-screens.php:118
 #, fuzzy
@@ -9333,13 +9342,13 @@ msgstr "Un membre a accepté votre demande de mise en relation"
 #, fuzzy
 msgctxt "Admin Groups page title"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-groups/bp-groups-admin.php:33
 #, fuzzy
 msgctxt "Admin Groups menu"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-groups/bp-groups-admin.php:131
 #, fuzzy
@@ -9368,7 +9377,7 @@ msgstr "Gestion des membres"
 #, fuzzy
 msgctxt "Groups per page (screen options)"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-groups/bp-groups-admin.php:877
 #, fuzzy
@@ -9434,13 +9443,13 @@ msgstr "%s projet"
 #, fuzzy
 msgctxt "Group screen page <title>"
 msgid "User Groups"
-msgstr "Mes projets"
+msgstr "Groupes"
 
 #: bp-groups/bp-groups-loader.php:168
 #, fuzzy
 msgctxt "Component directory search"
 msgid "Search Groups..."
-msgstr "Rechercher un projet"
+msgstr "Rechercher un projet..."
 
 #: bp-groups/bp-groups-loader.php:291
 #, fuzzy
@@ -9475,19 +9484,19 @@ msgstr "Adhérer"
 #, fuzzy
 msgctxt "Group screen nav with counter"
 msgid "Groups <span class=\"%s\">%s</span>"
-msgstr "Projets <span class=\"%s\">%s</span> "
+msgstr "Groupes <span class=\"%s\">%s</span> "
 
 #: bp-groups/bp-groups-loader.php:400
 #, fuzzy
 msgctxt "Group screen nav without counter"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-groups/bp-groups-loader.php:469
 #, fuzzy
 msgctxt "Group screen navigation title"
 msgid "Home"
-msgstr "Description"
+msgstr "Accueil"
 
 #: bp-groups/bp-groups-loader.php:501
 #, fuzzy
@@ -9515,7 +9524,7 @@ msgstr "<span id=\"gestion\"><"
 #, fuzzy
 msgctxt "My Account Groups"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-groups/bp-groups-loader.php:645
 #, fuzzy
@@ -9539,13 +9548,13 @@ msgstr "Mes adhésions"
 #, fuzzy
 msgctxt "My Account Groups sub nav"
 msgid "Create a Group"
-msgstr "Créer un nouvel espace projet"
+msgstr "Créer le projet et poursuivre"
 
 #: bp-groups/bp-groups-loader.php:648
 #, fuzzy
 msgctxt "My Account Groups nav"
 msgid "Groups <span class=\"count\">%s</span>"
-msgstr "Projets <span class=\"count\">%s</span> "
+msgstr "Groupes <span class=\"count\">%s</span> "
 
 #: bp-groups/bp-groups-loader.php:699
 #, fuzzy
@@ -9569,7 +9578,7 @@ msgstr "* Description changée de \"%s\" à \"%s\""
 #, fuzzy
 msgctxt "Group settings on notification settings page"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-groups/bp-groups-screens.php:1340
 #, fuzzy
@@ -9600,7 +9609,7 @@ msgstr ""
 #, fuzzy
 msgctxt "Group creation page"
 msgid "Groups"
-msgstr "Mes projets"
+msgstr "Créer un projet"
 
 #: bp-groups/bp-groups-template.php:364
 #, fuzzy
@@ -9634,7 +9643,7 @@ msgstr "Activation"
 #, fuzzy
 msgctxt "Pending signup action"
 msgid "Email"
-msgstr "Options de messagerie"
+msgstr "Email "
 
 #: bp-members/bp-members-admin.php:732
 #, fuzzy
@@ -9658,7 +9667,7 @@ msgstr "Type de Membre"
 #, fuzzy
 msgctxt "user"
 msgid "Add New"
-msgstr "Ajouter un nouveau"
+msgstr "Ajouter un utilisateur"
 
 #: bp-members/bp-members-admin.php:900 bp-members/bp-members-admin.php:1852
 #, fuzzy
@@ -9774,13 +9783,13 @@ msgstr "Archiver"
 #, fuzzy
 msgctxt "Message dropdown filter"
 msgid "Unread"
-msgstr "A lire"
+msgstr "Désarchiver"
 
 #: bp-messages/bp-messages-template.php:1270
 #, fuzzy
 msgctxt "Message dropdown filter"
 msgid "All"
-msgstr "Toutes les activités"
+msgstr "Tous"
 
 #: bp-messages/bp-messages-template.php:1275
 #, fuzzy
@@ -9798,25 +9807,25 @@ msgstr "Marquer à lire"
 #, fuzzy
 msgctxt "Page <title>"
 msgid "Notifications"
-msgstr "Options de notification"
+msgstr "Notes"
 
 #: bp-notifications/bp-notifications-loader.php:110
 #, fuzzy
 msgctxt "Profile screen nav"
 msgid "Notifications <span class=\"%s\">%s</span>"
-msgstr "Notifications <span class=\"%s\">%s</span>"
+msgstr "Notes <span class=\"%s\">%s</span>"
 
 #: bp-notifications/bp-notifications-loader.php:112
 #, fuzzy
 msgctxt "Profile screen nav"
 msgid "Notifications"
-msgstr "Options de notification"
+msgstr "Notes"
 
 #: bp-notifications/bp-notifications-loader.php:139
 #, fuzzy
 msgctxt "Notification screen nav"
 msgid "Unread"
-msgstr "A lire"
+msgstr "Désarchiver"
 
 #: bp-notifications/bp-notifications-loader.php:150
 #, fuzzy
@@ -9828,7 +9837,7 @@ msgstr "Archiver"
 #, fuzzy
 msgctxt "My Account Notification pending"
 msgid "Notifications <span class=\"count\">%s</span>"
-msgstr "Notifications <span class=\"count\">%s</span>"
+msgstr "Notes <span class=\"count\">%s</span>"
 
 #: bp-notifications/bp-notifications-loader.php:185
 #, fuzzy
@@ -9840,13 +9849,13 @@ msgstr "En attente de lecture <span class=\"count\">%s</span>"
 #, fuzzy
 msgctxt "My Account Notification"
 msgid "Notifications"
-msgstr "Options de notification"
+msgstr "Notes"
 
 #: bp-notifications/bp-notifications-loader.php:188
 #, fuzzy
 msgctxt "My Account Notification sub nav"
 msgid "Unread"
-msgstr "A lire"
+msgstr "Désarchiver"
 
 #: bp-notifications/bp-notifications-loader.php:211
 #, fuzzy
@@ -9870,7 +9879,7 @@ msgstr "&rarr;"
 #, fuzzy
 msgctxt "Notification screen action"
 msgid "Unread"
-msgstr "A lire"
+msgstr "Désarchiver"
 
 #: bp-templates/bp-legacy/buddypress/activity/index.php:115
 msgctxt "Number of new activity mentions"
@@ -9902,19 +9911,19 @@ msgstr[1] "%s membres"
 #, fuzzy
 msgctxt "xProfile admin page title"
 msgid "Profile Fields"
-msgstr "Gestion des champs de profil"
+msgstr "Gestion du formulaire de profil"
 
 #: bp-xprofile/bp-xprofile-admin.php:29
 #, fuzzy
 msgctxt "Admin Users menu"
 msgid "Profile Fields"
-msgstr "Gestion des champs de profil"
+msgstr "Gestion du formulaire de profil"
 
 #: bp-xprofile/bp-xprofile-admin.php:90
 #, fuzzy
 msgctxt "Settings page header"
 msgid "Profile Fields"
-msgstr "Gestion des champs de profil"
+msgstr "Gestion du formulaire de profil"
 
 #: bp-xprofile/bp-xprofile-admin.php:593
 #, fuzzy
@@ -9942,21 +9951,24 @@ msgid "Single Fields"
 msgstr "Champ simple"
 
 #: bp-xprofile/bp-xprofile-admin.php:767
+#, fuzzy
 msgctxt "xprofile user-admin edit screen"
 msgid "User marked as a spammer"
 msgstr ""
+"Utilisateur marqué comme spammeur. Ce type d'utilisateur est uniquement "
+"visibles par les administrateurs."
 
 #: bp-xprofile/bp-xprofile-admin.php:779
 #, fuzzy
 msgctxt "xprofile user-admin edit screen"
 msgid "Profile Photo"
-msgstr "Photo du profil"
+msgstr "Photo"
 
 #: bp-xprofile/bp-xprofile-loader.php:43
 #, fuzzy
 msgctxt "Component page <title>"
 msgid "Extended Profiles"
-msgstr "Profils étendus"
+msgstr "Profil détaillé"
 
 #: bp-xprofile/bp-xprofile-loader.php:123
 #, fuzzy
@@ -9980,7 +9992,7 @@ msgstr "Tous les membres"
 #, fuzzy
 msgctxt "Visibility level setting"
 msgid "My Friends"
-msgstr "Mes amis"
+msgstr "Seulement mes amis"
 
 #: bp-xprofile/bp-xprofile-loader.php:178
 #, fuzzy
@@ -10004,7 +10016,7 @@ msgstr "Modifier :"
 #, fuzzy
 msgctxt "Profile header sub menu"
 msgid "Change Profile Photo"
-msgstr "Changer la photo du profil"
+msgstr "Ma photo"
 
 #: bp-xprofile/bp-xprofile-loader.php:264
 #, fuzzy
@@ -10034,7 +10046,7 @@ msgstr "Modifier :"
 #, fuzzy
 msgctxt "My Account Profile sub nav"
 msgid "Change Profile Photo"
-msgstr "Changer la photo du profil"
+msgstr "Ma photo"
 
 #: bp-xprofile/bp-xprofile-loader.php:345
 #, fuzzy
@@ -10106,7 +10118,7 @@ msgstr "Champ texte"
 #, fuzzy
 msgctxt "xprofile field type"
 msgid "URL"
-msgstr "URL"
+msgstr "Champ URL"
 
 #: bp-xprofile/classes/class-bp-xprofile-field.php:855
 #, fuzzy
@@ -10119,212 +10131,3 @@ msgstr "Nom"
 msgctxt "XProfile admin edit field"
 msgid "Description"
 msgstr "Description"
-
-#~ msgid "\"%s\""
-#~ msgstr "\"%s\""
-
-#~ msgid "%1$s"
-#~ msgstr "%1$s"
-
-#~ msgid ", in"
-#~ msgstr ", dans"
-
-#~ msgid ", with"
-#~ msgstr ", avec"
-
-#~ msgid "0 Comments"
-#~ msgstr "0 commentaires"
-
-#~ msgid "1 Comment"
-#~ msgstr "1 commentaire"
-
-#~ msgid ""
-#~ "A widget that display popular posts, recent posts, recent comments and "
-#~ "tags."
-#~ msgstr ""
-#~ "Un widget qui affiche les messages populaires, récents, les commentaires "
-#~ "récents et les étiquettes."
-
-#~ msgid "A widget that displays categories, pages, and archives."
-#~ msgstr "Un widget qui affiche les catégories, pages et archives."
-
-#~ msgid "About The Author"
-#~ msgstr "À propos de l'auteur"
-
-#~ msgid "Add"
-#~ msgstr "Ajouter"
-
-#~ msgid "Add Your Comment"
-#~ msgstr "Ajouter votre commentaire"
-
-#~ msgid "An optional widget area for your site footer"
-#~ msgstr "Une zone de widget optionnelle pour le pied de page de votre site"
-
-#~ msgid "Avatar preview"
-#~ msgstr "Aperçu de l'avatar"
-
-#~ msgid "Avatar to crop"
-#~ msgstr "Avatar à redimensionner "
-
-#~ msgid "Blog Archives"
-#~ msgstr "Archives du blog"
-
-#~ msgid "By &middot; "
-#~ msgstr "Par &middot;"
-
-#~ msgid "By &middot; %1$s"
-#~ msgstr "Par &middot; %1$s"
-
-#~ msgid "Categories"
-#~ msgstr "Catégories"
-
-#~ msgid "Category"
-#~ msgstr "Catégorie"
-
-#~ msgid "Change Avatar"
-#~ msgstr "Changer l'avatar"
-
-#~ msgid "Continue Reading &rarr;"
-#~ msgstr "Continuer la lecture &rarr;"
-
-#~ msgid "Create An Account →"
-#~ msgstr "Créer un compte →"
-
-#~ msgid "Create a New Group"
-#~ msgstr "Je crée mon projet !"
-
-#~ msgid "Crop Group Avatar"
-#~ msgstr "Redimensionner l'avatar du projet"
-
-#~ msgid "Current Password"
-#~ msgstr "Mot de passe actuel"
-
-#~ msgid "Daily Archives"
-#~ msgstr "Archives quotidiennes"
-
-#~ msgid "Delete My Avatar"
-#~ msgstr "Supprimer mon avatar"
-
-#~ msgid "Display your flickr photos."
-#~ msgstr "Afficher vos photos Flickr"
-
-#~ msgid "Displays your latest tweets."
-#~ msgstr "Afficher vos derniers tweets"
-
-#~ msgid "Enter your search term"
-#~ msgstr "Saisissez votre recherche"
-
-#~ msgid "Feedburner ID:"
-#~ msgstr "Identifiant Feedburner :"
-
-#~ msgid "Flickr ID:"
-#~ msgstr "Identifiant Flickr :"
-
-#~ msgid "Footer Menu"
-#~ msgstr "Pied de page"
-
-#~ msgid "Forgot Password?"
-#~ msgstr "Mot de passe oublié ?"
-
-#~ msgid "Huddle: Flickr Photos"
-#~ msgstr "Huddle : photos Flickr"
-
-#~ msgid "Huddle: Latest Tweets"
-#~ msgstr "Huddle : derniers Tweets"
-
-#~ msgid "Huddle: Video Widget"
-#~ msgstr "Huddle : Widget vidéo"
-
-#~ msgid "Join"
-#~ msgstr "Rejoindre"
-
-#~ msgid "Last Reply "
-#~ msgstr "Dernière réponse"
-
-#~ msgid "Leave"
-#~ msgstr "Quitter"
-
-#~ msgid "Logout"
-#~ msgstr "Se déconnecter"
-
-#~ msgid "Main Menu"
-#~ msgstr "Menu principal"
-
-#~ msgid "Next"
-#~ msgstr "Suivant"
-
-#~ msgid "No results were found. Please try again using a different keyword."
-#~ msgstr ""
-#~ "Aucun résultat n'a été trouvé. Essayez à nouveau en utilisant un mot-clé "
-#~ "différent."
-
-#~ msgid "Number Of Tweets:"
-#~ msgstr "Nombre de Tweets :"
-
-#~ msgid "Number of Results To Display:"
-#~ msgstr "Nombre de résultats à afficher :"
-
-#~ msgid "Popular Posts Title:"
-#~ msgstr "Titre des posts populaires :"
-
-#~ msgid "Previous"
-#~ msgstr "Précédent"
-
-#~ msgid "Submit Comment &rarr;"
-#~ msgstr "Commenter &rarr;"
-
-#~ msgid "Submit Comment <span>&rarr;</span>"
-#~ msgstr "Commenter <span>&rarr;</span>"
-
-#~ msgid "Tag"
-#~ msgstr "Étiquette"
-
-#~ msgid "The most recent/popular posts on your site"
-#~ msgstr "Les posts les plus populaires/récents sur votre site"
-
-#~ msgid ""
-#~ "This post is password protected. Enter the password to view any comments."
-#~ msgstr ""
-#~ "Ce message est protégé par un mot de passe. Veuillez saisir le mot de "
-#~ "passe pour en voir le contenu."
-
-#~ msgid "Twitter ID (username):"
-#~ msgstr "Identifiant Twitter :"
-
-#~ msgid "Video"
-#~ msgstr "Vidéo"
-
-#~ msgid "View All Posts From This Author &rarr;"
-#~ msgstr "Voir tous les messages de cet auteur &rarr;"
-
-#~ msgid ""
-#~ "WARNING: Deleting your account will completely remove ALL content "
-#~ "associated with it. There is no way back, please be careful with this "
-#~ "option."
-#~ msgstr ""
-#~ "ATTENTION : En supprimant votre compte tous les contenus associés seront "
-#~ "également supprimés. Cette action est irréversible."
-
-#~ msgid "Welcome"
-#~ msgstr "Bienvenue"
-
-#~ msgid "Welcome %s"
-#~ msgstr "Bienvenue %s"
-
-#~ msgid "Yearly Archives"
-#~ msgstr "Archives annuelles"
-
-#~ msgid "Your comment is awaiting moderation."
-#~ msgstr "Votre commentaire est en attente de modération."
-
-#~ msgid "\\'Privacy Policy\\' page:"
-#~ msgstr "page\\'Politique de confidentialité\\'  :"
-
-#~ msgid "or press esc to cancel."
-#~ msgstr "ou appuyez sur Esc pour annuler"
-
-#~ msgid "recent"
-#~ msgstr "récent"
-
-#~ msgid "with"
-#~ msgstr "avec"

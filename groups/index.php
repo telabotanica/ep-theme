@@ -28,7 +28,7 @@
 						<?php do_action( 'bp_groups_directory_group_types' ); ?>
 					
 						<!-- Retour à l'accueil de l'espace projets -->
-						<a href="<?php echo get_option('home'); ?>" class="lien-accueil">Revenir à l'accueil</a>
+						<a href="<?php echo trailingslashit( bp_get_root_domain() ); ?>" class="lien-accueil">Revenir à l'accueil</a>
 										
 						<!-- Barre de recherche -->
 						<?php bp_directory_groups_search_form() ?>
@@ -74,10 +74,10 @@
 				<?php do_action( 'bp_after_directory_groups_content' ); ?>
 
 			</form>
-		
+
 			<!-- Tuile création projet -->
 			<?php if ( is_user_logged_in() && bp_user_can_create_groups() ) { ?>
-				<a href="create">
+				<a href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/create' ); ?>">
 					<div id="tuile-creation-projet">Créer un nouveau projet</div>
 				</a>
 			<?php } ?>

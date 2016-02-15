@@ -5,8 +5,8 @@ do_action( 'bp_before_group_header' );
 ?>
 
 <!-- Lien de retour -->
-<div class="hide-responsive"><a class="lien-accueil" href="/wordpress/<?php echo BP_GROUPS_SLUG /* non traduit (ie. "groups" => "groupes") => wtf ? */ ?>">Revenir aux projets</a></div>
-<div class="show-responsive"><a class="lien-accueil" href="/wordpress/<?php echo BP_GROUPS_SLUG ?>">Retour</a></div>
+<div class="hide-responsive"><a class="lien-accueil" href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_groups_root_slug() ); ?>">Revenir aux projets</a></div>
+<div class="show-responsive"><a class="lien-accueil" href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_groups_root_slug() ); ?>">Retour</a></div>
 
 
 

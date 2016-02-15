@@ -15,8 +15,8 @@
 
 				<?php locate_template( array( 'groups/single/group-header.php' ), true ); ?>
 
-			</div><!-- #item-header -->
-
+			</div>
+			
 			<div id="item-nav">
 				<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
 					<ul>
@@ -27,7 +27,7 @@
 						
 					</ul>
 				</div>
-			</div><!-- #item-nav -->
+			</div>
 
 			<div id="item-body">
 				
@@ -79,16 +79,16 @@
 
 				do_action( 'bp_after_group_body' ); ?>
 
-			</div><!-- #item-body -->
+			</div>
 			
 
 			<?php do_action( 'bp_after_group_home_content' ); ?>
 
 			<?php endwhile; endif; ?>
 
-		</div><!-- .padder -->
+		</div>
 		
-	</div><!-- #content -->
+	</div>
 
 <?php get_sidebar( 'buddypress' ); ?>
 <?php get_footer( 'buddypress' ); ?>

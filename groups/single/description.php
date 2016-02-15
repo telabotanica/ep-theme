@@ -14,12 +14,12 @@ do_action( 'bp_before_group_header' );
 
 			<?php do_action( 'bp_group_header_actions' ); ?>
 
-		</div><!-- #item-buttons -->
+		</div>
 
 		<?php do_action( 'bp_group_header_meta' ); ?>
 
 	</div>
-</div><!-- #item-header-content -->
+</div>
 
 <?php
 do_action( 'bp_after_group_header' );

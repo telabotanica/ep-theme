@@ -117,7 +117,6 @@ get_header(); ?>
 				$articlesRecents = new WP_Query();
 				$articlesRecents->query('showposts=5');
 				$totalProjets = groups_get_total_group_count();
-				//if ( $articlesRecents->have_posts() && $totalProjets == 0 ) {
 			?>
 			
 			<!-- Projets populaires -->

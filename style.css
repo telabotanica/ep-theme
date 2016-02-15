@@ -2102,22 +2102,6 @@ body.groups #item-header #item-meta {
 	margin-top: 10px;
 }
 
-#activity-stream li.first {
-	background: url(images/bg-activity-shadow-h.png) center -28px no-repeat;
-}
-
-#activity-stream li:first-child {
-	background: url(images/bg-activity-shadow-h.png) center -28px no-repeat;
-}
-
-#activity-stream li:nth-child(odd) {
-	background-color: #fafafa;
-}
-
-#activity-stream li.odd {
-	background-color: #fafafa;
-}
-
 #activity-stream li .activity-comments .ac-reply-avatar {
 	float: left;
 	width: 35px;
@@ -4230,7 +4214,7 @@ body.cyan.forums table.forum td .topic-meta a,
 
 	#page-accueil .post {
 		position: relative;
-		margin-top: 5em;
+		margin-top: 3em;
 		background-color: #f0f0f1;
 		
 	}

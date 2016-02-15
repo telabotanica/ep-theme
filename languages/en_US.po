@@ -1,0 +1,1994 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+
+#. Text in function
+#: huddle/search.php:10
+msgid "\"%s\""
+msgstr ""
+
+#. Text in function
+#: huddle/includes/loop.php:35
+#: huddle/includes/loop.php:121
+#: huddle/includes/related-posts.php:31
+#: huddle/functions/widgets/widget-tab-posts.php:76
+#: huddle/functions/widgets/widget-recent-posts.php:56
+#: huddle/comments.php:15
+msgid "% Comments"
+msgstr ""
+
+#. Text in function
+#: huddle/forums/forums-loop.php:42
+msgid "%1$s"
+msgstr ""
+
+#. Text in function
+#: huddle/archive.php:30
+#: huddle/archive.php:14
+#: huddle/archive.php:17
+msgid "%s"
+msgstr ""
+
+#. Text in function
+#: huddle/members/single/groups/invites.php:14
+msgid "%s members"
+msgstr ""
+
+#. Text in function
+#: huddle/forums/single/topic.php:96
+msgid "%s said %s ago:"
+msgstr ""
+
+#. Text in function
+#: huddle/members/single/profile/profile-wp.php:8
+msgid "%s's Profile"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:287
+msgid "(banned)"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:41
+#: huddle/registration/register.php:46
+#: huddle/registration/register.php:51
+#: huddle/registration/register.php:56
+#: huddle/registration/register.php:110
+#: huddle/registration/register.php:136
+#: huddle/registration/register.php:147
+#: huddle/registration/register.php:198
+#: huddle/registration/register.php:209
+#: huddle/members/single/profile/edit.php:40
+#: huddle/members/single/profile/edit.php:33
+#: huddle/members/single/profile/edit.php:49
+#: huddle/members/single/profile/edit.php:83
+#: huddle/members/single/profile/edit.php:93
+msgid "(required)"
+msgstr ""
+
+#. Text in echo
+#: huddle/includes/loop.php:33
+#: huddle/includes/loop.php:119
+msgid ", in"
+msgstr ""
+
+#. Text in echo
+#: huddle/includes/loop.php:34
+#: huddle/includes/loop.php:120
+msgid ", with"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/index.php:118
+msgid "----"
+msgstr ""
+
+#. Text in function
+#: huddle/includes/loop.php:35
+#: huddle/includes/loop.php:121
+#: huddle/includes/related-posts.php:31
+#: huddle/functions/widgets/widget-tab-posts.php:76
+#: huddle/functions/widgets/widget-recent-posts.php:56
+msgid "0 Comments"
+msgstr ""
+
+#. Text in function
+#: huddle/includes/loop.php:35
+#: huddle/includes/loop.php:121
+#: huddle/includes/related-posts.php:31
+#: huddle/functions/widgets/widget-tab-posts.php:76
+#: huddle/functions/widgets/widget-recent-posts.php:56
+#: huddle/comments.php:15
+msgid "1 Comment"
+msgstr ""
+
+#. Text in echo
+#: huddle/template-archives.php:20
+msgid "25 Most Recent Posts"
+msgstr ""
+
+#. Text in function
+#: huddle/activity/comment.php:12
+msgid "<a href=\"%1$s\">%2$s</a> replied <a href=\"%3$s\" class=\"activity-time-since\"><span class=\"time-since\">%4$s</span></a>"
+msgstr ""
+
+#. Text in function
+#: huddle/activity/index.php:63
+msgid "<span>%s new</span>"
+msgstr ""
+
+#. Text in function
+#: huddle/groups/create.php:66
+msgid "<strong>Attention Site Admin:</strong> Group forums require the <a href=\"%s\">correct setup and configuration</a> of a bbPress installation."
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-tab-posts.php:1
+msgid "A widget that display popular posts, recent posts, recent comments and tags."
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-tab-archive.php:1
+msgid "A widget that displays categories, pages, and archives."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/profile-wp.php:51
+msgid "AOL Messenger"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/profile-wp.php:24
+msgid "About Me"
+msgstr ""
+
+#. Text in echo
+#: huddle/includes/author-info.php:5
+msgid "About The Author"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/groups/invites.php:23
+#: huddle/members/single/friends/requests.php:23
+#: huddle/groups/single/admin.php:359
+msgid "Accept"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/activate.php:11
+msgid "Account Activated"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:33
+msgid "Account Details"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/general.php:52
+msgid "Account Email"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/member-header.php:42
+msgid "Account Settings"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/activate.php:39
+msgid "Activate"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/activate.php:24
+msgid "Activate your Account"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/activate.php:34
+msgid "Activation Key:"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/index.php:63
+msgid "Activity that I have been mentioned in."
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Add"
+msgstr ""
+
+#. Text in function
+#: huddle/comments.php:38
+msgid "Add Your Comment"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum/topic.php:102
+#: huddle/forums/single/topic.php:152
+msgid "Add a reply:"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:191
+msgid "Administrators"
+msgstr ""
+
+#. Text in function
+#: huddle/activity/index.php:25
+msgid "All Members <span>%s</span>"
+msgstr ""
+
+#. Text in function
+#: huddle/blogs/index.php:24
+msgid "All Sites <span>%s</span>"
+msgstr ""
+
+#. Text in function
+#: huddle/forums/index.php:35
+msgid "All Topics <span>%s</span>"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:115
+#: huddle/groups/single/admin.php:108
+msgid "All group members"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/friends.php:13
+#: huddle/members/single/blogs.php:13
+#: huddle/members/index.php:34
+#: huddle/members/index.php:42
+#: huddle/blogs/index.php:48
+#: huddle/groups/index.php:48
+#: huddle/members/single/groups.php:14
+msgid "Alphabetical"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "An optional widget area for your site footer"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:81
+#: huddle/groups/single/admin.php:71
+msgid "Any site member can join this group."
+msgstr ""
+
+#. Text in echo
+#: huddle/archive.php:27
+msgid "Author"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:37
+#: huddle/groups/create.php:171
+#: huddle/groups/single/admin.php:168
+msgid "Avatar preview"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:34
+#: huddle/groups/create.php:168
+#: huddle/groups/single/admin.php:165
+msgid "Avatar to crop"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:270
+msgid "Back to Previous Step"
+msgstr ""
+
+#. Text in echo
+#: huddle/archive.php:29
+msgid "Blog Archives"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:191
+msgid "Blog Details"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Blog Sidebar"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:198
+msgid "Blog URL"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-enews.php:105
+msgid "Button Text:"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/group-forums-loop.php:59
+#: huddle/forums/forums-loop.php:60
+msgid "By &middot; "
+msgstr ""
+
+#. Text in function
+#: huddle/forums/group-forums-loop.php:32
+#: huddle/forums/forums-loop.php:26
+msgid "By &middot; %1$s"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+#: huddle/forums/index.php:137
+msgid "Cancel"
+msgstr ""
+
+#. Text in function
+#: huddle/comments.php:38
+msgid "Cancel Reply To Comment &rarr;"
+msgstr ""
+
+#. Text in echo
+#: huddle/template-archives.php:27
+#: huddle/template-sitemap.php:28
+msgid "Categories"
+msgstr ""
+
+#. Text in echo
+#: huddle/archive.php:19
+msgid "Category"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:1
+msgid "Change Avatar"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/general.php:57
+msgid "Change Password <span>(leave blank for no change)</span>"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:51
+msgid "Choose a Password"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:126
+#: huddle/members/single/profile/edit.php:58
+#: huddle/members/single/profile/edit.php:73
+msgid "Clear"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:14
+msgid "Click below to select a JPG, GIF or PNG format photo from your computer and then click \\'Upload Image\\' to proceed."
+msgstr ""
+
+#. Text in function
+#: huddle/activity/entry.php:47
+msgid "Comment <span>%s</span>"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/activity.php:18
+#: huddle/activity/index.php:88
+msgid "Comments"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/request-membership.php:7
+msgid "Comments (optional)"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:231
+msgid "Complete Sign Up"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:56
+msgid "Confirm Password"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum.php:81
+#: huddle/forums/single/edit.php:52
+#: huddle/forums/index.php:105
+#: huddle/groups/single/forum/edit.php:57
+msgid "Content:"
+msgstr ""
+
+#. Text in echo
+#: huddle/includes/loop.php:126
+msgid "Continue Reading &rarr;"
+msgstr ""
+
+#. Text in function
+#: huddle/members/single/messages/single.php:18
+msgid "Conversation between %s and you."
+msgstr ""
+
+#. Text in echo
+#: huddle/template-homepage.php:21
+msgid "Create An Account →"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:284
+msgid "Create Group and Continue"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/index.php:94
+msgid "Create New Topic:"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:9
+msgid "Create a Group"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/index.php:18
+#: huddle/groups/index.php:57
+msgid "Create a New Group"
+msgstr ""
+
+#. Text in echo
+#: huddle/blogs/create.php:10
+#: huddle/blogs/index.php:12
+msgid "Create a Site"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:20
+msgid "Create an Account"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:163
+msgid "Crop Avatar"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:166
+msgid "Crop Group Avatar"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:40
+#: huddle/groups/create.php:174
+#: huddle/groups/single/admin.php:171
+msgid "Crop Image"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:32
+msgid "Crop Your New Avatar"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/general.php:47
+msgid "Current Password"
+msgstr ""
+
+#. Text in echo
+#: huddle/archive.php:10
+msgid "Daily Archives"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-enews.php:97
+msgid "Default Text for Input Field:"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/single.php:24
+#: huddle/activity/comment.php:30
+#: huddle/members/single/messages/messages-loop.php:47
+msgid "Delete"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/delete-account.php:40
+msgid "Delete Account"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:25
+#: huddle/groups/single/admin.php:153
+msgid "Delete Avatar"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:399
+msgid "Delete Group"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/single.php:24
+#: huddle/members/single/messages/notices-loop.php:38
+#: huddle/members/single/messages/messages-loop.php:47
+msgid "Delete Message"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/delete-account.php:55
+msgid "Delete My Account"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:25
+msgid "Delete My Avatar"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:210
+#: huddle/groups/single/admin.php:242
+msgid "Demote to Member"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-video.php:56
+msgid "Description:"
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-flickr.php:1
+msgid "Display your flickr photos."
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-video.php:1
+msgid "Displays a featured video."
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-tweets.php:1
+msgid "Displays your latest tweets."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/member-header.php:41
+msgid "Edit Profile"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/single/edit.php:25
+#: huddle/groups/single/forum/edit.php:36
+msgid "Edit:"
+msgstr ""
+
+#. Text in function
+#: huddle/members/single/profile/edit.php:10
+msgid "Editing '%s' Profile Group"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:46
+msgid "Email Address"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/notifications.php:40
+msgid "Email Notification"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:59
+#: huddle/groups/single/admin.php:54
+msgid "Enable discussion forum"
+msgstr ""
+
+#. Text in echo
+#: huddle/searchform.php:4
+msgid "Enter your search term"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions-buddypress.php:187
+msgid "Error joining group"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions-buddypress.php:187
+msgid "Error leaving group"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions-buddypress.php:187
+msgid "Error requesting membership"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/activity.php:10
+#: huddle/groups/single/activity.php:10
+#: huddle/activity/index.php:82
+msgid "Everything"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/entry.php:55
+msgid "Favorite"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-enews.php:101
+msgid "Feedburner ID:"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:291
+msgid "Finish"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-flickr.php:61
+msgid "Flickr ID:"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-tweets.php:67
+msgid "Follow Text (ex: Follow me on Twitter):"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Footer Menu"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Footer Sidebar"
+msgstr ""
+
+#. Text in echo
+#: huddle/header.php:70
+msgid "Forgot Password?"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:51
+msgid "Forum"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/single/forum.php:22
+#: huddle/groups/single/forum.php:27
+#: huddle/forums/single/edit.php:16
+#: huddle/groups/single/forum/edit.php:16
+#: huddle/groups/single/forum/topic.php:20
+#: huddle/forums/single/topic.php:42
+msgid "Forum Directory"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/activity.php:34
+#: huddle/groups/single/activity.php:15
+#: huddle/activity/index.php:95
+msgid "Forum Replies"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/activity.php:33
+#: huddle/groups/single/activity.php:14
+#: huddle/activity/index.php:94
+msgid "Forum Topics"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/index.php:13
+msgid "Forums Directory"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/activity.php:25
+#: huddle/activity/index.php:108
+msgid "Friendships"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/messages-loop.php:29
+msgid "From:"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/general.php:40
+msgid "General Settings"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/group-header.php:42
+msgid "Group Admins"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:38
+#: huddle/groups/single/admin.php:22
+msgid "Group Description (required)"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:108
+#: huddle/groups/single/admin.php:100
+msgid "Group Invitations"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/activity.php:41
+#: huddle/groups/single/activity.php:18
+#: huddle/activity/index.php:102
+msgid "Group Memberships"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/group-header.php:69
+msgid "Group Mods"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:33
+#: huddle/groups/single/admin.php:17
+msgid "Group Name (required)"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:120
+#: huddle/groups/single/admin.php:115
+msgid "Group admins and mods only"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:125
+#: huddle/groups/single/admin.php:122
+msgid "Group admins only"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:83
+#: huddle/groups/single/admin.php:73
+msgid "Group content and activity will be visible to any site member."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:101
+#: huddle/groups/single/admin.php:93
+msgid "Group content and activity will only be visible to members of the group."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/index.php:15
+msgid "Groups"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Homepage Sidebar"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-flickr.php:62
+msgid "How Many Photos:"
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-flickr.php:1
+msgid "Huddle: Flickr Photos"
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-tweets.php:1
+msgid "Huddle: Latest Tweets"
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-tab-archive.php:1
+msgid "Huddle: Tabbed Archive"
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-tab-posts.php:1
+msgid "Huddle: Tabbed Posts"
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-video.php:1
+msgid "Huddle: Video Widget"
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-enews.php:1
+msgid "Huddle: eNews Signup"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/delete-account.php:49
+msgid "I understand the consequences of deleting my account."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:394
+msgid "I understand the consequences of deleting this group."
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:214
+msgid "I would like my site to appear in search engines, and in public listings around this network."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:24
+msgid "If you'd like to delete your current avatar but not upload a new one, please use the delete avatar button."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:151
+msgid "If you'd like to remove the existing avatar but not upload a new one, please use the delete avatar button."
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/entry.php:24
+msgid "In reply to: "
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/profile-wp.php:42
+msgid "Jabber"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Join"
+msgstr ""
+
+#. Text in function
+#: huddle/functions-buddypress.php:187
+msgid "Join Group"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:298
+msgid "Kick &amp; Ban"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:298
+msgid "Kick and ban this member"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/single/forum.php:33
+#: huddle/members/single/friends.php:11
+#: huddle/members/single/blogs.php:11
+#: huddle/groups/single/forum.php:38
+#: huddle/forums/index.php:55
+#: huddle/members/single/forums.php:10
+#: huddle/members/index.php:32
+#: huddle/members/index.php:37
+#: huddle/blogs/index.php:46
+#: huddle/groups/index.php:45
+#: huddle/members/single/groups.php:11
+msgid "Last Active"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/group-forums-loop.php:56
+msgid "Last Reply "
+msgstr ""
+
+#. Text in function
+#: huddle/forums/forums-loop.php:57
+msgid "Last Reply %s"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Leave"
+msgstr ""
+
+#. Text in function
+#: huddle/functions-buddypress.php:187
+msgid "Leave Group"
+msgstr ""
+
+#. Text in echo
+#: huddle/comments.php:14
+msgid "Leave Your Comment &rarr;"
+msgstr ""
+
+#. Text in echo
+#: huddle/header.php:68
+msgid "Logout"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/general.php:48
+msgid "Lost your password?"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Main Menu"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/entry.php:55
+msgid "Mark as Favorite"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:255
+msgid "Members"
+msgstr ""
+
+#. Text in function
+#: huddle/functions-buddypress.php:187
+msgid "Membership Requested"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/index.php:63
+msgid "Mentions"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/compose.php:31
+msgid "Message"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions-buddypress.php:560
+msgid "Messages deleted."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:223
+msgid "Moderators"
+msgstr ""
+
+#. Text in echo
+#: huddle/template-archives.php:31
+#: huddle/archive.php:13
+msgid "Monthly Archives"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/index.php:46
+#: huddle/members/single/groups.php:12
+msgid "Most Members"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/single/forum.php:34
+#: huddle/groups/single/forum.php:39
+#: huddle/forums/index.php:56
+#: huddle/members/single/forums.php:11
+msgid "Most Posts"
+msgstr ""
+
+#. Text in function
+#: huddle/activity/index.php:57
+msgid "My Favorites <span>%s</span>"
+msgstr ""
+
+#. Text in function
+#: huddle/activity/index.php:35
+msgid "My Friends <span>%s</span>"
+msgstr ""
+
+#. Text in function
+#: huddle/activity/index.php:47
+msgid "My Groups <span>%s</span>"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/post-form.php:32
+msgid "My Profile"
+msgstr ""
+
+#. Text in function
+#: huddle/blogs/index.php:28
+msgid "My Sites <span>%s</span>"
+msgstr ""
+
+#. Text in function
+#: huddle/forums/index.php:39
+msgid "My Topics <span>%s</span>"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/profile-wp.php:15
+msgid "Name"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/activity.php:40
+#: huddle/activity/index.php:101
+msgid "New Groups"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/index.php:112
+msgid "New Members"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/general.php:58
+msgid "New Password"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum/topic.php:12
+#: huddle/forums/single/topic.php:35
+msgid "New Reply"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/single/forum.php:16
+#: huddle/groups/single/forum.php:19
+#: huddle/forums/index.php:46
+msgid "New Topic"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/blogs.php:12
+#: huddle/blogs/index.php:47
+msgid "Newest"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/friends.php:12
+#: huddle/members/index.php:33
+#: huddle/members/index.php:38
+msgid "Newest Registered"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/index.php:47
+#: huddle/members/single/groups.php:13
+msgid "Newly Created"
+msgstr ""
+
+#. Text in function
+#: huddle/includes/pagination.php:15
+msgid "Next"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:277
+msgid "Next Step"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:218
+#: huddle/groups/single/admin.php:31
+msgid "No"
+msgstr ""
+
+#. Text in function
+#: huddle/comments.php:15
+msgid "No comments"
+msgstr ""
+
+#. Text in echo
+#: huddle/includes/loop.php:88
+msgid "No results were found. Please try again using a different keyword."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:29
+msgid "Notify group members of changes via email"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-tweets.php:66
+msgid "Number Of Tweets:"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-tab-posts.php:139
+msgid "Number of Results To Display:"
+msgstr ""
+
+#. Text in echo
+#: huddle/includes/related-posts.php:28
+#: huddle/functions/widgets/widget-tab-posts.php:73
+#: huddle/functions/widgets/widget-recent-posts.php:53
+msgid "On"
+msgstr ""
+
+#. Text in function
+#: huddle/forums/group-forums-loop.php:33
+#: huddle/forums/forums-loop.php:27
+msgid "On &middot; %1$s"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:248
+#: huddle/groups/single/send-invites.php:86
+msgid "Once you have built up friend connections you will be able to invite others to your group. You can send invites any time in the future by selecting the \"Send Invites\" option when viewing your new group."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:99
+#: huddle/groups/single/admin.php:91
+msgid "Only users who are invited can join the group."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:90
+#: huddle/groups/single/admin.php:81
+msgid "Only users who request membership and are accepted can join the group."
+msgstr ""
+
+#. Text in echo
+#: huddle/template-homepage.php:21
+msgid "Or sign-in to your account"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/single/forum.php:31
+#: huddle/members/single/friends.php:9
+#: huddle/members/single/blogs.php:9
+#: huddle/groups/single/forum.php:36
+#: huddle/forums/index.php:53
+#: huddle/members/single/forums.php:8
+#: huddle/blogs/index.php:44
+#: huddle/members/single/groups.php:9
+msgid "Order By:"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/index.php:15
+msgid "Our Members"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Page Sidebar"
+msgstr ""
+
+#. Text in echo
+#: huddle/404.php:9
+msgid "Page not found"
+msgstr ""
+
+#. Text in echo
+#: huddle/template-sitemap.php:23
+msgid "Pages"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/general.php:48
+msgid "Password Lost and Found"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/group-forums-loop.php:27
+#: huddle/forums/forums-loop.php:21
+msgid "Permalink"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum/topic.php:57
+#: huddle/forums/single/topic.php:116
+msgid "Permanent link to this post"
+msgstr ""
+
+#. Text in function
+#: huddle/functions-buddypress.php:187
+msgid "Please do not leave the comment area blank."
+msgstr ""
+
+#. Text in function
+#: huddle/functions-buddypress.php:1
+msgid "Please enter some content to post."
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/activate.php:29
+msgid "Please provide a valid activation key."
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-tab-archive.php:79
+#: huddle/functions/widgets/widget-tab-posts.php:136
+msgid "Popular Posts Title:"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/entry.php:91
+msgid "Post"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/index.php:115
+msgid "Post In Group Forum:"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum/topic.php:109
+#: huddle/forums/single/topic.php:157
+msgid "Post Reply"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum.php:93
+#: huddle/forums/index.php:136
+msgid "Post Topic"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/post-form.php:25
+msgid "Post Update"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum.php:73
+msgid "Post a New Topic:"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/post-form.php:29
+msgid "Post in"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/forums-loop.php:37
+msgid "Posted in Group"
+msgstr ""
+
+#. Text in echo
+#: huddle/includes/loop.php:32
+#: huddle/includes/loop.php:118
+msgid "Posted on"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/activity.php:17
+#: huddle/activity/index.php:87
+#: huddle/functions/widgets/widget-recent-posts.php:1
+msgid "Posts"
+msgstr ""
+
+#. Text in function
+#: huddle/includes/pagination.php:14
+msgid "Previous"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:75
+#: huddle/groups/single/admin.php:64
+msgid "Privacy Options"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:73
+msgid "Profile Details"
+msgstr ""
+
+#. Text in function
+#: huddle/groups/single/admin.php:200
+#: huddle/groups/single/admin.php:231
+msgid "Profile picture of %s"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:241
+#: huddle/groups/single/admin.php:300
+msgid "Promote to Admin"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:299
+msgid "Promote to Mod"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/activity.php:3
+#: huddle/activity/index.php:75
+msgid "RSS"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/activity.php:3
+#: huddle/activity/index.php:75
+msgid "RSS Feed"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-tab-archive.php:81
+#: huddle/functions/widgets/widget-tab-posts.php:138
+msgid "Recent Comments Title:"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-tab-archive.php:80
+#: huddle/functions/widgets/widget-tab-posts.php:137
+msgid "Recent Posts Title:"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:25
+msgid "Registering for this site is easy, just fill in the fields below and we\\'ll get a new account set up for you in no time."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/groups/invites.php:24
+#: huddle/members/single/friends/requests.php:24
+#: huddle/groups/single/admin.php:361
+msgid "Reject"
+msgstr ""
+
+#. Text in echo
+#: huddle/includes/related-posts.php:21
+msgid "Related Posts"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:294
+msgid "Remove Ban"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/entry.php:59
+#: huddle/functions-buddypress.php:187
+msgid "Remove Favorite"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:231
+#: huddle/functions-buddypress.php:187
+#: huddle/groups/single/send-invites.php:53
+msgid "Remove Invite"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:304
+msgid "Remove from group"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:304
+msgid "Remove this member"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/general.php:59
+msgid "Repeat New Password"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:301
+#: huddle/activity/comment.php:24
+#: huddle/forums/single/edit.php:10
+#: huddle/groups/single/forum/edit.php:10
+msgid "Reply"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Request"
+msgstr ""
+
+#. Text in function
+#: huddle/functions-buddypress.php:187
+msgid "Request Membership"
+msgstr ""
+
+#. Text in function
+#: huddle/functions.php:316
+msgid "Requested"
+msgstr ""
+
+#. Text in function
+#: huddle/comments.php:38
+msgid "Required"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/general.php:65
+#: huddle/members/single/settings/notifications.php:54
+#: huddle/forums/single/edit.php:73
+#: huddle/groups/single/forum/edit.php:84
+#: huddle/members/single/profile/edit.php:126
+#: huddle/groups/single/admin.php:131
+msgid "Save Changes"
+msgstr ""
+
+#. Text in echo
+#: huddle/searchform.php:5
+msgid "Search"
+msgstr ""
+
+#. Text in echo
+#: huddle/search.php:9
+msgid "Search Results"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:213
+msgid "Select people to invite from your friends list."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/send-invites.php:24
+msgid "Select the people you would like to invite to this group."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/send-invites.php:73
+msgid "Send Invites"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/compose.php:41
+msgid "Send Message"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/single.php:90
+msgid "Send Reply"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/request-membership.php:12
+msgid "Send Request"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/compose.php:9
+msgid "Send To (Username or Friend's Name)"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/notifications.php:45
+msgid "Send a notification by email when:"
+msgstr ""
+
+#. Text in function
+#: huddle/functions-buddypress.php:545
+msgid "Sent %s"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/notices-loop.php:31
+msgid "Sent:"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-recent-posts.php:84
+msgid "Show "
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/activity-loop.php:29
+msgid "Show More Recent Activity"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-recent-posts.php:91
+msgid "Show Post Thumbnails"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/activity.php:8
+#: huddle/groups/single/activity.php:8
+#: huddle/activity/index.php:80
+msgid "Show:"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:243
+msgid "Sign Up Complete!"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/index.php:13
+msgid "Site Activity"
+msgstr ""
+
+#. Text in echo
+#: huddle/blogs/create.php:10
+#: huddle/blogs/index.php:12
+msgid "Site Directory"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:209
+msgid "Site Title"
+msgstr ""
+
+#. Text in echo
+#: huddle/blogs/create.php:21
+msgid "Site registration is currently disabled"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/members-loop.php:58
+msgid "Sorry, no members were found."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/messages-loop.php:66
+msgid "Sorry, no messages were found."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/notices-loop.php:49
+msgid "Sorry, no notices were found."
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/activity-loop.php:43
+msgid "Sorry, there was no activity found. Please try a different filter."
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/group-forums-loop.php:93
+#: huddle/forums/forums-loop.php:92
+msgid "Sorry, there were no forum topics found."
+msgstr ""
+
+#. Text in echo
+#: huddle/blogs/blogs-loop.php:78
+msgid "Sorry, there were no sites found."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/compose.php:25
+msgid "Subject"
+msgstr ""
+
+#. Text in function
+#: huddle/comments.php:38
+msgid "Submit Comment &rarr;"
+msgstr ""
+
+#. Text in echo
+#: huddle/comments.php:37
+msgid "Submit Comment <span>&rarr;</span>"
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-enews.php:1
+msgid "Subscribe to email updates."
+msgstr ""
+
+#. Text in echo
+#: huddle/archive.php:22
+msgid "Tag"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum.php:86
+#: huddle/forums/index.php:110
+#: huddle/groups/single/forum/edit.php:62
+msgid "Tags (comma separated):"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-enews.php:93
+msgid "Text:"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/index.php:57
+msgid "The activity I've marked as a favorite."
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/index.php:47
+msgid "The activity of groups I am a member of."
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/index.php:35
+msgid "The activity of my friends only."
+msgstr ""
+
+#. Text in function
+#: huddle/functions/widgets/widget-recent-posts.php:1
+msgid "The most recent/popular posts on your site"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/index.php:25
+msgid "The public activity for everyone on this site."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:374
+msgid "There are no pending membership requests."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum/topic.php:134
+#: huddle/forums/single/topic.php:183
+msgid "There are no posts for this topic."
+msgstr ""
+
+#. Text in function
+#: huddle/functions-buddypress.php:187
+msgid "There was a problem closing the notice."
+msgstr ""
+
+#. Text in function
+#: huddle/functions-buddypress.php:1
+msgid "There was a problem posting your update, please try again."
+msgstr ""
+
+#. Text in function
+#: huddle/functions-buddypress.php:560
+msgid "There was a problem sending that reply. Please try again."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/groups-loop.php:62
+msgid "There were no groups found."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/members.php:74
+#: huddle/groups/single/admin.php:318
+msgid "This group has no members."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:91
+#: huddle/groups/single/admin.php:82
+msgid "This group will be listed in the groups directory and in search results."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:100
+#: huddle/groups/single/admin.php:92
+msgid "This group will not be listed in the groups directory or search results."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:97
+#: huddle/groups/single/admin.php:89
+msgid "This is a hidden group"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/compose.php:19
+msgid "This is a notice to all users."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:88
+#: huddle/groups/single/admin.php:79
+msgid "This is a private group"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:79
+#: huddle/groups/single/admin.php:69
+msgid "This is a public group"
+msgstr ""
+
+#. Text in echo
+#: huddle/comments.php:3
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/single/edit.php:88
+#: huddle/groups/single/forum/edit.php:99
+msgid "This topic does not exist."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum/topic.php:120
+#: huddle/forums/single/topic.php:168
+msgid "This topic is closed, replies are no longer accepted."
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-video.php:52
+#: huddle/groups/single/forum.php:76
+#: huddle/forums/single/edit.php:49
+#: huddle/functions/widgets/widget-tab-archive.php:78
+#: huddle/forums/index.php:100
+#: huddle/groups/single/forum/edit.php:52
+#: huddle/functions/widgets/widget-tab-posts.php:135
+#: huddle/functions/widgets/widget-enews.php:80
+#: huddle/functions/widgets/widget-tweets.php:64
+#: huddle/functions/widgets/widget-flickr.php:60
+msgid "Title:"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:159
+msgid "To skip the avatar upload process, hit the \"Next Step\" button."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/messages-loop.php:34
+msgid "To:"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-tweets.php:65
+msgid "Twitter ID (username):"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:294
+msgid "Unban this member"
+msgstr ""
+
+#. Text in echo
+#: huddle/forums/single/forum.php:35
+#: huddle/groups/single/forum.php:40
+#: huddle/forums/index.php:57
+#: huddle/members/single/forums.php:12
+msgid "Unreplied"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/activity.php:11
+#: huddle/groups/single/activity.php:11
+#: huddle/activity/index.php:83
+msgid "Updates"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:18
+#: huddle/groups/create.php:155
+#: huddle/groups/single/admin.php:145
+msgid "Upload Image"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:151
+#: huddle/groups/single/admin.php:141
+msgid "Upload an image to use as an avatar for this group. The image will be shown on the main group page, and in search results."
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:13
+msgid "User registration is currently not allowed."
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:41
+msgid "Username"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-video.php:54
+msgid "Video"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-video.php:55
+msgid "Video Embed Code (Best at 265px wide)"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/entry.php:24
+#: huddle/groups/groups-loop.php:41
+msgid "View"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-flickr.php:36
+msgid "View All"
+msgstr ""
+
+#. Text in echo
+#: huddle/includes/author-info.php:4
+msgid "View All Posts From This Author &rarr;"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/messages-loop.php:40
+msgid "View Message"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/entry.php:24
+msgid "View Thread / Permalink"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/admin.php:391
+msgid "WARNING: Deleting this group will completely remove ALL content associated with it. There is no way back, please be careful with this option."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/settings/delete-account.php:45
+msgid "WARNING: Deleting your account will completely remove ALL content associated with it. There is no way back, please be careful with this option."
+msgstr ""
+
+#. Text in echo
+#: huddle/404.php:12
+msgid "We're sorry, but we can't find the page that you're looking for."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/profile-wp.php:33
+msgid "Website"
+msgstr ""
+
+#. Text in echo
+#: huddle/template-homepage.php:13
+msgid "Welcome"
+msgstr ""
+
+#. Text in function
+#: huddle/header.php:68
+msgid "Welcome %s"
+msgstr ""
+
+#. Text in function
+#: huddle/activity/post-form.php:12
+msgid "What's new in %s, %s?"
+msgstr ""
+
+#. Text in function
+#: huddle/activity/post-form.php:12
+msgid "What's new, %s?"
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/create.php:110
+#: huddle/groups/single/admin.php:102
+msgid "Which members of this group are allowed to invite others?"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/profile-wp.php:60
+msgid "Yahoo Messenger"
+msgstr ""
+
+#. Text in echo
+#: huddle/archive.php:16
+msgid "Yearly Archives"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:217
+#: huddle/groups/single/admin.php:30
+msgid "Yes"
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:193
+msgid "Yes, I\\'d like to create a new site"
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/messages/single.php:14
+msgid "You are alone in this conversation."
+msgstr ""
+
+#. Text in function
+#: huddle/forums/index.php:148
+msgid "You are not a member of any groups so you don't have any group forums you can post in. To start posting, first find a group that matches the topic subject you'd like to start. If this group does not exist, why not <a href='%s'>create a new group</a>? Once you have joined or created the group you can post your topic in that group's forum."
+msgstr ""
+
+#. Text in function
+#: huddle/groups/single/request-membership.php:4
+msgid "You are requesting to become a member of the group '%s'."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/groups/invites.php:37
+msgid "You have no outstanding group invites."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/friends/requests.php:48
+msgid "You have no pending friendship requests."
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:251
+msgid "You have successfully created your account! Please log in using the username and password you have just created."
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/register.php:249
+msgid "You have successfully created your account! To begin using this site you will need to activate your account via the email we have just sent to your address."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum/topic.php:97
+msgid "You will auto join this group when you reply to this topic."
+msgstr ""
+
+#. Text in echo
+#: huddle/groups/single/forum.php:69
+msgid "You will auto join this group when you start a new topic."
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/activate.php:19
+msgid "Your account was activated successfully! You can now log in with the username and password you provided when you signed up."
+msgstr ""
+
+#. Text in echo
+#: huddle/registration/activate.php:17
+msgid "Your account was activated successfully! Your account details have been sent to you in a separate email."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:7
+msgid "Your avatar will be used on your profile and throughout the site. If there is a <a href=\"http://gravatar.com\">Gravatar</a> associated with your account email we will use that, or you can upload an image from your computer."
+msgstr ""
+
+#. Text in echo
+#: huddle/members/single/profile/change-avatar.php:56
+msgid "Your avatar will be used on your profile and throughout the site. To change your avatar, please create an account with <a href=\"http://gravatar.com\">Gravatar</a> using the same email address as you used to register with this site."
+msgstr ""
+
+#. Text in echo
+#: huddle/functions.php:307
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-enews.php:84
+msgid "\\'Privacy Policy\\' page:"
+msgstr ""
+
+#. Text in function
+#: huddle/groups/single/group-header.php:17
+#: huddle/forums/single/forum-header.php:13
+#: huddle/groups/groups-loop.php:30
+msgid "active %s"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-flickr.php:70
+msgid "flickr_type (user or group):"
+msgstr ""
+
+#. Text in function
+#: huddle/forums/group-forums-loop.php:39
+msgid "in %1$s"
+msgstr ""
+
+#. Text in echo
+#: huddle/activity/entry.php:91
+msgid "or press esc to cancel."
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-recent-posts.php:86
+msgid "popular"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-recent-posts.php:87
+msgid "posts"
+msgstr ""
+
+#. Text in echo
+#: huddle/functions/widgets/widget-recent-posts.php:85
+msgid "recent"
+msgstr ""
+
+#. Text in echo
+#: huddle/includes/related-posts.php:30
+#: huddle/functions/widgets/widget-tab-posts.php:75
+#: huddle/functions/widgets/widget-recent-posts.php:55
+msgid "with"
+msgstr ""
+
