@@ -362,62 +362,6 @@ if( ! function_exists( 'huddle_auto_excerpt_more' ) ) {
 
 
 /* ------------------------------------------------
-	Register Sidebars
------------------------------------------------- */
-/*
-add_action( 'widgets_init', 'huddle_widgets_init' );
-
-if( ! function_exists( 'huddle_widgets_init' ) ) {
-	function huddle_widgets_init() {
-		register_sidebar( array(
-			'name'=>'Page',
-			'id'   => 'sidebar-page',
-			'description'   => 'Pour foutre un widget tout posé au milieu de la page sisi t\'entends',
-			'before_widget' => '<div>',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h4>',
-			'after_title'   => '</h4>'
-
-		) );
-	}
-}
-*/
-
-/* ------------------------------------------------
-	Onglets du projet
------------------------------------------------- */
-
-/* Un onglet Selection des outils 
-add_action( 'bp_actions', 'selection_outils' );
-
-function selection_outils() {
-	global $bp;
-	if(bp_is_group() && bp_group_is_admin()) {
-		bp_core_new_subnav_item( 
-			array( 
-		    	'name' => 'Selection des outils', 
-		    	'slug' => 'outils', 
-				'parent_slug' => $bp->groups->current_group->slug, 
-				'parent_url' => bp_get_group_permalink( $bp->groups->current_group ), 
-				'position' => 50, 
-				'screen_function' => create_function('',"bp_core_load_template( apply_filters( 'groups_template_group_members', 'groups/single/selection-outils' ) );"),
-		    ) 
-		);
-
-		if ( bp_is_current_action( 'selection-outils' ) ) {
-	        add_action( 'bp_template_content_header', create_function( '', 'echo "' . esc_attr( 'selection-outils' ) . '";' ) );
-	        add_action( 'bp_template_title', create_function( '', 'echo "' . esc_attr( 'selection-outils' ) . '";' ) );
-	    }
-	    
-	    
-	}
-}
-
-*/
-
-
-
-/* ------------------------------------------------
    Expanding Body Class
 ------------------------------------------------ */
 
@@ -495,9 +439,7 @@ include 'functions/widgets/widget-tab-archive.php';	// Archives Widget
 include 'functions/widgets/widget-tab-posts.php';	// Posts Widget
 include 'functions/widgets/widget-tweets.php';		// Tweets Widget
 include 'functions/widgets/widget-video.php';		// Video Widget
-
 include 'functions/shortcodes.php';					// Shortcodes
-
 include 'functions-buddypress.php';					// BuddyPress Functions
 
 
@@ -578,7 +520,9 @@ function bp_surcharge_directory_groups_search_form($action) {
 	}
 
 	$search_form_html = '<form action="'.$action.'" method="get" id="search-groups-form">
-		<label for="groups_search"><input type="text" name="' . esc_attr( $query_arg ) . '" id="groups_search" placeholder="'. esc_attr( $search_value ) .'" /></label>
+		<label for="groups_search">
+			<input type="text" name="' . esc_attr( $query_arg ) . '" id="groups_search" placeholder="'. esc_attr( $search_value ) .'" />
+		</label>
 		<input type="submit" class="hide-responsive custom_groups_search_submit" name="groups_search_submit" value="Je cherche un projet" />
 		<input type="submit" class="show-responsive custom_groups_search_submit" name="groups_search_submit" value="Recherche" />
 	</form>';

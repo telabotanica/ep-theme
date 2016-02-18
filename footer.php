@@ -8,22 +8,14 @@
 
 			<?php do_action( 'bp_before_footer' ) ?>
 			
-			<!--
-			<div id="footer">
-
-				<p class="fl"><?php echo of_get_option( 'footer_text', 'Copyright &copy; 2011. All Rights Reserved' ) ?></p>
-
-				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container' => false ) ); ?>
-
-				<?php do_action( 'bp_footer' ) ?>
-
-			</div> #footer -->
+			<!-- Retour haut de page -->
+			<a href="#subnav" class="retour-haut-page show-responsive" title="Revenir en haut de la page">&#9650;</a>
 
 			<?php do_action( 'bp_after_footer' ) ?>
 
 		<?php endif ?>
 
-	</div><!-- #main -->
+	</div>
 
 <?php wp_footer(); ?>
 

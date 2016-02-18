@@ -83,9 +83,6 @@
 			<?php } ?>
 
 			<?php do_action( 'bp_after_directory_groups' ); ?>
-			
-			<!-- Retour haut de page -->
-			<a href="#subnav" class="retour-haut-page show-responsive" title="Revenir en haut de la page">&#9650;</a>
 
 		</div>
 	</div>

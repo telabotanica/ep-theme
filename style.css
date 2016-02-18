@@ -538,18 +538,21 @@ a:hover {
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
-	width: 36px;
-	line-height: 36px;
-	font-size: 24px;
+	width: 64px;
+	line-height: 64px;
+	font-size: 36px;
 	text-align: center;
 	background-color: #e16e38;
+	background: linear-gradient(-45deg, #e16e38 25%, #e15e38 25%, #e15e38 50%, #e16e38 50%, #e16e38 75%, #e15e38 75%, #e16e38);
+	background-size: 8px 8px;
 	color: white;
-	border-radius: 5px;
+	z-index: 1200;
 	opacity: 0.8;
 }
 
 .retour-haut-page:hover {
 	opacity: 0.95;
+	color: white;
 }
 
 
@@ -1021,7 +1024,7 @@ li.last .sub-menu {
 }
 
 .post {
-	/* margin-bottom: 60px; */
+	
 }
 
 .post .post-title {
@@ -4167,7 +4170,6 @@ body.cyan.forums table.forum td .topic-meta a,
 		top: 0;
 		left: 0;
 		padding: 0;
-		z-index: 9999;
 		text-align: center;
 		background-color: white;
 		background: linear-gradient(-45deg, white 25%, #F9F9F9 25%, #F9F9F9 50%, white 50%, white 75%, #F9F9F9 75%, #F9F9F9);
@@ -4515,8 +4517,10 @@ body.cyan.forums table.forum td .topic-meta a,
 	}
 	
 	.dir-list .item-list .tuile-projet .details-projet .confidentialite-projet {
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: black;
 		color: white;
+		line-height: 24px;
+		text-transform: uppercase;
 	}
 	
 	.dir-list .item-list .tuile-projet .details-projet .membres-projet {
@@ -4578,7 +4582,6 @@ body.cyan.forums table.forum td .topic-meta a,
 		background-color: #009fb8;
 		background: linear-gradient(-45deg, #009aa8 25%, #009fb8 25%, #009fb8 50%, #009aa8 50%, #009aa8 75%, #009fb8 75%, #009fb8);
 		background-size: 8px 8px;
-		z-index: 9999;
 		padding: 10px;
 		margin-left: -10px;
 		margin-top: -10px;
@@ -4658,7 +4661,8 @@ body.cyan.forums table.forum td .topic-meta a,
 	.hide-responsive { display: none; }
 	
 	/* Liste des projets */
-	#panneau-lateral > .tuile-options { width: 220px; } /* Padding de 10px = 240px */
+	#panneau-lateral { display: none; } /* Padding de 10px = 240px */
+	#groups-list { margin-left: -20px; }
 	
 	/* Projet */
 	#item-header { width: 100px; min-height: auto; } 
