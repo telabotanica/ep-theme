@@ -555,7 +555,7 @@ a:hover {
 
 /*-- 1.1 BUTTON --*/
 
-.btn {
+/*.btn {
 	display: inline-block;
 	background: url(images/btn-left.png) no-repeat left center;
 	padding-left: 15px;
@@ -569,7 +569,7 @@ a:hover {
 	background: url(images/btn-right.png) no-repeat right center;
 	padding-right: 15px;
 	height: 38px;
-}
+}*/
 
 .btn-gray,
 #groups_search_submit {
