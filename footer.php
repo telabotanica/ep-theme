@@ -9,7 +9,7 @@
 			<?php do_action( 'bp_before_footer' ) ?>
 			
 			<!-- Retour haut de page -->
-			<a href="#subnav" class="retour-haut-page show-responsive" title="Revenir en haut de la page">&#9650;</a>
+			<a href="#" class="retour-haut-page show-responsive" title="Revenir en haut de la page">&#9650;</a>
 
 			<?php do_action( 'bp_after_footer' ) ?>
 
