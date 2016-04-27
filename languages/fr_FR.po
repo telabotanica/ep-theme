@@ -5334,12 +5334,12 @@ msgstr "Photo du créateur du projet %s"
 #: bp-groups/bp-groups-template.php:1577
 #, fuzzy
 msgid "No Admins"
-msgstr "Pas d'admin"
+msgstr "Pas d'administrateur"
 
 #: bp-groups/bp-groups-template.php:1624
 #, fuzzy
 msgid "No Mods"
-msgstr "Pas de modo"
+msgstr "Pas de modérateur"
 
 #: bp-groups/bp-groups-template.php:1750
 #, fuzzy
