@@ -36,13 +36,14 @@
 				/* Onglet Réglages */
 				if ( bp_is_group_admin_page() && bp_group_is_visible() ) :
 					locate_template( array( 'groups/single/admin.php' ), true );
-		
+
+				/* Onglet Accueil */
+				elseif ( bp_is_group_home() && bp_group_is_visible() ) :
+					locate_template( array( 'groups/single/description.php' ), true );
+
 				/* Onglet Membres */
 				elseif ( bp_is_group_members() && bp_group_is_visible() ) :
 					locate_template( array( 'groups/single/members.php' ), true );
-
-				elseif ( bp_group_is_visible() ) :
-					locate_template( array( 'groups/single/description.php' ), true );
 					
 				/* Onglet Activité */
 				elseif ( bp_is_group_activity() ) :

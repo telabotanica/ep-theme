@@ -1,27 +1,11 @@
+<?php do_action( 'bp_before_group_description_content' ); ?>
+
+<div id="description-complete">
 <?php
-
-do_action( 'bp_before_group_header' );
-
+	// Simple affichage de la description complète
+	echo nl2br(get_value('description-complete'));
 ?>
-
-<div id="item-header-content">
-
-	<?php do_action( 'bp_before_group_header_meta' ); ?>
-
-	<div id="item-meta">
-
-		<div id="item-buttons">
-
-			<?php do_action( 'bp_group_header_actions' ); ?>
-
-		</div>
-
-		<?php do_action( 'bp_group_header_meta' ); ?>
-
-	</div>
 </div>
 
-<?php
-do_action( 'bp_after_group_header' );
-do_action( 'template_notices' );
-?>
+<?php do_action( 'bp_after_group_description_content' );
+	  do_action( 'template_notices' );
