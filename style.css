@@ -4052,12 +4052,25 @@ body.cyan.forums table.forum td .topic-meta a,
 -------------------------------------*/
 
 /*-- 13.0. SURCHARGE WORDPRESS --*/
-#wpadminbar {
+/*#wpadminbar {
 	opacity: 0;
 }
 
 #wpadminbar:hover {
 	opacity: 1;
+}*/
+
+/* masquage de la recherche - voir comment faire ça mieux*/
+#adminbarsearch {
+	display: none;
+}
+/* connexion du même côté que le profil / déconnexion */
+#wpadminbar #wp-admin-bar-bp-login {
+	float: right;
+}
+/* masque le menu BP */
+#wp-admin-bar-customize, #wp-admin-bar-group-admin {
+	display: none;
 }
 
 
@@ -4646,7 +4659,41 @@ body.cyan.forums table.forum td .topic-meta a,
 		width: 200px;
 	}
 	
-
+	/*-- 13.5 FORÇAGE DE RÈGLES POUR LES OUTILS --*/
+	#new-thread-body {
+		border: 1px solid #d0d0d0 !important;
+		padding: 10px !important;
+		width: 100% !important;
+		font-size: 1em !important;
+		line-height: 20px !important;
+	}
+	.wp-bootstrap .btn.reply-to-message {
+		border-radius: 2px;
+		color: #2a6496;
+		font-size: 1.8em;
+	}
+	.wp-bootstrap .btn.cancel-reply {
+		border-radius: 2px;
+		color: #ef4b2c;
+		display: none;
+		font-size: 1.8em;
+	}
+	.wp-bootstrap .btn.send-reply {
+		border-radius: 2px;
+		color: #51b13d;
+		display: none;
+		font-size: 1.8em;
+	}
+	.reply-area {
+		border: 1px solid #d0d0d0; !important;
+		color: #555 !important;
+		display: none;
+		height: 200px !important;
+		padding: 10px !important;
+		width: 100% !important;
+		font-size: 1em !important;
+		line-height: 20px !important;
+	}
 
 /*-------------------------------------
    14. MEDIA QUERIES
