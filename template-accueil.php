@@ -3,6 +3,17 @@
 Template Name: Page d'accueil
 */
 
+function getBPPageSlug($bpPage)
+{
+	$wpToBpPages = get_option("bp-pages");
+	if (! array_key_exists($bpPage, $wpToBpPages)) {
+		throw new Exception('La page BuddyPress "' . $bpPage . '" n\'existe pas');
+	}
+	$wpPageSlug = get_post($wpToBpPages[$bpPage]);
+	return $wpPageSlug->post_name;
+}
+$pageProjets = getBPPageSlug('groups');
+
 get_header(); ?>
 <div id="page-accueil">
 
@@ -22,25 +33,25 @@ get_header(); ?>
 						<!-- 1ère colonne -->
 						<ul class="fl">
 							<li>
-								> <a href="#">Flora Data</a>
+								> <a href="http://www.tela-botanica.org/page:FloraData">Flora Data</a>
 							</li>
 							<li>
-								> <a href="#">Sauvages de ma rue</a>
+								> <a href="http://www.tela-botanica.org/page:Sauvages_de_ma_rue">Sauvages de ma rue</a>
 							</li>
 							<li>
-								> <a href="#">Observatoires des saisons</a>
+								> <a href="http://www.tela-botanica.org/page:Observatoire_des_Saisons">Observatoires des saisons</a>
 							</li>
 						</ul>
-						<!-- 2ème clonne -->
+						<!-- 2ème colonne -->
 						<ul class="fr">
 							<li>
-								> <a href="#">Les Herbonautes</a>
+								> <a href="http://www.tela-botanica.org/page:Herbonautes">Les Herbonautes</a>
 							</li>
 							<li>
-								> <a href="#">Vigie Flore</a>
+								> <a href="http://www.tela-botanica.org/page:Vigie_Flore">Vigie Flore</a>
 							</li>
 							<li>
-								> <a href="#">Mission Flore</a>
+								> <a href="http://www.tela-botanica.org/mission/">Mission Flore</a>
 							</li>
 						</ul>
 						<div class="clear"></div>
@@ -58,17 +69,17 @@ get_header(); ?>
 						<!-- 1ère colonne -->
 						<ul class="fl">
 							<li>
-								> <a href="groups">Rechercher un projet</a>
+								> <a href="<?= trailingslashit( bp_get_root_domain() . '/' . $pageProjets . '/?groups_search' ); ?>">Rechercher un projet</a>
 							</li>
-							<li>
+							<!--<li>
 								> <a href="#">Rejoindre un projet</a>
-							</li>
+							</li>-->
 							<li>
-								> <a href="#">Créer un projet</a>
+								> <a href="<?= trailingslashit( bp_get_root_domain() . '/' . $pageProjets . '/create' ); ?>">Créer un projet</a>
 							</li>
 						</ul>
 						<!-- 2ème colonne -->
-						<ul class="fr">
+						<!--<ul class="fr">
 							<li>
 								> <a href="#">Des outils à votre disposition</a>
 							</li>
@@ -78,7 +89,7 @@ get_header(); ?>
 							<li>
 								> <a href="#">FAQ</a>
 							</li>
-						</ul>
+						</ul>-->
 					</div>
 				</div>
 				
@@ -90,14 +101,14 @@ get_header(); ?>
 				<!-- Accès aux projets existants -->
 				<div class="tb-encart-projet" id="tb-recherche-projet">
 					<!-- Barre de recherche -->
-					<?php bp_surcharge_directory_groups_search_form('groups') ?>
+					<?php bp_surcharge_directory_groups_search_form($pageProjets) ?>
 				</div>
 			
 				<!-- Création projet -->
 				<?php if ( is_user_logged_in() && bp_user_can_create_groups() ) { ?>
 				
 				<!-- Si l'utilisateur est connecté, il a accès au formulaire de création d'un projet -->
-				<a class="tb-encart-projet" id="tb-creation-projet" href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_groups_root_slug() . '/create' ); ?>">
+				<a class="tb-encart-projet" id="tb-creation-projet" href="<?= trailingslashit( bp_get_root_domain() . '/' . $pageProjets . '/create' ); ?>">
 					<input class="hide-responsive custom_groups_search_submit" value="Je crée mon projet" />
 					<input class="show-responsive custom_groups_search_submit" value="Création" />
 				</a>
@@ -109,6 +120,7 @@ get_header(); ?>
 					<input class="show-responsive custom_groups_search_submit" value="Connexion" />
 				</a>
 				
+				<!-- Et s'il est connecté, mais sans avoir le droit de créer des groupes ? -->
 				<?php } ?>
 								
 			</div>
