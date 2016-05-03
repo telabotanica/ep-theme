@@ -17,31 +17,22 @@ $url = rtrim( current( explode( '?', $_SERVER['REQUEST_URI'] ) ), '/' );
 		<div id="titre-panneau-lateral">Recherche avancée</div>
 		<div id="masquer-panneau-lateral" class="pointer" title="Masquer la recherche avancée">X</div>
 	
-		<!-- Filtres -->
-		<div class="tuile-options" id="panneau-filtres">
-		
-			<!-- Titre tri -->
+		<!--<div class="tuile-options" id="panneau-filtres">
 			<div class="titre-options pointer">Trier par</div>
-			
-			<!-- Options tri -->
 			<div class="wp-bootstrap contenu-options btn-group btn-group" role="group">
-				
-				<!-- Par activité -->
+
 				<label for="activite" class="pointer">
 					<button type="button" id="activite" class="btn btn-primary" value="active"><?php _e( 'Last Active', 'buddypress' ); ?></button>
 				</label>
-					
-				<!-- Par popularité -->
+
 				<label for="populaire" class="pointer">
 					<button type="button" id="populaire" class="btn btn-primary" value="popular"><?php _e( 'Most Members', 'buddypress' ); ?></button>
 				</label>
-				
-				<!-- Par date -->
+
 				<label for="date" class="pointer">
 					<button type="button" id="date" class="btn btn-primary" value="newest"><?php _e( 'Newly Created', 'buddypress' ); ?></button>
 				</label>
-				
-				<!-- Par ordre alphabétique -->
+
 				<label for="alphabetique" class="pointer">
 					<button type="button" id="alphabetique" class="btn btn-primary" value="alphabetical"><?php _e( 'Alphabetical', 'buddypress' ); ?></button>
 				</label>
@@ -50,17 +41,13 @@ $url = rtrim( current( explode( '?', $_SERVER['REQUEST_URI'] ) ), '/' );
 					
 			</div>
 			
-		</div>
-		
-		<!-- Catégories -->
-		<div class="tuile-options" id="panneau-categories">
-		
-			<!-- Titre catégories -->
+		</div>-->
+
+		<!--<div class="tuile-options" id="panneau-categories">
+
 			<div class="titre-options pointer">Catégories</div>
-		
-			<!-- Options catégories -->
+
 			<div class="wp-bootstrap contenu-options btn-group btn-group" role="group">
-			
 				<?php	
 				/* Lecture de la table "wp_tb_categories_projets" */
 				$requete = "
@@ -80,38 +67,29 @@ $url = rtrim( current( explode( '?', $_SERVER['REQUEST_URI'] ) ), '/' );
 				<?php
 				}
 				?>
-				
-			</diV>
-			
-		</div>
-		
-		<!-- Etiquettes -->
+			</div>
+		</div>-->
+
 		<div class="tuile-options" id="panneau-tags">
-		
-			<!-- Titre étiquettes -->
 			<div class="titre-options pointer">Mots-clés</div>
-			
-			<!-- Options étiquettes -->
 			<div class="wp-bootstrap contenu-options btn-group btn-group" role="group">
 				<?php echo custom_gtags_show_tags_in_add_form(); ?>
 			</div>
-			
 		</div>
-		
-		<!-- Filtrer -->
-		<div class="tuile-options" id="panneau-submit">
+
+		<!--<div class="tuile-options" id="panneau-submit">
 			<div class="wp-bootstrap contenu-options btn-group btn-group" role="group">
 				<label class="pointer">
 					<button class="btn btn-warning">Filtrer</button>
 				</label>
 			</div>
-		</div>
+		</div>-->
 	
 	</div>
 
 	<!-- Liste des projets -->
 	<ul id="groups-list" class="item-list" role="main">
-		
+
 	<?php $i_row = 0; $i = 0; $i_column = 0; while ( bp_groups() ) : bp_the_group(); ?>
 	
 		<!-- Projet -->
@@ -141,9 +119,6 @@ $url = rtrim( current( explode( '?', $_SERVER['REQUEST_URI'] ) ), '/' );
 			</div>
 			
 		</li>
-			
-		
-		
 	<?php endwhile; ?>
 	</ul>
 
