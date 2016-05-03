@@ -1975,6 +1975,7 @@ body.groups #item-header #item-meta {
 	min-height: 650px;
 	text-align: justify;
 	background-color: white;
+	font-size: 14px;
 }
 
 #item-body h1, 
