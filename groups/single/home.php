@@ -30,7 +30,6 @@
 			</div>
 
 			<div id="item-body">
-				
 				<?php do_action( 'bp_before_group_body' );
 				
 				/* Onglet Réglages */
@@ -68,7 +67,25 @@
 					do_action( 'bp_before_group_status_message' ); ?>
 
 					<div id="message" class="info">
-						<p><?php bp_group_status_message(); ?></p>
+						<p>
+							<?php //bp_group_status_message(); ?>
+							Ce projet est privé.
+						</p>
+						<?php if (is_user_logged_in()): ?>
+						<p>
+							Pour y participer, vous devez faire une demande d'adhésion en
+							cliquant sur "adhérer au projet" ci-dessus.
+						</p>
+						<?php else: ?>
+						<p>
+							Pour y participer, vous devez être identifié avec votre compte Tela Botanica.
+							<br/>
+							Pour vous identifier, utilisez le bouton "connexion" en haut à droite de la page.
+							<br/>
+							(vous n'avez pas encore de compte ?
+							<a href="http://www.tela-botanica.org/incsription" target="_blank">Créez-en un ici</a>)
+						</p>
+						<?php endif; ?>
 					</div>
 
 					<?php do_action( 'bp_after_group_status_message' );

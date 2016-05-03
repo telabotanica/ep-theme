@@ -55,8 +55,8 @@
 						 
 					</div>
 				
-					<!-- Afficher volet -->
-					<div id="afficher-panneau-lateral" class="pointer show-responsive">Recherche avancée</div>
+					<!-- Afficher volet @TODO réactiver -->
+					<!--<div id="afficher-panneau-lateral" class="pointer show-responsive">Recherche avancée</div>-->
 			
 				</div>
 			

@@ -908,7 +908,7 @@ msgstr "Logo du projet"
 #: bp-groups/bp-groups-template.php:897
 #, fuzzy
 msgid "Group logo of %s"
-msgstr "Logo du groupe %s"
+msgstr "Logo du projet %s"
 
 #: bp-activity/bp-activity-template.php:1644
 #, fuzzy
@@ -1418,7 +1418,7 @@ msgstr "Rapports d'activité globale, personnelle et de projet, avec commentaire
 #: bp-core/admin/bp-core-admin-components.php:398
 #, fuzzy
 msgid "User Groups"
-msgstr "Groupes"
+msgstr "Projets"
 
 #: bp-core/admin/bp-core-admin-components.php:399
 #, fuzzy
@@ -2991,7 +2991,7 @@ msgstr "Membre au hasard"
 #: bp-core/deprecated/2.1.php:347
 #, fuzzy
 msgid "Random Group"
-msgstr "Groupe au hasard"
+msgstr "Projet au hasard"
 
 #: bp-core/deprecated/2.1.php:353
 #, fuzzy
@@ -3862,7 +3862,7 @@ msgstr "Options du projet mises à jour"
 #: bp-groups/bp-groups-activity.php:51
 #, fuzzy
 msgid "Group Updates"
-msgstr "Mises à jour du Groupe"
+msgstr "Mises à jour du Projet"
 
 #: bp-groups/bp-groups-activity.php:62
 #, fuzzy
@@ -3973,12 +3973,12 @@ msgstr "Vous ne pouvez pas supprimer tous les administrateurs d'un projet."
 #: bp-groups/bp-groups-admin.php:506
 #, fuzzy
 msgid "Group name cannot be empty."
-msgstr "Nom de Groupe. Ce champ ne peut rester vide."
+msgstr "Nom de Projet. Ce champ ne peut rester vide."
 
 #: bp-groups/bp-groups-admin.php:510
 #, fuzzy
 msgid "Group description cannot be empty."
-msgstr "Description du Groupe. Ce champ ne peut rester vide."
+msgstr "Description du Projet. Ce champ ne peut rester vide."
 
 #: bp-groups/bp-groups-admin.php:514
 #, fuzzy
@@ -4344,7 +4344,7 @@ msgstr "Photo"
 #: bp-groups/bp-groups-loader.php:591
 #, fuzzy
 msgid "Requests"
-msgstr "Demandes de contact"
+msgstr "Demandes d'adhésion"
 
 #: bp-groups/bp-groups-loader.php:722
 #, fuzzy
@@ -4866,22 +4866,22 @@ msgstr "Le projet a été correctement supprimé !"
 #: bp-groups/bp-groups-template.php:804
 #, fuzzy
 msgid "Public Group"
-msgstr "Groupe Public"
+msgstr "Projet Public"
 
 #: bp-groups/bp-groups-template.php:806
 #, fuzzy
 msgid "Hidden Group"
-msgstr "Groupe Masqué"
+msgstr "Projet Masqué"
 
 #: bp-groups/bp-groups-template.php:808
 #, fuzzy
 msgid "Private Group"
-msgstr "Groupe Privé"
+msgstr "Projet Privé"
 
 #: bp-groups/bp-groups-template.php:810
 #, fuzzy
 msgid "Group"
-msgstr "Groupe"
+msgstr "Projet"
 
 #: bp-groups/bp-groups-template.php:1017
 #, fuzzy
@@ -5164,7 +5164,7 @@ msgstr "Maximum de projets à afficher:"
 #: bp-groups/bp-groups-widgets.php:171
 #, fuzzy
 msgid "Default groups to show:"
-msgstr "Groupes par défaut à afficher:"
+msgstr "Projets par défaut à afficher:"
 
 #: bp-groups/bp-groups-widgets.php:240
 #, fuzzy
@@ -7000,7 +7000,7 @@ msgstr "Aucun projet n'a été trouvé."
 #: bp-templates/bp-legacy/buddypress/groups/index.php:43
 #, fuzzy
 msgid "All Groups <span>%s</span>"
-msgstr "Tous les Groupes <span>%s</span>"
+msgstr "Tous les Projets <span>%s</span>"
 
 #: bp-templates/bp-legacy/buddypress/groups/index.php:78
 #: bp-templates/bp-legacy/buddypress/members/single/groups.php:23
@@ -8302,7 +8302,7 @@ msgstr "Amis"
 #, fuzzy
 msgctxt "widget name"
 msgid "(BuddyPress) Groups"
-msgstr "(BuddyPress) Groupes"
+msgstr "(BuddyPress) Projets"
 
 #: bp-members/bp-members-widgets.php:38
 #, fuzzy
@@ -8747,7 +8747,7 @@ msgstr "%s projet"
 #, fuzzy
 msgctxt "Group screen page <title>"
 msgid "User Groups"
-msgstr "Groupes"
+msgstr "Projets"
 
 #: bp-groups/bp-groups-loader.php:168
 #, fuzzy
@@ -8788,7 +8788,7 @@ msgstr "Adhérer"
 #, fuzzy
 msgctxt "Group screen nav with counter"
 msgid "Groups <span class=\"%s\">%s</span>"
-msgstr "Groupes <span class=\"%s\">%s</span> "
+msgstr "Projets <span class=\"%s\">%s</span> "
 
 #: bp-groups/bp-groups-loader.php:400
 #, fuzzy
@@ -8858,7 +8858,7 @@ msgstr "Créer le projet et poursuivre"
 #, fuzzy
 msgctxt "My Account Groups nav"
 msgid "Groups <span class=\"count\">%s</span>"
-msgstr "Groupes <span class=\"count\">%s</span> "
+msgstr "Projets <span class=\"count\">%s</span> "
 
 #: bp-groups/bp-groups-loader.php:699
 #, fuzzy

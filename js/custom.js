@@ -276,7 +276,7 @@ $('.dir-list .item-list .tuile-projet').on('mouseenter', function() {
   	$('.membres-projet', this).toggle();
   	$('.confidentialite-projet', this).toggle();
   	$('.gtags-item-tags a', this).toggle();	
-  	if (idNavigateur() != 'Firefox') {
+  	/*if (idNavigateur() != 'Firefox') {
 		$('.avatar-projet img', this).animate({
 			borderRadius: '100%',
 			height: '140px',
@@ -289,7 +289,7 @@ $('.dir-list .item-list .tuile-projet').on('mouseenter', function() {
 			opacity: 1
 		}, 
 		200);
-	}
+	}*/
 });
 /*-- Animation tuile projet (Mouse Leave)--*/
 $('.dir-list .item-list .tuile-projet').on('mouseleave', function() {
@@ -299,7 +299,7 @@ $('.dir-list .item-list .tuile-projet').on('mouseleave', function() {
   	$('.confidentialite-projet', this).toggle();
   	$('.gtags-item-tags a', this).toggle();
   	$('.avatar-projet img', this)
-  	if (idNavigateur() != 'Firefox') {
+  	/*if (idNavigateur() != 'Firefox') {
 		$('.avatar-projet img', this).animate({
 			borderRadius: 0,
 			height: '100%',
@@ -312,7 +312,7 @@ $('.dir-list .item-list .tuile-projet').on('mouseleave', function() {
 			opacity: 0.8
 		}, 
 		100);
-	}
+	}*/
 });
 
 
