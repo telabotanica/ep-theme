@@ -1,10 +1,10 @@
 
 <?php do_action( 'bp_before_member_header' ); ?>
 
+
 <!-- Lien de retour -->
-<a class="lien-accueil" href="/wordpress/groups">
-	Revenir aux projets
-</a>
+<div class="hide-responsive"><a class="lien-accueil" href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_groups_root_slug() ); ?>">Revenir aux projets</a></div>
+<div class="show-responsive"><a class="lien-accueil" href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_groups_root_slug() ); ?>">Retour</a></div>
 
 <!-- Avatar du membre -->
 <div id="item-header-avatar">

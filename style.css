@@ -4324,6 +4324,10 @@ body.cyan.forums table.forum td .topic-meta a,
 	display: flex;
 }
 
+#create-group-form p#bp-avatar-feedback {
+    color: #333;
+}
+
 #group-name,
 #group-desc,
 #group-tags {
