@@ -1861,6 +1861,7 @@ li.last .sub-menu {
 	color: #009fb8;
 	font-size: 14px;
 	/*width: 100%;*/
+	width: 176px;
 	text-align: left;
 	border-radius: 0;
 	/*margin-left: -10px;*/
@@ -1961,6 +1962,14 @@ body.groups #item-header #item-meta {
 
 #item-header-content a {
 	color: white;
+}
+
+/* Boutons rejoindre / quitter le groupe */
+#join-group-wrapper {
+    border: 1px solid #c0c0c0;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
 }
 
 

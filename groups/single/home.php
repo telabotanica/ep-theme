@@ -74,7 +74,7 @@
 						<?php if (is_user_logged_in()): ?>
 						<p>
 							Pour y participer, vous devez faire une demande d'adhésion en
-							cliquant sur "adhérer au projet" ci-dessus.
+							cliquant sur "adhérer à ce projet".
 						</p>
 						<?php else: ?>
 						<p>

@@ -30,7 +30,7 @@ do_action( 'bp_before_group_header' );
 	<h2><a href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>"><?php bp_group_name(); ?></a></h2>
 
 	<!-- bouton d'adhésion / désadhésion -->
-	<?php bp_group_join_button(); ?>
+	<?php echo bp_get_group_join_button(); ?>
 	
 	<!-- Résumé du projet -->
 	<span class="highlight" id="resume"><?php bp_group_description(); ?></span>

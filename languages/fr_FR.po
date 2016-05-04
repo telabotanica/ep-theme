@@ -5006,7 +5006,7 @@ msgstr "Demande envoyée"
 #: bp-templates/bp-legacy/buddypress-functions.php:1477
 #, fuzzy
 msgid "Request Membership"
-msgstr "Adhérer"
+msgstr "Adhérer à ce projet"
 
 #: bp-groups/bp-groups-template.php:3488
 #, fuzzy
@@ -8787,7 +8787,7 @@ msgstr "Invitations"
 #, fuzzy
 msgctxt "Group screen nav"
 msgid "Request Membership"
-msgstr "Adhérer"
+msgstr "Adhérer à ce projet"
 
 #: bp-groups/bp-groups-loader.php:398
 #, fuzzy

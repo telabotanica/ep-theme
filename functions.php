@@ -16,7 +16,6 @@ function huddle_bp_unlink_profile_fields() {
 remove_filter( 'bp_get_the_profile_field_value', 'xprofile_filter_link_profile_data', 9 );
 
 add_filter( 'bp_get_add_friend_button', 'huddle_bp_get_add_friend_button' );
-add_filter( 'bp_get_group_join_button', 'huddle_bp_get_add_friend_button' );
 
 add_filter( 'bp_get_the_profile_field_value', 'huddle_bp_get_the_profile_field_value', 3 );
 
@@ -534,3 +533,10 @@ function bp_surcharge_directory_groups_search_form($action) {
 /* ------------------------------------------------
 	Trucs à la main (Mathias, 2016-05-04)
 ------------------------------------------------ */
+
+function tweak_button ( $button ) { 
+	$button['wrapper_id'] = "join-group-wrapper";
+	return $button;
+
+}
+add_filter( 'bp_get_group_join_button', 'tweak_button', 1, 1 );
