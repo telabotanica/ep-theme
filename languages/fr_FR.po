@@ -4091,6 +4091,11 @@ msgstr "Rechercher dans les projets"
 msgid "Enable discussion forum"
 msgstr "Activer la discussion du forum"
 
+#: groups/single/admin.php:147
+#: groups/create.php:160
+msgid "Upload an image to use as an avatar for this group. The image will be shown on the main group page, and in search results."
+msgstr "Choisissez une image à utiliser comme avatar de ce projet. Cette image apparaîtra sur la page du projet et dans les résutlats de recherche."
+
 #: bp-groups/bp-groups-admin.php:774
 #, fuzzy
 msgid "Privacy"
@@ -4339,7 +4344,7 @@ msgstr "Informations"
 #: bp-groups/bp-groups-loader.php:577
 #, fuzzy
 msgid "Photo"
-msgstr "Photo"
+msgstr "Avatar"
 
 #: bp-groups/bp-groups-loader.php:591
 #, fuzzy
@@ -8770,7 +8775,7 @@ msgstr "Réglages"
 #, fuzzy
 msgctxt "Group screen nav"
 msgid "Photo"
-msgstr "Photo"
+msgstr "Avatar"
 
 #: bp-groups/bp-groups-loader.php:312
 #, fuzzy
