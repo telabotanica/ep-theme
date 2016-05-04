@@ -23,12 +23,14 @@ do_action( 'bp_before_group_header' );
 </div>
 
 
-
 <!-- Contenu du header -->
 <div id="item-header-content" class="hide-responsive">
 
 	<!-- Titre du projet -->
 	<h2><a href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>"><?php bp_group_name(); ?></a></h2>
+
+	<!-- bouton d'adhésion / désadhésion -->
+	<?php bp_group_join_button(); ?>
 	
 	<!-- Résumé du projet -->
 	<span class="highlight" id="resume"><?php bp_group_description(); ?></span>
@@ -39,7 +41,6 @@ do_action( 'bp_before_group_header' );
 	<?php do_action( 'bp_before_group_header_meta' ); ?>
 
 </div>
-
 
 
 <!-- Actions du header -->

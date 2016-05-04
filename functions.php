@@ -531,6 +531,6 @@ function bp_surcharge_directory_groups_search_form($action) {
 
 }
 
-
-
-
+/* ------------------------------------------------
+	Trucs à la main (Mathias, 2016-05-04)
+------------------------------------------------ */

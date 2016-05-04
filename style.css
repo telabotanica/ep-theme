@@ -1860,12 +1860,13 @@ li.last .sub-menu {
 	background-size: 8px 8px;
 	color: #009fb8;
 	font-size: 14px;
-	width: 100%;
+	/*width: 100%;*/
 	text-align: left;
 	border-radius: 0;
-	margin-left: -10px;
+	/*margin-left: -10px;*/
 	padding-right: 20px;
 	font-weight: normal;
+	margin-top: 10px;
 }	
 
 #item-header #resume p{
@@ -1954,6 +1955,8 @@ body.groups #item-header #item-meta {
 
 #item-header-content h2 {
 	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #item-header-content a {
